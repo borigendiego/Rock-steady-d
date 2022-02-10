@@ -1,0 +1,18 @@
+@import './styles/variables.scss';
+
+.text {
+  font-family: $archivoBlack;
+}
+
+.text2 {
+  font-family: $archivoBlack;
+}
+
+.text2::after {
+  content: "";
+  background: url('/assets/images/belief-star.png');
+}
+
+.background {
+  background: linear-gradient(113.49deg, #A60321 -30.3%, #1F0B25 58.12%);
+}

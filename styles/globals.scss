@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'variables';
+
+// Import Swiper styles
+@import "swiper/css";
+@import "swiper/css/effect-coverflow";
+@import "swiper/css/pagination";
+
+@import "slick-carousel/slick/slick.css"; 
+@import "slick-carousel/slick/slick-theme.css";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 64px;
+  color: $white;
+  text-align: center;
+  font-family: $archivoBlack;
+  line-height: 1;
+}
+
+h2 {
+  color: $white;
+  font-family: $archivoBlack;
+  line-height: 1;
+}
+
+h3 {
+  color: $white;
+  font-family: $archivoBlack;
+}
+
+h4 {
+  color: $white;
+}
+
+h5 {
+  color: $white;
+}
+
+h6 {
+  color: $white;
+}
+
+p {
+  color: $white;
+  font-family: $poppins, sans-serif;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+  font-family: $poppins, sans-serif;
+}
+
+img {
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.empty-font {
+    -webkit-text-stroke: 2px $white;
+    color: transparent;
+}
+
+
+//Button Styles
+.button {
+  background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-family: $poppins;
+}
+
+.button:hover {
+  background: linear-gradient(214.02deg, #B05369 6.04%, #671AE4 92.95%);
+  transition: 3s;
+}
+
+//Form Styles. Remove after refactor
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item { width: 100%; }
+
+.item.half { width: 49%; }
+
+.input {
+  border: 3px solid #ccc;
+  border-radius: 50px;
+  height: 40px;
+  width: 100%;
+  transition: 300ms;
+  background-color: transparent;
+  padding-left: 10px;
+}
+
+.input.error {
+  border: 3px solid #cc0017;
+  background-color: #cc001712;
+  font-weight: 600;
+}
+
+.input_box {
+  border: 3px solid #ccc;
+  background-color: transparent;
+  border-radius: 30px;
+  height: 80%;
+  width: 100%;
+  padding-left: 10px;
+}
+
+textarea {
+  padding-top: 5px;
+}
+
+.error_message {
+  font-size: clamp(16px, 0.2em, 22px);
+  color: #cc0017;
+}
+
+.message {
+  min-height: 3em;
+  border: 1px solid;
+  border-radius: 2px;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.message h2 { font-size: clamp(24px, 0.2em, 30px); }
+.message p { font-size: clamp(16px, 0.2em, 24px); }
+
+.message.error {
+  background-color: #cc001712;
+  color: #cc0017;
+  border: 2px solid #cc0017;
+}
+
+.message.succeed {
+  background-color: #1ec61e40;
+  color: #33a533;
+  border: 2px solid #33a533;
+}
+
+@media (max-width: 480px) {
+  .item, .item.half { width: 100%; }
+
+  .input_button {
+      height: 6vh;
+      width: 50vw;
+      display: block;
+      margin: auto;
+  }
+}

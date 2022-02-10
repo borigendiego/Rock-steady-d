@@ -1,0 +1,11 @@
+@import './styles/variables.scss';
+
+.text {
+  font-family: $archivoBlack;
+}
+
+.background {
+  background: linear-gradient(rgb(6 6 6 / 58%), rgb(0 0 0 / 66%)), url("/assets/images/banner-bg.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

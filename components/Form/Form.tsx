@@ -95,7 +95,6 @@ const MyCustomForm = ({
                                 <MyInput
                                     key={name}
                                     fieldName={name}
-                                    id={name}
                                     fieldType={'text'}
                                     label={label}
                                     handleChange={handleChange}
@@ -115,8 +114,8 @@ const MyCustomForm = ({
                                         id={name}
                                         onChange={handleChange}
                                         value={values[name]}
-                                        rows={'5'}
-                                        cols={'40'}
+                                        rows={5}
+                                        cols={40}
                                         className={'input_box'}
                                         placeholder={placeholder}
                                     />
@@ -135,9 +134,9 @@ const MyCustomForm = ({
                                 <MyInput
                                     key={name}
                                     fieldName={name}
-                                    id={name}
                                     fieldType={'text'}
                                     label={label}
+                                    size={size}
                                     handleChange={handleChange}
                                     value={values[name]}
                                     validations={validations}

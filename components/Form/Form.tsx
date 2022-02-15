@@ -112,7 +112,6 @@ const MyCustomForm = ({
                                     <textarea
                                         name={name}
                                         id={name}
-                                        onChange={handleChange}
                                         value={values[name]}
                                         rows={10}
                                         cols={40}

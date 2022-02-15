@@ -112,7 +112,9 @@ const MyCustomForm = ({
                                     <textarea
                                         name={name}
                                         id={name}
-                                        rows={5}
+                                        onChange={handleChange}
+                                        value={values[name]}
+                                        rows={10}
                                         cols={40}
                                         className={'input_box'}
                                         placeholder={placeholder}
@@ -150,7 +152,7 @@ const MyCustomForm = ({
                 <input
                     type={'submit'}
                     value={submitButtonLabel ? submitButtonLabel : 'SEND'}
-                    className={'contact-input-button button py-4 px-12 text-white m-10 cursor-pointer'}
+                    className={'contact-input-button button py-4 px-20 text-white cursor-pointer'}
                 />
             </section>
         </form>

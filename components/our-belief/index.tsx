@@ -6,17 +6,17 @@ import Item from "./item";
 
 const OurBelief = () => {
     return(
-        <div className={`bg-purple-900 flex ${styles.background}`}>
-            <div className={'w-3/6 flex flex-col items-center p-16'}>
-                <div className={'flex w-full flex-wrap'}>
-                    <h1 className={`${styles.text} text-left w-full`}>OUR</h1>
-                    <h1 className={`${styles.text2} text-left w-full empty-font`}>BELIEFS</h1>
+        <div className={`bg-purple-900 flex flex-col sm:flex-row ${styles.background}`}>
+            <div className={'sm:w-3/6 flex flex-col items-center'}>
+                <div className={'flex flex-wrap pt-4'}>
+                    <h1 className={`${styles.text} text-left w-full sm:text-left text-center`}>OUR</h1>
+                    <h1 className={`${styles.text} text-left w-full empty-font sm:text-left text-center`}>BELIEFS</h1>
                 </div>
-                <div className={'flex flex-col items-baseline mt-8 px-4'}>
+                <div className={'flex flex-col items-baseline mt-4 px-4 sm:items-center'}>
                     {ITEM_DATA.map((value, index) => <Item itemData={value} key={index}/>)}
                 </div>
             </div>
-            <img alt={'background image'} src={'/assets/images/beliefImg.png'} className={'max-h-max w-3/6 rounded-2xl'}/>
+            <img alt={'background image'} src={'/assets/images/beliefImg.png'} className={'max-h-max w-3/6 rounded-2xl sm:flex hidden'}/>
         </div>
     )
 };

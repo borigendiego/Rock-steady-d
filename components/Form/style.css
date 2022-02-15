@@ -35,6 +35,10 @@
     width: 100%;
 }
 
+.contact-input-button {
+    margin-top: 0;
+}
+
 .error_message {
     font-size: clamp(16px, 0.2em, 22px);
     color: #cc0017;

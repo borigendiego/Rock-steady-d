@@ -15,7 +15,7 @@ const How = () => {
       };
 
     return(
-        <div className={`${styles.background} flex h-screen flex-wrap`}>
+        <div className={`${styles.background} flex h-screen flex-wrap`} id={'HOW'}>
             <div className={`w-1/2 flex flex-col justify-center relative`}>
                 <img 
                     src={'/assets/images/how-we-do-it-word.png'} 

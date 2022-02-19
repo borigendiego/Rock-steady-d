@@ -4,10 +4,10 @@ import { Form } from '../Form';
 
 const Contact = () => {
   return(
-      <div className={`${styles.background} flex flex-col justify-center`}>
+      <div className={`${styles.background} flex flex-col justify-center`} id={'CONTACT'}>
             <img 
                 src={'/assets/images/READY_TO.png'}
-                className={'w-2/3 m-auto'}
+                className={'sm:w-2/3 m-auto'}
             />
             <Form 
                 fields={[

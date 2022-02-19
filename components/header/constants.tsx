@@ -5,7 +5,7 @@ const MENU_LINKS = [
     },
     {
         label: 'Values',
-        linkTo: '#PROJECTS'
+        linkTo: '#BELIEFS'
     },
     {
         label: 'About',
@@ -13,7 +13,7 @@ const MENU_LINKS = [
     },
     {
         label: 'How',
-        linkTo: '#CONTACT'
+        linkTo: '#HOW'
     },
 ];
 

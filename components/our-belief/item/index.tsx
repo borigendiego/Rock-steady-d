@@ -11,7 +11,7 @@ const Item = ({ itemData }) => {
     
     return(
         <div className={'flex flex-col sm:flex-row my-8 items-center sm:w-4/5'}>
-            <div className={`p-1 h-14 w-14 mr-6 ${styles.imageDiv}`}>
+            <div className={`p-1 h-14 w-14 sm:mr-6 mr-0 ${styles.imageDiv}`}>
                 <img src={image} alt={`${key}-profile`} className={'mx-auto pt-2.5'}/>
             </div>
             <div className={'w-9/12 sm:pt-0 pt-4'}>

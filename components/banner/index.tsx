@@ -5,9 +5,9 @@ import Header from '../header';
 
 const Banner = () => {
     return(
-        <div className={`flex flex-col p-12 max-h-screen ${styles.background}`}>
+        <div className={`flex flex-col sm:p-12 sm:max-h-screen h-screen ${styles.background}`}>
             <Header />
-            <img src={'/assets/images/banner-text.png'} className={'w-9/12 m-auto'} />
+            <img src={'/assets/images/banner-text.png'} className={'sm:w-9/12 w-full h-3/6 sm:m-auto'} />
         </div>
     )
 };

@@ -5,6 +5,13 @@ $main-green: #CFE1DF;
 $primary-pink: #F7F5F5;
 $button-pink: #E7CCBF;
 $orange: rgba(217, 179, 70, 0.2);
+$main-purple: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+$hover-purple: linear-gradient(214.02deg, #B05369 6.04%, #671AE4 92.95%);
+
+//Devices sizes
+$xs-screen: 450px;
+$md-screen: 1024px;
+$lg-screen: 1280px;
 
 //Fonts
 $brandonBlack: 'Brandon grotesque black';
@@ -12,19 +19,6 @@ $brandonRegular: 'Brandon grotesque regular';
 $archivoBlack: 'Archivo Black';
 $poppins: 'Poppins';
 $poppins9: 'Poppins9';
-
-// @font-face {
-//   font-family: 'Brandon grotesque black';
-//   font-style: normal;
-//   src: url('/assets/fonts/brandon-grotesque-black.otf');
-// }
-
-// @font-face {
-//   font-family: 'Brandon grotesque regular';
-//   font-style: normal;
-//   font-weight: 400;
-//   src: url('/assets/fonts/brandon-grotesque-light.otf');
-// }
 
 @font-face {
   font-family: 'Archivo Black';

@@ -1,0 +1,20 @@
+@import './styles/variables.scss';
+
+.background {
+    background: linear-gradient(113.49deg, #A60321 -30.3%, #1F0B25 58.12%);
+}
+
+
+.title_container {
+    position: relative;
+
+    &::before,
+    &::after {
+        content: url('/assets/images/belief-star.png');
+    }
+
+    &::before {
+        position: relative;
+        left: 0;
+    }
+}

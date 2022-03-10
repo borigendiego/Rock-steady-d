@@ -15,7 +15,7 @@ const Footer = () => {
                 <div className={'sm:w-1/5'}>
                     <a className={'font-bold pb-2 sm:contents hidden'}>About</a>
                 </div>
-                <div className={'sm:w-1/5 flex flex-col'}>
+                <div className={'flex flex-col'}>
                     <a className={'font-bold pb-2 sm:contents hidden'}>How</a>
                     <a className={'py-2 sm:flex hidden'}>Discover</a>
                     <a className={'py-2 sm:flex hidden'}>Design</a>

@@ -12,6 +12,43 @@
   font-family: $poppins;
 }
 
-.grid {
+
+.card_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity ease-out 250ms;
+  width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+  transition: transform 250ms, opacity 250ms;
+  position: relative;
+  background: #1d161b;
+  border-radius: 10px;
+}
+
+.card_image {
+  display: block;
+  transition: opacity ease 300ms;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.card:hover .card_image {
+  opacity: 0.4;
   
 }
+
+.card:hover .card_text {
+  opacity: 1;
+}
+

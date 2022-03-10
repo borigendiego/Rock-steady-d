@@ -8,6 +8,7 @@ import Ready from "../components/ready";
 import Contact from "../components/contact";
 import How from "../components/how";
 import Footer from "../components/footer";
+import Kam from '../components/kam';
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <How />
         <OurBelief />
         <Start />
+        <Kam />
         <Ready />
         <Contact />
       </main>

@@ -25,15 +25,8 @@
 .button {
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 0 16px 16px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
   width: 133px;
   height: 50px;
-  color: white;
-  font-family: $poppins , sans-serif;
-}
-
-.button:hover {
-  background: linear-gradient(214.02deg, #B05369 6.04%, #671AE4 92.95%);
 }
 
 @media (max-width: $xs-screen) {

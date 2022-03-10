@@ -1,0 +1,26 @@
+@import './styles/variables.scss';
+
+
+.box {
+    width: 25%;
+    border-radius: 2px;
+}
+
+.background {
+    background-image: url('/assets/images/about-box.png');
+    background-size: cover;
+    border-radius: 3% 3% 0 0;
+}
+
+.image {
+    border-radius: 50%;
+    width: 40%;
+    position: relative;
+    top: 20%;
+    margin: 30% auto 0 auto;
+}
+
+.overlay {
+    background-color: rgba(196, 196, 196, 0.2);
+    border-radius: 0 0 3% 3%;
+}

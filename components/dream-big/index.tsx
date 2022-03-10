@@ -1,93 +1,115 @@
 import React, {useState} from 'react';
 import styles from './dream.module.scss';
 import Modal from './Modal';
+import { DIALOG_DATA } from './dialog/constants';
 
 const DreamBig = ({}) => {
 
-    const [openModalMarketing, setOpenModalMarketing] = useState<boolean>(false);
-    const [openModalSocial, setOpenModalSocial] = useState<boolean>(false);
-    const [openModalBlockchain, setOpenModalBlockchain] = useState<boolean>(false);
-    const [openModalData, setOpenModalData] = useState<boolean>(false);
-    const [openModalUx, setOpenModalUx] = useState<boolean>(false);
-    const [openModalProgramming, setOpenModalProgramming] = useState<boolean>(false);
-    const [openModalDigital, setOpenModalDigital] = useState<boolean>(false);
+    const [openModal, setOpenModal] = useState<boolean>(false);
 
+    const [selectedModalDataId, setSelectedModalDataId] = useState<number>(0);
 
     return (
         <div className={`flex flex-col p-8 sm:p-12 ${styles.background}`}>
-            <h1 className={`text-center text-white ${styles.title}`}>DREAM BIG.</h1>
-            <h1 className={`text-center text-white ${styles.title} empty-font`}>WE CREATE IT</h1>
+            <h1 className={`text-center text-white`}>DREAM BIG.</h1>
+            <h1 className={`text-center text-white empty-font`}>WE CREATE IT</h1>
             <div className={'flex mt-5 sm:mt-20 h-48 sm:h-auto'}>
                 <div className={'w-1/2 hidden sm:contents'}>
-                    <div className={`grid grid-rows-6 grid-cols-3 grid-flow-col gap-2 ${styles.grid}`}>
+                    <div className={`grid grid-cols-3 grid-flow-col gap-3 ${styles.grid}`}>
                         <div 
-                            className={'row-span-1 col-start-1'} 
-                            onMouseEnter={() => setOpenModalMarketing(true)}
+                            className={`${styles.card} row-span-1 col-start-1 relative`} 
+                            onClick={() => {
+                                setSelectedModalDataId(0)
+                                setOpenModal(true)}
+                            }
                         >
                             <img 
                                 src="/assets/images/dream-big/marketing.png" 
                                 alt={''}
-                                className={''} 
+                                className={`${styles.card_image}`}
                             />
+                            <div className={`${styles.card_text}`}>
+                                <h4 className='text-lg'>MARKETING</h4>
+                                <p className='text-xs'>Click for + info</p>
+                            </div>
                         </div>
                         <div
-                            className={'row-span-2 col-start-1'}
-                            onMouseEnter={() => setOpenModalSocial(true)}
+                            className={'row-span-1 col-start-1'}
+                            onClick={() => {
+                                setSelectedModalDataId(1)
+                                setOpenModal(true)}
+                                
+                            }
                         >
                             <img 
                                 src="/assets/images/dream-big/social-media.png"
                                 alt={''}
-                                className={''} 
+                                className={`${styles.card}`} 
                             />
                         </div>
                         <div 
-                            className={'row-span-2 col-start-1'}
-                            onMouseEnter={() => setOpenModalBlockchain(true)}
+                            className={'row-span-1 col-start-1'}
+                            onClick={() => {
+                                setSelectedModalDataId(2)
+                                setOpenModal(true)}
+                            }
                         >
                             <img 
                                 src="/assets/images/dream-big/blockchain.png"
                                 alt={''}
-                                className={''} 
+                                className={`${styles.card}`} 
                             />
                         </div>
                         <div 
                             className={'row-span-1 col-start-2'}
-                            onMouseEnter={() => setOpenModalData(true)}
+                            onClick={() => {
+                                setSelectedModalDataId(3)
+                                setOpenModal(true)}
+                            }
                         >
                             <img
                                 src="/assets/images/dream-big/data.png" 
                                 alt={''}
-                                className={''} 
+                                className={`${styles.card}`} 
                             />
                         </div>
                         <div 
-                            className={'row-span-3 col-start-2'}
-                            onMouseEnter={() => setOpenModalUx(true)}
+                            className={'row-span-1 col-start-2'}
+                            onClick={() => {
+                                setSelectedModalDataId(4)
+                                setOpenModal(true)}
+                            }
                         >
                             <img 
                                 src="/assets/images/dream-big/uxui.png"
                                 alt={''}
-                                className={''} 
+                                className={`${styles.card}`} 
                             />
                         </div>
                         <div 
-                            className={'row-span-2 col-start-2'}
-                            onMouseEnter={() => setOpenModalProgramming(true)}
+                            className={'row-span-1 col-start-2'}
+                            onClick={() => {
+                                setSelectedModalDataId(5)
+                                setOpenModal(true)}
+                            }
                         >
                             <img 
                                 src="/assets/images/dream-big/programming.png"
                                 alt={''}
-                                className={''} 
+                                className={`${styles.card}`} 
                             />
                         </div>
                         <div 
-                            className={'row-span-6 col-start-3'}
-                            onMouseEnter={() => setOpenModalDigital(true)}
+                            className={'row-span-3 col-start-3'}
+                            onClick={() => {
+                                setSelectedModalDataId(6)
+                                setOpenModal(true)}
+                            }
                         >
                             <img 
                                 src="/assets/images/dream-big/digital-transformation.png" 
                                 alt={''}
-                                className={''} 
+                                className={`${styles.card}`} 
                             />
                         </div>
                     </div>
@@ -105,39 +127,9 @@ const DreamBig = ({}) => {
                     </p>
                 </div>
             </div>
-            <Modal open={openModalMarketing} closeModal={() => setOpenModalMarketing(false)}>
+            <Modal open={openModal} closeModal={() => setOpenModal(false)}>
                 <div>
-                   <h1>marketing</h1> 
-                </div>
-            </Modal>
-            <Modal open={openModalSocial} closeModal={() => setOpenModalSocial(false)}>
-                <div>
-                   <h1>Social</h1> 
-                </div>
-            </Modal>
-            <Modal open={openModalBlockchain} closeModal={() => setOpenModalBlockchain(false)}>
-                <div>
-                   <h1>Blockchain</h1> 
-                </div>
-            </Modal>
-            <Modal open={openModalData} closeModal={() => setOpenModalData(false)}>
-                <div>
-                   <h1>Data</h1> 
-                </div>
-            </Modal>
-            <Modal open={openModalUx} closeModal={() => setOpenModalUx(false)}>
-                <div>
-                   <h1>Ux</h1> 
-                </div>
-            </Modal>
-            <Modal open={openModalProgramming} closeModal={() => setOpenModalProgramming(false)}>
-                <div>
-                   <h1>Programming</h1> 
-                </div>
-            </Modal>
-            <Modal open={openModalDigital} closeModal={() => setOpenModalDigital(false)}>
-                <div>
-                   <h1>Digital</h1> 
+                    {DIALOG_DATA[selectedModalDataId].content}
                 </div>
             </Modal>
         </div>

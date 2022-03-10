@@ -10,7 +10,7 @@ const Start = () => {
             <p className={`${styles.text} p-4 text-center w-6/12`}>Only at Rock Steady Digital, you can build a good
                 portfolio with really low commission,
                 maximum security,  and instant deposit.</p>
-            <button className={`${styles.button} py-4 px-8 text-white m-10`}>Contact Us</button>
+            <button className={`py-4 px-8 text-white m-10`}>Contact Us</button>
         </div>
     )
 };

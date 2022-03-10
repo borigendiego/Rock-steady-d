@@ -6,8 +6,38 @@ const ABOUT_TEXT = `Digital Delivery and Transformation Leader
         through increased presence on digital channels leading technology delivery for digital projects.
         Some of the enterprises I worked for: `
 
+const COMPANIES = [
+        {
+                url: '',
+                image: '/assets/images/about/seven.png',
+        },
+        {
+                url: '',
+                image: '/assets/images/about/orora.png',
+        },
+        {
+                url: '',
+                image: '/assets/images/about/city.png',
+        },
+        {
+                url: '',
+                image: '/assets/images/about/dulux.png',
+        },
+        {
+                url: '',
+                image: '/assets/images/about/tabcorp.png',
+        },
+        {
+                url: '',
+                image: '/assets/images/about/coles.png',
+        },
+        {
+                url: '',
+                image: '/assets/images/about/bmw.png',
+        },
+];
 
 
 
 
-export { ABOUT_TEXT }
+export { ABOUT_TEXT, COMPANIES }

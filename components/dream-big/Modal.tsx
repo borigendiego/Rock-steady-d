@@ -6,7 +6,7 @@ import styles from './modal.module.scss';
 
 type modalProps = {
     open: boolean,
-    children: ReactElement<any.any>,
+    children: any,
     closeModal: any,
 }
 

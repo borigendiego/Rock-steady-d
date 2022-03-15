@@ -13,8 +13,8 @@ const DreamBig = ({}) => {
         <div className={`flex flex-col p-8 sm:p-12 ${styles.background}`}>
             <h1 className={`text-center text-white`}>DREAM BIG.</h1>
             <h1 className={`text-center text-white empty-font`}>WE CREATE IT</h1>
-            <div className={'flex mt-5 sm:mt-20 h-48 sm:h-auto'}>
-                <div className={'w-1/2 hidden sm:contents'}>
+            <div className={'flex mt-5 sm:mt-20 justify-center'}>
+                <div className={'w-1/2 sm:contents'}>
                     <div className={`grid grid-cols-3 grid-flow-col gap-3`}>
                         <div 
                             className={`${styles.card} row-span-1 col-start-1`} 
@@ -87,6 +87,7 @@ const DreamBig = ({}) => {
                         </div>
                         <div 
                             className={`${styles.card} row-span-1 col-start-2`}
+                            style={{marginTop: '-30px;'}}
                             onClick={() => {
                                 setSelectedModalDataId(4)
                                 setOpenModal(true)}
@@ -104,6 +105,7 @@ const DreamBig = ({}) => {
                         </div>
                         <div 
                             className={`${styles.card} row-span-1 col-start-2`}
+                            style={{marginTop: '-30px;'}}
                             onClick={() => {
                                 setSelectedModalDataId(5)
                                 setOpenModal(true)}
@@ -112,7 +114,7 @@ const DreamBig = ({}) => {
                             <img 
                                 src="/assets/images/dream-big/programming.png"
                                 alt={''}
-                                className={`${styles.card_image} w-fit`}
+                                className={`${styles.card_image} w-full`}
                             />
                             <div className={`${styles.card_text}`}>
                                 <h4 className='text-lg'>PROGRAMMING</h4>
@@ -120,7 +122,7 @@ const DreamBig = ({}) => {
                             </div>
                         </div>
                         <div 
-                            className={`${styles.card} row-span-3 col-start-3`}
+                            className={`${styles.card} row-span-3 col-start-3 mt-auto mb-auto`}
                             onClick={() => {
                                 setSelectedModalDataId(6)
                                 setOpenModal(true)}
@@ -138,15 +140,15 @@ const DreamBig = ({}) => {
                         </div>
                     </div>
                 </div>
-                <div className={'sm:w-1/2 mb-0 sm:mb-10 px-6 pt-8'}>
-                    <p className={`py-2 font-bold ${styles.text}`}>
+                <div className={'sm:w-1/2 mb-0 sm:mb-10 px-20 pt-8'}>
+                    <p className={`py-4 font-bold ${styles.text}`}>
                         Let us do the heavy lifting 
                     </p>
-                    <p className={`py-2 ${styles.text}`}>
+                    <p className={`py-4 ${styles.text} text-gray-400`}>
                         We help SMEs and Start-ups in their digital transformation and requirements. 
                         We can enhance your company's existing digital capabilities through website and social media development, e-commerce implementations, and digital transformations.
                     </p>
-                    <p className={`py-2 font-bold ${styles.text}`}>
+                    <p className={`py-4 font-bold ${styles.text}`}>
                         It's simple, we unite people + processes + tools + data in unique creations that will help your business grow.
                     </p>
                 </div>

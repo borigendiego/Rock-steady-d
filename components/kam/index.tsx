@@ -5,7 +5,7 @@ import styles from './kam.module.scss'
 
 const Kam = () => {
     return(
-        <div className={`${styles.background} flex h-screen sm:justify-around`} id={'ABOUT'}>
+        <div className={`flex h-screen sm:justify-around`} id={'ABOUT'}>
             <Box
                 image='/assets/images/kam_photo.png'
                 title='KAMLESH LAD - FOUNDER'

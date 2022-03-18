@@ -1,5 +1,4 @@
-import React from "react";
-//
+import React from 'react';
 import styles from './banner.module.scss';
 import Header from '../header';
 

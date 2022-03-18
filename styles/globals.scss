@@ -87,6 +87,22 @@ img {
     color: transparent;
 }
 
+.main-bg {
+  position: relative;
+}
+
+.main-bg::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background-image: url('/assets/images/stars_bg.png');
+  background-position: 50% 0;
+}
 
 //Button Styles
 button, .button {

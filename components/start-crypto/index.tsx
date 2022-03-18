@@ -4,7 +4,7 @@ import styles from './start.module.scss';
 
 const Start = () => {
     return(
-        <div className={`${styles.background} flex justify-center bg-pink-900 flex-col my-0 mx-auto items-center`}>
+        <div className={`flex justify-center flex-col my-0 mx-auto items-center`}>
             <h2 className={`${styles.title} text-5xl leading-10 text-center mb-8`}>Start
                 and Build Your Crypto Portfolio</h2>
             <p className={`${styles.text} p-4 text-center w-6/12`}>Only at Rock Steady Digital, you can build a good

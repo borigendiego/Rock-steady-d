@@ -12,13 +12,13 @@ import Kam from '../components/kam';
 
 export default function Home() {
   return (
-    <div>
+    <div className={'main-bg'} style={{background: 'linear-gradient(113.49deg, #A60321 -30.3%, #1F0B25 58.12%)'}}>
       <Head>
         <title>Rock Steady</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className={'relative z-10'}>
         <Banner />
         <DreamBig />
         <How />
@@ -29,7 +29,7 @@ export default function Home() {
         <Contact />
       </main>
 
-      <footer>
+      <footer className={'relative z-10'}>
           <Footer />
       </footer>
     </div>

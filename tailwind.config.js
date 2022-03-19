@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        "primary-purple": "#6A1CE5",
+      },
       gridTemplateRows: {
         // Simple 16 row grid
         '16': 'repeat(16, minmax(0, 1fr))',

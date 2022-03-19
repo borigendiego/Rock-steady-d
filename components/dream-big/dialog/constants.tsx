@@ -32,7 +32,7 @@ const DIALOG_DATA = [
         content: 
                 <Tile 
                     key={3}
-                    image={'/assets/images/modal/blockchainModal.png'}
+                    image={'/assets/images/modal/metaverse-2.png'}
                     title={'Blockchain'}
                     text={`We Provide customers with innovative solutions to
                      their business challenges and goals through Blockchain technology.`}

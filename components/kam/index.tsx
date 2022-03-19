@@ -7,7 +7,7 @@ const Kam = () => {
     return(
         <div className={`flex h-screen sm:justify-around`} id={'ABOUT'}>
             <Box
-                image='/assets/images/kam_photo.png'
+                image='/assets/images/kam-home.png'
                 title='KAMLESH LAD - FOUNDER'
                 text='I can help you reach your financial goals so
                     you can focus on the more important things in life.'

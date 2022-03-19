@@ -59,7 +59,7 @@ const DreamBig = ({}) => {
                             }
                         >
                             <img 
-                                src="/assets/images/dream-big/blockchain.png"
+                                src="/assets/images/dream-big/metaverse.png"
                                 alt={''}
                                 className={`${styles.card_image}`}
                             />

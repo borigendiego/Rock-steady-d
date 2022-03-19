@@ -1,9 +1,5 @@
 @import "./styles/variables.scss";
 
-.background {
-  background: linear-gradient(113.49deg, #A60321 -30.3%, #1F0B25 58.12%);
-}
-
 .box {
   background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -15,11 +11,6 @@
   font-size: 50px;
   line-height: 54px;
   text-align: center;
-}
-
-.titles {
-  padding-left: 8%;
-  margin-right: 8%;
 }
 
 .button {

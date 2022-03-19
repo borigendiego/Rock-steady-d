@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return(
-        <div className={`sm:pt-8 lg:px-52`}>
+        <div className={`sm:pt-8 lg:px-32`}>
             <div className={`flex flex-col sm:pt-0 pt-8 lg:flex-row`}>
                 <div className={'sm:w-1/5 lg:w-1/3 lg:px-12 flex flex-col items-center sm:items-start'}>
                     <img alt={'contact logo'} src={'/assets/images/logo-white.png'}/>

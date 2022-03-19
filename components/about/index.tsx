@@ -20,7 +20,7 @@ const About = () => {
                 <div className='w-1/2 flex flex-col justify-center pl-8'>
                     <h2 className='empty-font text-4xl'>ABOUT ME</h2>
                     <p className='pt-6 opacity-50 w-5/6'>{ABOUT_TEXT}</p>
-                    <div className='flex my-12'>
+                    <div className='flex my-12 items-center'>
                         {COMPANIES.map((value, index) => 
                         <a href={value.url} className={'bg-none pr-6'}><img key={index} src={value.image} className='w-24'/></a>
                         )}

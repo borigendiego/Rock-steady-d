@@ -9,31 +9,31 @@ const ABOUT_TEXT = `Digital Delivery and Transformation Leader
 const COMPANIES = [
         {
                 url: '',
-                image: '/assets/images/about/seven.png',
+                image: '/assets/images/about/seven.svg',
         },
         {
                 url: '',
-                image: '/assets/images/about/orora.png',
+                image: '/assets/images/about/merill.svg',
         },
         {
                 url: '',
-                image: '/assets/images/about/city.png',
+                image: '/assets/images/about/city_melb.svg',
         },
         {
                 url: '',
-                image: '/assets/images/about/dulux.png',
+                image: '/assets/images/about/dulux.svg',
         },
         {
                 url: '',
-                image: '/assets/images/about/tabcorp.png',
+                image: '/assets/images/about/bupa.svg',
         },
         {
                 url: '',
-                image: '/assets/images/about/coles.png',
+                image: '/assets/images/about/coles.svg',
         },
         {
                 url: '',
-                image: '/assets/images/about/bmw.png',
+                image: '/assets/images/about/bmw.svg',
         },
 ];
 

@@ -6,7 +6,7 @@ import Item from "./item";
 
 const OurBelief = () => {
     return(
-        <div className={'flex flex-col sm:flex-row py-8 my-20'} id={'BELIEFS'}>
+        <div className={'flex flex-col sm:flex-row mt-10 mb-20'} id={'BELIEFS'}>
             <div className={'sm:w-3/6 lg:w-1/2 flex flex-col items-center'}>
                 <div className={'flex flex-wrap'}>
                     <h1 className={`${styles.text} w-full sm:text-left text-center`}>OUR</h1>

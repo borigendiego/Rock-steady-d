@@ -1,6 +1,7 @@
 import React from 'react';
 import { ABOUT_TEXT, COMPANIES } from './constants';
 import styles from './about.module.scss';
+import Link from 'next/link';
 
 const About = () => {
     return(
@@ -24,6 +25,11 @@ const About = () => {
                         {COMPANIES.map((value, index) => 
                         <a href={value.url} className={'bg-none pr-6'}><img key={index} src={value.image} className='w-24'/></a>
                         )}
+                    </div>
+                    <div className='w-full'>
+                        <Link href={'/#CONTACT'}>
+                            <button className={'w-1/4 px-3 py-4 float-right'}>Contact me</button>
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -69,7 +69,6 @@ const DIALOG_DATA = [
                             We leave nothing to chance. We unite emotional design methodologies, focused on the user, with the understanding of human behavior to create experiences that enhance your brand.
                         </p>
                         <p>Intuitive design is all about giving the user new superpowers.</p>
-                        <button className='py-3 px-4 float-right'>Find out more</button>
                     </div>
                 </div>,
 
@@ -99,7 +98,6 @@ const DIALOG_DATA = [
                  through the transformation of people, processes and technology
                 </p>
                 <p>We have the ability to adapt and flexibility to deal with exponential changes in technology.</p>
-                <button className='py-3 px-4 float-right mt-6'>Find out more</button>
             </div>
         </div>,
     }

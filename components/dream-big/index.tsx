@@ -134,7 +134,7 @@ const DreamBig = ({}) => {
                                 className={`${styles.card_image}`}
                             />
                             <div className={`${styles.card_text}`}>
-                                <h4 className='text-lg text-center'>DIGITAL TRANSFORMATION</h4>
+                                <h4 className='text-lg text-center'>DIGITAL DISRUPTION</h4>
                                 <p className='text-xs'>Click for + info</p>
                             </div>
                         </div>
@@ -153,7 +153,8 @@ const DreamBig = ({}) => {
                     </p>
                 </div>
             </div>
-            <Modal open={openModal} closeModal={() => setOpenModal(false)}>
+
+            <Modal open={openModal} closeModal={() => setOpenModal(false)} selectedSection={DIALOG_DATA[selectedModalDataId].section} >
                 <div>
                     {DIALOG_DATA[selectedModalDataId].content}
                 </div>

@@ -3,6 +3,7 @@ import Tile from '.';
 const DIALOG_DATA = [
     {
         id: 1,
+        section: 'Marketing Campaing',
         content: <Tile 
                     key={1}
                     image={'/assets/images/modal/marketingModal.png'}
@@ -16,6 +17,7 @@ const DIALOG_DATA = [
     },
     {
         id: 2,
+        section: 'Social Media',
         content: 
                 <Tile 
                     key={2}
@@ -29,6 +31,7 @@ const DIALOG_DATA = [
     },
     {
         id: 3,
+        section: 'Blockchain',
         content: 
                 <Tile 
                     key={3}
@@ -40,6 +43,7 @@ const DIALOG_DATA = [
     },
     {
         id: 4,
+        section: 'Big Data',
         content: 
                 <Tile 
                     key={3}
@@ -54,10 +58,11 @@ const DIALOG_DATA = [
     },
     {
         id: 5,
+        section: 'Media & User experience',
         content: <div className='flex mx-auto my-10 justify-center'>
                     <img alt={``} src={'/assets/images/modal/uxuiModal.png'} className={'w-1/4 mr-8'}/>
                     <div className='w-1/3 ml-8'>
-                        <p className='mb-2'>Media & User Experience</p>
+                        <p className='mb-2'>{'Media & User Experience'}</p>
                         <p className='opacity-50 mb-6'>We want to ensure that contact with your brand,
                             or with your product, through the interface on any device is clear, attractive
                             and suggestive. 
@@ -71,6 +76,7 @@ const DIALOG_DATA = [
     },
     {
         id: 6,
+        section: 'Programming',
         content: 
                 <Tile 
                     key={6}
@@ -83,11 +89,12 @@ const DIALOG_DATA = [
     },
     {
         id: 7,
+        section: 'Digital disruption',
         content: 
         <div className='flex mx-auto my-10 justify-center'>
             <img alt={``} src={'/assets/images/modal/digitalModal.png'} className={'w-1/4 mr-8'}/>
             <div className='w-1/3 ml-8'>
-                <p className='mb-2'>Digital Transformation</p>
+                <p className='mb-2'>Digital disruption</p>
                 <p className='opacity-50 mb-6'>We lead digital projects from strategy to implementation
                  through the transformation of people, processes and technology
                 </p>

@@ -35,6 +35,8 @@ const MyCustomForm = ({
         initialValues,
         fields,
         onSubmit: () => {
+            const section = window.localStorage.getItem('section') || 'Contact form'
+
             axios.post(
                 emailServiceURL,
                 {
@@ -42,6 +44,7 @@ const MyCustomForm = ({
                     message: values.message,
                     name: values.name,
                     customerEmail: values.customerEmail,
+                    section: section,
                 },
                 {
                     headers: {
@@ -64,14 +67,14 @@ const MyCustomForm = ({
 
     const renderSentMessage = () => {
         if (messageSent === 'succeed') {
-            return <div className={`message succeed`}>
-                <h2>Thank you!</h2>
+            return <div className={`message succeed w-full text-center mb-6`}>
+                <h2 className={'mb-4'}>Thank you!</h2>
                 <p>{onSuccessMessage}</p>
             </div>
         }
         if (messageSent === 'error') {
-            return <div className={`message error`}>
-                <h2>Something went wrong</h2>
+            return <div className={`message error w-full text-center mb-6`}>
+                <h2 className={'mb-4 text-red-500'}>Something went wrong</h2>
                 <p>{onErrorMessage}</p>
                 <p>{messageDescription}</p>
             </div>
@@ -117,6 +120,7 @@ const MyCustomForm = ({
                                         cols={40}
                                         className={'input_box'}
                                         placeholder={placeholder}
+                                        onChange={(e) => handleChange(e, [])}
                                     />
                                 </section>
                             );

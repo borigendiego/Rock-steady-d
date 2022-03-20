@@ -175,6 +175,12 @@ textarea {
   color: #cc0017;
 }
 
+.error-message {
+  color: #cc0017;
+  font-family: $poppins, sans-serif;
+  padding-left: 10px;
+}
+
 .message {
   min-height: 3em;
   border: 1px solid;

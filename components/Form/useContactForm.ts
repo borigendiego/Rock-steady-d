@@ -51,7 +51,7 @@ const useCustomForm = ({initialValues,fields, onSubmit}) => {
         });
 
         if (Object.keys(newErrors).length === 0) {
-            //onSubmit(event.target);
+            onSubmit(event.target);
         }
     };
 

@@ -32,13 +32,14 @@ const Modal = (
                   },
             }}
         >
-            <div className={`${styles.overlay} flex flex-col`}>
+            <div className={`${styles.overlay} flex flex-col overflow-hidden`}>
                 <a onClick={() => closeModal()} className={`${styles.link} text-xl relative left-6 top-8 w-fit`}>&#9735; GO BACK</a>
                 <h1 className={`text-center text-white`}>DREAM BIG.</h1>
                 <h1 className={`text-center text-white empty-font`}>WE CREATE IT</h1>
                 {children}
+                <div className='w-full flex justify-end'>
                 <button 
-                    className={'py-3 px-4 mx-auto mb-4'}
+                    className={'py-3 px-4 relative right-48 bottom-16'}
                     onClick={() => {
                         window.localStorage.setItem('section', selectedSection);
                         closeModal();
@@ -47,6 +48,7 @@ const Modal = (
                 >
                     Find out more
                 </button>
+                </div>
             </div>
         </Dialog>
     )

@@ -155,7 +155,7 @@ const MyCustomForm = ({
                 <input
                     type={'submit'}
                     value={submitButtonLabel ? submitButtonLabel : 'SEND'}
-                    className={'contact-input-button button py-4 px-20 text-white cursor-pointer'}
+                    className={'contact-input-button button py-4 px-20 text-white cursor-pointer relative bottom-6'}
                 />
             </section>
         </form>

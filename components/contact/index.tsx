@@ -7,7 +7,7 @@ const Contact = () => {
       <div className={'flex flex-col justify-center'} id={'CONTACT'}>
             <img 
                 src={'/assets/images/READY_TO.png'}
-                className={'sm:w-2/3 m-auto'}
+                className={'sm:w-2/3 m-auto w-full sm:h-auto h-52'}
             />
             <Form 
                 fields={[

@@ -6,7 +6,7 @@ const How = () => {
     const [selectedItem, setSelectedItem] = useState(0);
 
     return(
-        <div className={`flex flex-wrap px-40 py-20 mt-8`} id={'HOW'}>
+        <div className={`hidden sm:flex flex-wrap px-40 py-20 mt-8`} id={'HOW'}>
             <div className={`w-full xl:w-1/2 flex flex-col justify-center relative`}>
                 <video className={'absolute z-0 left-0 right-0 mr-auto ml-auto opacity-30 rounded-md'} src={'/assets/videos/video-2.mp4'} autoPlay={true} muted={true} loop={true} />
                 <div className={'relative z-20'}>

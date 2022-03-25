@@ -18,3 +18,14 @@
         left: 0;
     }
 }
+
+@media (max-width: $xs-screen) {
+    .title_container {
+        width: 80%;
+
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+}

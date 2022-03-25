@@ -140,7 +140,7 @@ const DreamBig = ({}) => {
                         </div>
                     </div>
                 </div>
-                <div className={'sm:w-1/2 mb-0 sm:mb-10 px-20 pt-8'}>
+                <div className={'sm:w-1/2 mb-0 sm:mb-10 sm:px-20 pt-8'}>
                     <p className={`py-4 font-bold ${styles.text}`}>
                         Let us do the heavy lifting 
                     </p>

@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Ready = () => {
   return(
-      <div className={`flex flex-col justify-center py-20`}>
+      <div className={`sm:flex hidden flex-col justify-center py-20`}>
           <div className={`${styles.box} flex justify-between sm:flex-row flex-col py-20 mx-auto items-center sm:w-4/5 w-7/12 px-20`}>
               <div className={`${styles.titles}`}>
                   <h2 className={`${styles.title}`}>READY TO TALK ABOUT</h2>

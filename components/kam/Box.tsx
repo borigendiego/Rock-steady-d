@@ -4,15 +4,15 @@ import Router from 'next/router';
 
 const Box = ({image, title, text}) => {
     return(
-        <div className={`${styles.box} flex flex-col justify-center relative`}>
+        <div className={`${styles.box} flex flex-col justify-center relative mt-10 sm:mt-0`}>
             <div>
                 <img alt='profile picture' src={image} className={'z-20 relative'} />
             </div>
-            <div className={`${styles.overlay} flex flex-col sm:pb-6 sm:px-4 sm:pt-14 -mt-2 relative z-10`}>
-                <h2 className='text-center text-lg'>{title}</h2>
-                <p className='text-center py-4 opacity-50'>{text}</p>
+            <div className={`${styles.overlay} flex flex-col pt-6 sm:pb-6 sm:px-4 sm:pt-14 -mt-2 relative z-10`}>
+                <h2 className='text-center text-lg sm:px-0 px-2'>{title}</h2>
+                <p className='text-center py-4 opacity-50 sm:px-0 px-6'>{text}</p>
                 <button 
-                className='py-2 px-12 my-0 mx-auto'
+                className='py-2 px-12 sm:my-0 mb-4 mx-auto'
                 onClick={() => Router.push('/about')}
                 >
                     Get to know me</button>

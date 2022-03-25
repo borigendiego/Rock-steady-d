@@ -24,3 +24,9 @@
     background-color: rgba(196, 196, 196, 0.2);
     border-radius: 0 0 3% 3%;
 }
+
+@media (max-width: $xs-screen) {
+    .box {
+        width: 75%;
+    }
+}

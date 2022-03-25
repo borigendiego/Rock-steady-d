@@ -3,11 +3,11 @@ import React from 'react';
 
 const About = () => {
     return(
-        <div className={'page-bg'}>
-            <a href='/' className='float-right relative right-16 top-8 text-lg'>&#9735; GO BACK TO HOME PAGE</a>
-            <div className={`flex h-screen`}>
-                <div className='w-1/2 flex flex-col items-center relative justify-center pt-32'>
-                    <img alt={'My photo'} src={'/assets/images/digital-dis.png'} className='w-2/3 rounded-md'/>
+        <div className={'page-bg flex sm:flex-row flex-col sm:block'}>
+            <a href='/' className='sm:float-right sm:relative sm:right-16 sm:top-8 sm:text-lg sm:p-0 flex justify-end pt-4 pr-4'>&#9735; GO BACK TO HOME PAGE</a>
+            <div className={`sm:flex inline sm:h-screen h-full`}>
+                <div className='sm:w-1/2 flex flex-col items-center relative justify-center pt-8 px-8 sm:pt-32'>
+                    <img alt={'My photo'} src={'/assets/images/digital-dis.png'} className='sm:w-2/3 w-full rounded-md'/>
                     <div className={`bg-primary-purple py-6 px-8 w-3/5 rounded-md relative  bottom-28 left-10`}>
                         <p className='font-italic italic mt-2 opacity-70'>
                             “There are currently over 200 million users of Blockchain technology worldwide. 

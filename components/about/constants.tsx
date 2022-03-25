@@ -17,7 +17,7 @@ const COMPANIES = [
         },
         {
                 url: '',
-                image: '/assets/images/about/city_melb.svg',
+                image: '/assets/images/about/hsbc.svg',
         },
         {
                 url: '',

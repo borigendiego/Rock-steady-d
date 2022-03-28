@@ -3,3 +3,13 @@
 .text {
   font-family: $poppins;
 }
+
+.container {
+  width: 47%;
+}
+
+@media (min-width: $xs-screen) {
+  .container {
+    width: 100%;
+  }
+}

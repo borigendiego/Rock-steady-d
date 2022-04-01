@@ -21,8 +21,7 @@
 
 @media (max-width: $xs-screen) {
     .title_container {
-        width: 80%;
-
+        margin-top: 50px;
         &::before,
         &::after {
             display: none;

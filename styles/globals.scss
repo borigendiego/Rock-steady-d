@@ -108,6 +108,10 @@ img {
   background: linear-gradient(113.49deg, #A60321 -30.3%, #1F0B25 58.12%);
 }
 
+.clamp-h1 {
+  font-size: clamp(50px, 100%, 64px);
+}
+
 //Button Styles
 button, .button {
   background: $main-purple;

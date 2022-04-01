@@ -9,8 +9,7 @@ const Kam = () => {
             <Box
                 image='/assets/images/kam-home.png'
                 title='KAMLESH LAD - FOUNDER'
-                text='I can help you reach your financial goals so
-                    you can focus on the more important things in life.'
+                text='I can help you reach your digital goals so you can focus on the more important things in life.'
              />
              <div className={'flex flex-wrap flex-col'}>
                 <div className={`${styles.title_container} sm:flex flex-col justify-center items-center`}>

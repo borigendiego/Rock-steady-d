@@ -123,6 +123,18 @@ button, .button {
   }
 }
 
+#carousel-arrow {
+  box-shadow: none; 
+  padding: 6%;
+  background: $main-purple;
+
+  &:hover {
+    transform: none;
+    background: $hover-purple;
+  }
+
+}
+
 //Form Styles. Remove after refactor
 .form {
   display: flex;
@@ -218,5 +230,6 @@ textarea {
 
   .form {
     position: initial;
+    width: 70%;
   }
 }

@@ -1,0 +1,52 @@
+@import './styles/variables.scss';
+
+.container { display: none; }
+.sliders{}
+.arrow{}
+.back{}
+.next{}
+.slider_wrapper{}
+.arrows_container{}
+
+@media (max-width: $md-screen) {
+  .container {
+    display: initial;
+    padding: 5% 0;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+
+    li {
+      height: auto;
+      padding: 0 !important;
+    }
+  }
+
+  .about-paragraphs ,.about-quote { display: none; }
+
+  .arrow {
+    background: none;
+    border: none;
+    width: 40px;
+    z-index: 1;
+  }
+
+  .arrow[disabled] { display: none; }
+
+  .back {
+    transform: rotate(180deg);
+    grid-area: left;
+  }
+
+  .next { grid-area: right; }
+
+  .arrow, .slider_wrapper:focus { outline: none; }
+
+  .arrows_container {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'left center right';
+    grid-template-columns: 1fr 3fr 1fr;
+    padding-top: 6%;
+  }
+}

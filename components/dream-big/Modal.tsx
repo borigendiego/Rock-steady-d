@@ -38,16 +38,16 @@ const Modal = (
                 <h1 className={`text-center text-white empty-font`}>WE CREATE IT</h1>
                 {children}
                 <div className='w-full flex justify-end'>
-                <button 
-                    className={'py-3 px-4 relative right-48 bottom-16'}
-                    onClick={() => {
-                        window.localStorage.setItem('section', selectedSection);
-                        closeModal();
-                        Router.push('/#CONTACT')
-                    }}
-                >
-                    Find out more
-                </button>
+                    <button 
+                        className={'py-3 px-4 relative right-48 bottom-16'}
+                        onClick={() => {
+                            window.localStorage.setItem('section', selectedSection);
+                            closeModal();
+                            Router.push('/#CONTACT')
+                        }}
+                    >
+                        Find out more
+                    </button>
                 </div>
             </div>
         </Dialog>

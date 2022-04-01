@@ -141,14 +141,14 @@ const DreamBig = ({}) => {
                     </div>
                 </div>
                 <div className={'sm:w-1/2 mb-0 sm:mb-10 sm:px-20 pt-8'}>
-                    <p className={`py-4 font-bold ${styles.text}`}>
+                    <p className={`py-4 font-bold text-center ${styles.text}`}>
                         Let us do the heavy lifting 
                     </p>
-                    <p className={`py-4 ${styles.text} text-gray-400`}>
+                    <p className={`py-4 text-center ${styles.text} text-gray-400`}>
                         We help SMEs and Start-ups in their digital transformation and requirements. 
                         We can enhance your company's existing digital capabilities through website and social media development, e-commerce implementations, and digital transformations.
                     </p>
-                    <p className={`py-4 font-bold ${styles.text}`}>
+                    <p className={`py-4 font-bold text-center ${styles.text}`}>
                         It's simple, we unite people + processes + tools + data in unique creations that will help your business grow.
                     </p>
                 </div>

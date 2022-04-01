@@ -12,7 +12,7 @@ const OurBelief = () => {
                     <h1 className={`${styles.text} w-full sm:text-left text-center`}>OUR</h1>
                     <h1 className={`${styles.text} w-full empty-font sm:text-left text-center`}>BELIEFS</h1>
                 </div>
-                <div className={'flex flex-col items-baseline mt-8 px-4 sm:items-center'}>
+                <div className={'flex flex-col items-baseline mt-4 px-4 sm:items-center'}>
                     {ITEM_DATA.map((value, index) => <Item itemData={value} key={index}/>)}
                 </div>
             </div>

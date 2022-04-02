@@ -16,10 +16,10 @@ const How = () => {
                 </div>
             </div>
             <div className={'flex sm:w-1/2 justify-center items-center flex-col relative px-2 sm:px-20'}>
-                <h3 className={'sm:mb-4 sm:mt-0 mt-24 text-center'}>This is how it works</h3>
+                <h3 className={'sm:mb-4 sm:mt-0 mt-24 text-center hidden md:block'}>This is how it works</h3>
                 <MobileCarousel slides={CAROUSEL_SLIDES} /> 
                 <p className={'text-center h-28 sm:block hidden'}>{CAROUSEL_DATA[selectedItem].description}</p>
-                <img className={'mt-16 mb-10 w-full'} src={'/assets/images/separator.svg'} alt={'Separator SVG'} />
+                <img className={'mt-16 mb-10 w-full hidden md:inline'} src={'/assets/images/separator.svg'} alt={'Separator SVG'} />
                 <div className={'hidden sm:flex justify-between w-full'}>
                     {
                         CAROUSEL_DATA.map((item) => {

@@ -39,7 +39,7 @@ const Modal = (
                 {children}
                 <div className='w-full flex justify-end'>
                     <button 
-                        className={'py-3 px-4 relative right-48 bottom-16'}
+                        className={'py-3 px-4 relative right-48 bottom-24'}
                         onClick={() => {
                             window.localStorage.setItem('section', selectedSection);
                             closeModal();

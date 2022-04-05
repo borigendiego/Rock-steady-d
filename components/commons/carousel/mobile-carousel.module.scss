@@ -34,7 +34,7 @@
   .arrow[disabled] { display: none; }
 
   .back {
-    transform: rotate(180deg);
+    transform: rotate(180deg) !important;
     grid-area: left;
   }
 

@@ -4,7 +4,7 @@ const MENU_LINKS = [
         linkTo: '#CONTACT'
     },
     {
-        label: 'Values',
+        label: 'Beliefs',
         linkTo: '#BELIEFS'
     },
     {

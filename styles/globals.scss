@@ -136,7 +136,10 @@ button, .button {
     transform: none;
     background: $hover-purple;
   }
+}
 
+.carousel__slide {
+  min-height: 17rem;
 }
 
 //Form Styles. Remove after refactor

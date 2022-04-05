@@ -13,7 +13,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 
 const MyCarousel = ({ slides }) => {
     return (
-        <div className={styles.container}>
+        <div className={`${styles.container} mt-20`}>
             <CarouselProvider
                 naturalSlideWidth={200}
                 naturalSlideHeight={110}

@@ -27,8 +27,8 @@ const How = () => {
    
     return(
         <div className={`sm:flex sm:flex-wrap sm:px-8 py-20 mt-8`} id={'HOW'}>
-            <div className={`w-full sm:w-1/2 flex flex-col justify-center relative`}>
-                <span className={'z-40 cursor-pointer absolute -bottom-10 right-2'} onClick={() => start(isMusicPlaying)}>
+            <div className={`w-full h-full sm:w-1/2 flex flex-col justify-center relative`}>
+                <span className={'z-40 cursor-pointer bottom-3 h-auto right-2 absolute'} onClick={() => start(isMusicPlaying)}>
                     {
                         isMusicPlaying 
                         ? <VolumeUpIcon
@@ -47,13 +47,13 @@ const How = () => {
                         />
                     }
                 </span>
-                <video 
-                    className={'absolute z-0 left-0 right-0 mr-auto ml-auto opacity-30 rounded-md'} 
+                <video
+                    className={'z-0 left-0 right-0 mr-auto ml-auto opacity-30 rounded-md'} 
                     src={'/assets/videos/video-2.mp4'} 
                     autoPlay={true} muted={true} 
                     loop={true} 
                 />
-                <div className={'relative z-20'}>
+                <div className={'absolute z-20 margin-auto'} style={{'transform': 'translate(-50%, 0)', left: '50%'}}>
                     <h1 className={'empty-font'}>HOW WE</h1>
                     <h1>DO IT</h1>
                 </div>

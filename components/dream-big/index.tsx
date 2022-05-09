@@ -4,9 +4,7 @@ import Modal from './Modal';
 import { DIALOG_DATA } from './dialog/constants';
 
 const DreamBig = ({}) => {
-
     const [openModal, setOpenModal] = useState<boolean>(false);
-
     const [selectedModalDataId, setSelectedModalDataId] = useState<number>(0);
 
     return (
@@ -141,15 +139,17 @@ const DreamBig = ({}) => {
                     </div>
                 </div>
                 <div className={'sm:w-1/2 mb-0 sm:mb-10 sm:px-20 pt-8'}>
-                    <p className={`py-4 font-bold text-center ${styles.text}`}>
+                    <h3 className={`py-4 font-bold text-center ${styles.text}`}>
                         Innovative Digital Solutions to Rock your World!
+                    </h3>
+                    <p className={`py-4 ${styles.text} text-gray-400`}>
+                        We help SMEs and Start-ups with their digital transformation and implement their requirements. We can enhance your company's existing digital capabilities through website and social media development, e-commerce implementations, and digital transformations.
                     </p>
-                    <p className={`py-4 text-center ${styles.text} text-gray-400`}>
-                        We help SMEs and Start-ups in their digital transformation and requirements. 
-                        We can enhance your company's existing digital capabilities through website and social media development, e-commerce implementations, and digital transformations.
+                    <p className={`py-4 font-bold ${styles.text}`}>
+                        It's simple, we unite people, processes, tools and data in a creative way that will help your business grow.
                     </p>
-                    <p className={`py-4 font-bold text-center ${styles.text}`}>
-                        It's simple, we unite people + processes + tools + data in unique creations that will help your business grow.
+                    <p className={`py-4 font-bold ${styles.text}`}>
+                        Between 1990 and 2000 the internet grew 63% per year. Crypto & Blockchain is growing 113% per year and increasing exponentially. It is fastest growing technology in recorded human history.
                     </p>
                 </div>
             </div>

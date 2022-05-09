@@ -1,15 +1,58 @@
-import React, { useState } from 'react';
-import styles from './how.module.scss';
+import React, { useState, useEffect } from 'react';
+//Compoments
 import { CAROUSEL_DATA, CAROUSEL_SLIDES } from './constants';
 import MobileCarousel from '../commons/carousel';
+//Assets
+import VolumeMuteIcon from '@mui/icons-material/VolumeMute';
+import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 
 const How = () => {
-    const [selectedItem, setSelectedItem] = useState(0);
+    const [selectedItem, setSelectedItem] = useState<number>(0);
+    const [audio, setAudio] = useState<any>(null)
+    const [isMusicPlaying, setIsMusicPlaying] = useState<boolean>(false);
 
+    useEffect(() => {
+        setAudio(new Audio('/assets/music/music1.mp3'))
+    }, [])
+
+    const start = (isPlaying: boolean) => {
+        if (isPlaying) {
+            audio.pause();
+            setIsMusicPlaying(false);
+        } else {
+            audio.play();
+            setIsMusicPlaying(true);
+        }
+    }
+   
     return(
-        <div className={`sm:flex sm:flex-wrap px-8 sm:px-8 py-20 mt-8`} id={'HOW'}>
+        <div className={`sm:flex sm:flex-wrap sm:px-8 py-20 mt-8`} id={'HOW'}>
             <div className={`w-full sm:w-1/2 flex flex-col justify-center relative`}>
-                <video className={'absolute z-0 left-0 right-0 mr-auto ml-auto opacity-30 rounded-md'} src={'/assets/videos/video-2.mp4'} autoPlay={true} muted={true} loop={true} />
+                <span className={'z-40 cursor-pointer absolute -bottom-10 right-2'} onClick={() => start(isMusicPlaying)}>
+                    {
+                        isMusicPlaying 
+                        ? <VolumeUpIcon
+                            style={{
+                                fill: '#fff',
+                                zIndex: '200'
+                            }}
+                            sx={{ fontSize: 40 }}
+                        />
+                        : <VolumeMuteIcon
+                            style={{
+                                fill: '#fff',
+                                zIndex: '200'
+                            }}
+                            sx={{ fontSize: 40 }}
+                        />
+                    }
+                </span>
+                <video 
+                    className={'absolute z-0 left-0 right-0 mr-auto ml-auto opacity-30 rounded-md'} 
+                    src={'/assets/videos/video-2.mp4'} 
+                    autoPlay={true} muted={true} 
+                    loop={true} 
+                />
                 <div className={'relative z-20'}>
                     <h1 className={'empty-font'}>HOW WE</h1>
                     <h1>DO IT</h1>

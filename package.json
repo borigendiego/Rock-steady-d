@@ -8,12 +8,13 @@
   "dependencies": {
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.6.2",
     "@mui/material": "^5.4.3",
     "next": "latest",
+    "pure-react-carousel": "^1.27.6",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "sass": "^1.49.0",
-    "pure-react-carousel": "^1.27.6"
+    "sass": "^1.49.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.13",

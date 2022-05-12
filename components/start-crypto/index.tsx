@@ -11,9 +11,12 @@ const Start = () => {
             <h2 className={`${styles.title} text-5xl leading-10 text-center mb-8`}>
                 Blockchain Technology
             </h2>
-            <p className={`${styles.text} p-4 text-center sm:w-6/12 w-4/5 text-gray-400`}>
-                {'Between 1990 and 2000 the internet grew 63% per year. Crypto & Blockchain is growing 113% per year and increasing exponentially. It is fastest growing technology in recorded human history.'}
-            </p>
+            <span className={'sm:w-6/12 w-4/5'}>
+                <p className={`${styles.text} p-4 text-center text-gray-400`}>
+                    {'Between 1990 and 2000 the internet grew 63% per year. Crypto & Blockchain is growing 113% per year and increasing exponentially. It is fastest growing technology in recorded human history.'}
+                </p>
+            </span>
+            
             <a className={'mt-4 sm:mb-24 text-2xl w-fit'} href={'/digital-disruption'}>Read more</a>
         </div>
     )

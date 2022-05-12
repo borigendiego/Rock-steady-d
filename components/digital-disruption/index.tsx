@@ -28,7 +28,7 @@ const About = () => {
                         Rock Steady is ready to help you and your business thrive in this new industry and take advantage of starting in this growth industry whilst it’s in its infancy. Just imagine if you started a .com when the Internet began! Well, you have the opportunity now to start or grow your business in the Blockchain industry with us at Rock Steady Digital.
                     </p>
                     <p className={'pt-6 opacity-50'}>
-                        To learn more about the Blockchain industry, please visit: <a href={'https://www.thecryptocartel.io/home'}>https://www.thecryptocartel.io/home</a>
+                        To learn more about the Blockchain industry, please visit: <a target={'_blank'} href={'https://www.thecryptocartel.io/home'}>https://www.thecryptocartel.io/home</a>
                     </p>
                     <div className='flex justify-center md:justify-end md:mt-8'>
                         <Link href={'/#CONTACT'}>

@@ -16,7 +16,7 @@ const MENU_LINKS = [
         linkTo: '#HOW'
     },
     {
-        label: 'Contact',
+        label: 'CONTACT',
         linkTo: '#CONTACT'
     },
 ];

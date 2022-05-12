@@ -26,7 +26,7 @@ const How = () => {
     }
    
     return(
-        <div className={`sm:flex sm:flex-wrap sm:px-8 py-20 mt-8`} id={'HOW'}>
+        <div className={`sm:flex sm:flex-wrap sm:pr-8 py-20 mt-8`} id={'HOW'}>
             <div className={`w-full h-full sm:w-1/2 flex flex-col justify-center relative`}>
                 <span className={'z-40 cursor-pointer bottom-3 h-auto right-2 absolute'} onClick={() => start(isMusicPlaying)}>
                     {

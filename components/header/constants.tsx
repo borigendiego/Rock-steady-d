@@ -1,19 +1,23 @@
 const MENU_LINKS = [
     {
-        label: 'Contact',
-        linkTo: '#CONTACT'
+        label: 'WHAT',
+        linkTo: '#WHAT'
     },
     {
-        label: 'Beliefs',
+        label: 'WHY',
         linkTo: '#BELIEFS'
     },
     {
-        label: 'About',
+        label: 'WHO',
         linkTo: '#ABOUT'
     },
     {
-        label: 'How',
+        label: 'HOW',
         linkTo: '#HOW'
+    },
+    {
+        label: 'Contact',
+        linkTo: '#CONTACT'
     },
 ];
 

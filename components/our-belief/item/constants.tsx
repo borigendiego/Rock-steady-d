@@ -7,7 +7,7 @@ type itemObj = {
 const ITEM_DATA = [
     {
         image: '/assets/images/icon.png',
-        title: 'Work- life balance',
+        title: 'Work-life balance',
         text: 'Create a win:win collaborative environment between people and organisations.' +
             ' Quality time with family, friends and colleagues.'
     },

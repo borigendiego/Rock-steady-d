@@ -139,7 +139,7 @@ button, .button {
 }
 
 .carousel__slide {
-  min-height: 17rem;
+  min-height: 18.5rem;
 }
 
 //Form Styles. Remove after refactor
@@ -223,6 +223,15 @@ textarea {
   background-color: #1ec61e40;
   color: #33a533;
   border: 2px solid #33a533;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 480px) {

@@ -34,7 +34,7 @@ const MyCarousel = ({ slides }) => {
                     <ButtonBack id='carousel-arrow' className={`${styles.arrow} ${styles.back}`}>
                         <img alt={'back-arrow'} src={'/assets/images/right-arrow.svg'} />
                     </ButtonBack>
-                    <ButtonNext id='carousel-arrow' className={`${styles.arrow} ${styles.next}`}>
+                    <ButtonNext id='carousel-arrow' className={`${styles.arrow} ${styles.next} ml-auto`}>
                         <img alt={'back-arrow'} src={'/assets/images/right-arrow.svg'} />
                     </ButtonNext>
                 </div>

@@ -8,7 +8,7 @@ const DreamBig = ({}) => {
     const [selectedModalDataId, setSelectedModalDataId] = useState<number>(0);
 
     return (
-        <div className={`flex flex-col p-8 sm:p-12 ${styles.background}`}>
+        <div className={`flex flex-col p-8 sm:p-12 ${styles.background}`} id={'WHAT'} >
             <h1 className={`text-center text-white`}>DREAM BIG.</h1>
             <h1 className={`text-center text-white empty-font`}>WE CREATE IT</h1>
             <div className={'flex mt-5 sm:mt-20 justify-center'}>

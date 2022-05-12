@@ -148,9 +148,6 @@ const DreamBig = ({}) => {
                     <p className={`py-4 font-bold ${styles.text}`}>
                         It's simple, we unite people, processes, tools and data in a creative way that will help your business grow.
                     </p>
-                    <p className={`py-4 font-bold ${styles.text}`}>
-                        Between 1990 and 2000 the internet grew 63% per year. Crypto & Blockchain is growing 113% per year and increasing exponentially. It is fastest growing technology in recorded human history.
-                    </p>
                 </div>
             </div>
 

@@ -15,124 +15,144 @@ const DreamBig = ({}) => {
                 <div className={'w-1/2 sm:contents'}>
                     <div className={`grid grid-cols-3 grid-flow-col gap-3`}>
                         <div 
-                            className={`${styles.card} row-span-1 col-start-1`} 
+                            className={`${styles.card} row-span-1 col-start-1 rounded-md`} 
                             onClick={() => {
                                 setSelectedModalDataId(0)
                                 setOpenModal(true)}
                             }
                         >
-                            <img 
-                                src="/assets/images/dream-big/marketing.png" 
-                                alt={''}
-                                className={`${styles.card_image}`}
-                            />
+                            <span className={'relative'}>
+                                <img 
+                                    src="/assets/images/dream-big/marketing.png" 
+                                    alt={''}
+                                    className={`${styles.card_image}`}
+                                />
+                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#82828291]'}>MARKETING</h4>
+                            </span>
                             <div className={`${styles.card_text}`}>
-                                <h4 className='text-lg'>MARKETING</h4>
                                 <p className='text-xs'>Click for + info</p>
                             </div>
                         </div>
                         <div
-                            className={`${styles.card} row-span-1 col-start-1`}
+                            className={`${styles.card} row-span-1 col-start-1 rounded-md`}
                             onClick={() => {
                                 setSelectedModalDataId(1)
                                 setOpenModal(true)}
                                 
                             }
                         >
-                            <img 
-                                src="/assets/images/dream-big/social-media.png"
-                                alt={''}
-                                className={`${styles.card_image}`}
-                            />
+                            <span className={'relative'}>
+                                <img 
+                                    src="/assets/images/dream-big/social-media.png"
+                                    alt={''}
+                                    className={`${styles.card_image}`}
+                                />
+                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#00000085]'}>SOCIAL MEDIA</h4>
+                            </span>
+                           
                             <div className={`${styles.card_text}`}>
-                                <h4 className='text-lg'>SOCIAL MEDIA</h4>
                                 <p className='text-xs'>Click for + info</p>
                             </div>
                         </div>
                         <div 
-                            className={`${styles.card} row-span-1 col-start-1`}
+                            className={`${styles.card} row-span-1 col-start-1 rounded-md`}
                             onClick={() => {
                                 setSelectedModalDataId(2)
                                 setOpenModal(true)}
                             }
                         >
-                            <img 
-                                src="/assets/images/dream-big/metaverse.png"
-                                alt={''}
-                                className={`${styles.card_image}`}
-                            />
+                            <span className={'relative'}>
+                                <img 
+                                    src="/assets/images/dream-big/metaverse.png"
+                                    alt={''}
+                                    className={`${styles.card_image}`}
+                                />
+                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#82828291]'}>BLOCKCHAIN</h4>
+                            </span>
+                            
                             <div className={`${styles.card_text}`}>
-                                <h4 className='text-lg'>BLOCKCHAIN</h4>
                                 <p className='text-xs'>Click for + info</p>
                             </div>
                         </div>
                         <div 
-                            className={`${styles.card} row-span-1 col-start-2`}
+                            className={`${styles.card} row-span-1 col-start-2 rounded-md`}
                             onClick={() => {
                                 setSelectedModalDataId(3)
                                 setOpenModal(true)}
                             }
                         >
-                            <img
-                                src="/assets/images/dream-big/data.png" 
-                                alt={''}
-                                className={`${styles.card_image}`}
-                            />
+                            <span className={'relative'}>
+                                <img
+                                    src="/assets/images/dream-big/data.png" 
+                                    alt={''}
+                                    className={`${styles.card_image}`}
+                                />
+                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#82828291]'}>BIG DATA</h4>
+                            </span>
+                            
                             <div className={`${styles.card_text}`}>
-                                <h4 className='text-lg'>BIG DATA</h4>
                                 <p className='text-xs'>Click for + info</p>
                             </div>
                         </div>
                         <div 
-                            className={`${styles.card} row-span-1 col-start-2`}
+                            className={`${styles.card} row-span-1 col-start-2 rounded-md`}
                             style={{marginTop: '-30px;'}}
                             onClick={() => {
                                 setSelectedModalDataId(4)
                                 setOpenModal(true)}
                             }
                         >
-                            <img 
-                                src="/assets/images/dream-big/uxui.png"
-                                alt={''}
-                                className={`${styles.card_image}`}
-                            />
+                            <span className={'relative'}>
+                                <img 
+                                    src="/assets/images/dream-big/uxui.png"
+                                    alt={''}
+                                    className={`${styles.card_image}`}
+                                />
+                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#82828291]'}>UX UI</h4>
+                            </span>
+                            
                             <div className={`${styles.card_text}`}>
-                                <h4 className='text-lg'>UX UI</h4>
                                 <p className='text-xs'>Click for + info</p>
                             </div>
                         </div>
                         <div 
-                            className={`${styles.card} row-span-1 col-start-2`}
+                            className={`${styles.card} row-span-1 col-start-2 rounded-md`}
                             style={{marginTop: '-30px;'}}
                             onClick={() => {
                                 setSelectedModalDataId(5)
                                 setOpenModal(true)}
                             }
                         >
-                            <img 
-                                src="/assets/images/dream-big/programming.png"
-                                alt={''}
-                                className={`${styles.card_image} w-full`}
-                            />
+                            <span className={'relative'}>
+                                <img 
+                                    src="/assets/images/dream-big/programming.png"
+                                    alt={''}
+                                    className={`${styles.card_image} w-full`}
+                                />
+                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#82828291]'}>PROGRAMMING</h4>
+                            </span>
+                            
                             <div className={`${styles.card_text}`}>
-                                <h4 className='text-lg'>PROGRAMMING</h4>
                                 <p className='text-xs'>Click for + info</p>
                             </div>
                         </div>
                         <div 
-                            className={`${styles.card} row-span-3 col-start-3 mt-auto mb-auto`}
+                            className={`${styles.card} row-span-3 col-start-3 mt-auto mb-auto rounded-md`}
                             onClick={() => {
                                 setSelectedModalDataId(6)
                                 setOpenModal(true)}
                             }
                         >
-                            <img 
-                                src="/assets/images/dream-big/digital-transformation.png" 
-                                alt={''}
-                                className={`${styles.card_image}`}
-                            />
+                            <span className={'relative'}>
+                                <img 
+                                    src="/assets/images/dream-big/digital-transformation.png" 
+                                    alt={''}
+                                    className={`${styles.card_image}`}
+                                />
+                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#00000085]'}>DIGITAL DISRUPTION</h4>
+                            </span>
+                            
                             <div className={`${styles.card_text}`}>
-                                <h4 className='text-lg text-center'>DIGITAL DISRUPTION</h4>
                                 <p className='text-xs'>Click for + info</p>
                             </div>
                         </div>

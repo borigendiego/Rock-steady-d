@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import styles from './dream.module.scss';
 import Modal from './Modal';
-import { DIALOG_DATA } from './dialog/constants';
+import { DIALOG_DATA, CAROUSEL_SLIDES } from './dialog/constants';
+import MobileCarousel from '../commons/carousel';
 
 const DreamBig = ({}) => {
     const [openModal, setOpenModal] = useState<boolean>(false);
@@ -11,8 +12,9 @@ const DreamBig = ({}) => {
         <div className={`flex flex-col p-8 sm:p-12 ${styles.background}`} id={'WHAT'} >
             <h1 className={`text-center text-white`}>DREAM BIG.</h1>
             <h1 className={`text-center text-white empty-font`}>WE CREATE IT</h1>
+            <MobileCarousel slides={CAROUSEL_SLIDES} /> 
             <div className={'flex mt-5 sm:mt-20 justify-center'}>
-                <div className={'w-1/2 sm:contents'}>
+                <div className={'w-1/2 hidden md:contents'}>
                     <div className={`grid grid-cols-3 grid-flow-col gap-3`}>
                         <div 
                             className={`${styles.card} row-span-1 col-start-1 rounded-md`} 

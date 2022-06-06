@@ -1,13 +1,16 @@
 import Head from 'next/head';
-import Header from '../components/header';
+import dynamic from 'next/dynamic';
+//Components
 import DreamBig from '../components/dream-big';
 import Banner from '../components/banner';
-import OurBelief from '../components/our-belief';
-import Start from "../components/start-crypto";
-import Ready from "../components/ready";
-import Contact from "../components/contact";
-import How from "../components/how";
-import Footer from "../components/footer";
+const OurBelief = dynamic(() => import('../components/our-belief'));
+//import OurBelief from '../components/our-belief';
+import Start from '../components/start-crypto';
+import Ready from '../components/ready';
+import Contact from '../components/contact';
+const How = dynamic(() => import('../components/how'));
+//import How from '../components/how';
+import Footer from '../components/footer';
 import Kam from '../components/kam';
 
 export default function Home() {

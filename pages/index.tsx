@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic';
 import DreamBig from '../components/dream-big';
 import Banner from '../components/banner';
 import OurBelief from '../components/our-belief';
-const Start = dynamic(() => import('../components/how'));
+const Start = dynamic(() => import('../components/start-crypto'));
 //import Start from '../components/start-crypto';
 //import Ready from '../components/ready';
 const Ready = dynamic(() => import('../components/ready'));

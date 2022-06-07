@@ -3,15 +3,19 @@ import dynamic from 'next/dynamic';
 //Components
 import DreamBig from '../components/dream-big';
 import Banner from '../components/banner';
-const OurBelief = dynamic(() => import('../components/our-belief'), { ssr: false });
-//import OurBelief from '../components/our-belief';
-import Start from '../components/start-crypto';
-import Ready from '../components/ready';
-import Contact from '../components/contact';
-const How = dynamic(() => import('../components/how'), { ssr: false });
-//import How from '../components/how';
-import Footer from '../components/footer';
-import Kam from '../components/kam';
+import OurBelief from '../components/our-belief';
+const Start = dynamic(() => import('../components/how'));
+//import Start from '../components/start-crypto';
+//import Ready from '../components/ready';
+const Ready = dynamic(() => import('../components/ready'));
+//import Contact from '../components/contact';
+const Contact = dynamic(() => import('../components/contact'));
+import How from '../components/how';
+//const How = dynamic(() => import('../components/how'));
+//import Footer from '../components/footer';
+const Footer = dynamic(() => import('../components/footer'));
+//import Kam from '../components/kam';
+const Kam = dynamic(() => import('../components/kam'));
 
 export default function Home() {
   return (

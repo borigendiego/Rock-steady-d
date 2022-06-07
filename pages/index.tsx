@@ -3,12 +3,12 @@ import dynamic from 'next/dynamic';
 //Components
 import DreamBig from '../components/dream-big';
 import Banner from '../components/banner';
-const OurBelief = dynamic(() => import('../components/our-belief'));
+const OurBelief = dynamic(() => import('../components/our-belief'), { ssr: false });
 //import OurBelief from '../components/our-belief';
 import Start from '../components/start-crypto';
 import Ready from '../components/ready';
 import Contact from '../components/contact';
-const How = dynamic(() => import('../components/how'));
+const How = dynamic(() => import('../components/how'), { ssr: false });
 //import How from '../components/how';
 import Footer from '../components/footer';
 import Kam from '../components/kam';

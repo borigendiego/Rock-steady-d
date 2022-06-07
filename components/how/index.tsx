@@ -48,11 +48,21 @@ const How = () => {
                     }
                 </span>
                 <video
-                    className={'z-0 left-0 right-0 mr-auto ml-auto opacity-30 rounded-md'} 
+                    className={'z-0 left-0 right-0 mr-auto ml-auto opacity-30 rounded-md md:block hidden'} 
                     src={'/assets/videos/video-2.mp4'} 
                     autoPlay={true} muted={true} 
                     loop={true} 
                 />
+                 <div className={'w-full h-[320px] relative overflow-hidden md:hidden'}>
+                    <iframe
+                        className={'z-0 left-0 right-0 mr-auto ml-auto rounded-md'}
+                        width="100%" 
+                        height="100%" 
+                        src={"https://www.youtube.com/embed/videoseries?autoplay=1&mute=1&loop=1&controls=0&amp;list=PLz16idll2IizsjliHUmHkk2ydaV5avvAz"}
+                        allow={"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"}
+                    />
+                    <div className={'absolute w-full h-full z-10 bg-slate-900 opacity-50 top-0'} />
+                </div>
                 <div className={'absolute z-20 margin-auto'} style={{'transform': 'translate(-50%, 0)', left: '50%'}}>
                     <h1 className={'empty-font'}>HOW WE</h1>
                     <h1>DO IT</h1>

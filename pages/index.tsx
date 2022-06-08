@@ -28,25 +28,24 @@ export default function Home() {
       </Head>
 
       <main className={'relative z-10'}>
-        <span className={'relative'}>
           <Image
             layout={'fill'}
-            className={'z-[-1] opacity-50'}
+            className={'opacity-50 z-0'}
             src={'/assets/images/stars_bg.png'}
-            objectFit={'cover'}
+            objectFit={'fill'}
             alt={'Start'}
-            objectPosition={'center'}
           />
-        </span>
-      
-        <Banner />
-        <DreamBig />
-        <How />
-        <OurBelief />
-        <Start />
-        <Kam />
-        <Ready />
-        <Contact />
+        <div className={'relative z-20'}>
+          <Banner />
+          <DreamBig />
+          <How />
+          <OurBelief />
+          <Start />
+          <Kam />
+          <Ready />
+          <Contact />
+        </div>
+       
       </main>
 
       <footer className={'relative z-10'}>

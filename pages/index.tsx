@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
+import Image from 'next/image';
 //Components
 import DreamBig from '../components/dream-big';
 import Banner from '../components/banner';
@@ -20,12 +21,21 @@ const Kam = dynamic(() => import('../components/kam'));
 export default function Home() {
   return (
     <div className={'main-bg'} style={{background: 'linear-gradient(113.49deg, #A60321 -30.3%, #1F0B25 58.12%)'}}>
+
       <Head>
         <title>Rock Steady</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={'relative z-10'}>
+        <Image
+          layout={'fill'}
+          className={'z-[-1] opacity-50'}
+          src={'/assets/images/stars_bg.png'}
+          objectFit={'cover'}
+          alt={'Start'}
+          objectPosition={'center'}
+        />
         <Banner />
         <DreamBig />
         <How />

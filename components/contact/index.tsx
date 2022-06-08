@@ -1,13 +1,16 @@
 import React from 'react';
 import { Form } from '../Form';
 import { required, email } from './fieldValidations';
+import Image from 'next/image';
 
 const Contact = () => {
   return(
       <div className={'flex flex-col justify-center'} id={'CONTACT'}>
-            <img 
+            <Image
                 src={'/assets/images/READY_TO.png'}
-                className={'sm:w-2/3 m-auto w-full sm:h-auto h-52'}
+                alt={'Ready to'}
+                width={800}
+                height={600}
             />
             <Form 
                 fields={[

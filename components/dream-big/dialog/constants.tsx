@@ -1,4 +1,5 @@
 import Tile from '.';
+import Image from 'next/image';
 
 const DIALOG_DATA = [
     {
@@ -106,7 +107,12 @@ const DIALOG_DATA = [
 
 const CAROUSEL_SLIDES = [
     <div className={'bg-cover px-1 relative rounded-md h-full'}>
-        <div className={' absolute bg-cover w-full h-full z-[-1] opacity-25'} style={{ backgroundImage: 'url(/assets/images/modal/marketingModal.png)'}} />
+         <Image
+            layout={"fill"}
+            className={'z-[-1] opacity-50'}
+            src={'/assets/images/modal/marketingModal.png'}
+            alt={'Marketing'}
+        />
         <h3 className={'text-center my-4'}>Marketing Campaing</h3>
         <p className='text-center'>
             In today's digital marketplace, small companies have the ability to win mindshare and influence their market through their websites,
@@ -115,7 +121,12 @@ const CAROUSEL_SLIDES = [
     </div>
     ,
     <div className={'bg-cover px-1 relative rounded-md h-full'}>
-        <div className={' absolute bg-cover w-full h-full z-[-1] opacity-25'} style={{ backgroundImage: 'url(/assets/images/modal/socialModal.png)'}} />
+         <Image
+            layout={"fill"}
+            className={'z-[-1] opacity-50'}
+            src={'/assets/images/modal/socialModal.png'}
+            alt={'Social'}
+        />
         <h3 className={'text-center my-4'}>Social Media</h3>
         <p className='text-center'>
             We help to promote businesses through a variety of
@@ -126,7 +137,12 @@ const CAROUSEL_SLIDES = [
     </div>
     ,
    <div className={'bg-cover px-1 relative rounded-md h-full'}>
-        <div className={' absolute bg-cover w-full h-full z-[-1] opacity-25'} style={{ backgroundImage: 'url(/assets/images/modal/metaverse-2.png)'}} />
+       <Image
+            layout={"fill"}
+            className={'z-[-1] opacity-50'}
+            src={'/assets/images/modal/metaverse-2.png'}
+            alt={'Blockchain'}
+        />
         <h3 className={'text-center my-4'}>Blockchain</h3>
         <p className='text-center'>
             We Provide customers with innovative solutions to
@@ -135,7 +151,12 @@ const CAROUSEL_SLIDES = [
     </div>
     ,
     <div className={'bg-cover px-1 relative rounded-md h-full'}>
-        <div className={' absolute bg-cover w-full h-full z-[-1] opacity-25'} style={{ backgroundImage: 'url(/assets/images/modal/dataModal.png)'}} />
+         <Image
+            layout={"fill"}
+            className={'z-[-1] opacity-50'}
+            src={'/assets/images/modal/dataModal.png'}
+            alt={'Big Data'}
+        />
         <h3 className={'text-center my-4'}>Big Data</h3>
         <p className='text-center'>
             We help organizations improve performance and OKRs.
@@ -146,7 +167,12 @@ const CAROUSEL_SLIDES = [
     </div>
     ,
     <div className={'bg-cover px-1 relative rounded-md h-full'}>
-        <div className={' absolute bg-cover w-full h-full z-[-1] opacity-25'} style={{ backgroundImage: 'url(/assets/images/modal/uxuiModal.png)'}} />
+        <Image
+            layout={"fill"}
+            className={'z-[-1] opacity-50'}
+            src={'/assets/images/modal/uxuiModal.png'}
+            alt={'Media'}
+        />
         <h3 className={'text-center my-4'}>{'Media & User experience'}</h3>
         <p className='text-center'>
             We want to ensure that contact with your brand, or with your product, through the interface on any device is clear,
@@ -157,7 +183,12 @@ const CAROUSEL_SLIDES = [
     </div>
     ,
     <div className={'bg-cover px-1 relative rounded-md h-full'}>
-        <div className={' absolute bg-cover w-full h-full z-[-1] opacity-25'} style={{ backgroundImage: 'url(/assets/images/modal/programmingModal.png)'}} />
+        <Image
+            layout={"fill"}
+            className={'z-[-1] opacity-50'}
+            src={'/assets/images/modal/programmingModal.png'}
+            alt={'Programming'}
+        />
         <h3 className={'text-center my-4'}>Programming</h3>
         <p className='text-center'>
             We create digital solutions according to the needs of each business.
@@ -167,7 +198,12 @@ const CAROUSEL_SLIDES = [
     </div>
     ,
     <div className={'bg-cover px-1 relative rounded-md h-full'}>
-        <div className={' absolute bg-cover w-full h-full z-[-1] opacity-25'} style={{ backgroundImage: 'url(/assets/images/modal/dataModal.png)'}} />
+        <Image
+            layout={"fill"}
+            className={'z-[-1] opacity-50'}
+            src={'/assets/images/modal/dataModal.png'}
+            alt={'Digital disruptio'}
+        />
         <h3 className={'text-center my-4'}>Digital disruption</h3>
         <p className='text-center'>We lead digital projects from strategy to implementation
             through the transformation of people, processes and technology

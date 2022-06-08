@@ -7,9 +7,9 @@ const Kam = () => {
     return(
         <div className={`flex flex-wrap flex-col md:flex-row sm:justify-around items-center justify-center`} id={'ABOUT'}>
             <Box
-                image='/assets/images/kam-home.png'
-                title='KAMLESH LAD - FOUNDER'
-                text='I can help you reach your digital goals so you can focus on the more important things in life.'
+                image={'/assets/images/kam-home.png'}
+                title={'KAMLESH LAD - FOUNDER'}
+                text={'I can help you reach your digital goals so you can focus on the more important things in life.'}
              />
              <div className={'flex flex-wrap flex-col'}>
                 <div className={`${styles.title_container} sm:flex flex-col justify-center items-center`}>

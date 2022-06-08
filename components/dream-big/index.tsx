@@ -1,8 +1,9 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import styles from './dream.module.scss';
 import Modal from './Modal';
 import { DIALOG_DATA, CAROUSEL_SLIDES } from './dialog/constants';
 import MobileCarousel from '../commons/carousel';
+import Image from 'next/image';
 
 const DreamBig = ({}) => {
     const [openModal, setOpenModal] = useState<boolean>(false);
@@ -24,10 +25,12 @@ const DreamBig = ({}) => {
                             }
                         >
                             <span className={'relative'}>
-                                <img 
-                                    src="/assets/images/dream-big/marketing.png" 
-                                    alt={''}
-                                    className={`${styles.card_image}`}
+                                <Image
+                                    src={'/assets/images/dream-big/marketing.png'}
+                                    alt={'Marketing service'}
+                                    className={' rounded-md'}
+                                    width={190}
+                                    height={120}
                                 />
                                 <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#82828291]'}>MARKETING</h4>
                             </span>
@@ -44,10 +47,12 @@ const DreamBig = ({}) => {
                             }
                         >
                             <span className={'relative'}>
-                                <img 
-                                    src="/assets/images/dream-big/social-media.png"
-                                    alt={''}
-                                    className={`${styles.card_image}`}
+                                <Image
+                                    src={'/assets/images/dream-big/social-media.png'}
+                                    alt={'Marketing service'}
+                                    className={' rounded-md'}
+                                    width={190}
+                                    height={200}
                                 />
                                 <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#00000085]'}>SOCIAL MEDIA</h4>
                             </span>
@@ -64,10 +69,12 @@ const DreamBig = ({}) => {
                             }
                         >
                             <span className={'relative'}>
-                                <img 
-                                    src="/assets/images/dream-big/metaverse.png"
-                                    alt={''}
-                                    className={`${styles.card_image}`}
+                                <Image
+                                    src={'/assets/images/dream-big/metaverse.png'}
+                                    alt={'Metaverse service'}
+                                    className={' rounded-md'}
+                                    width={190}
+                                    height={130}
                                 />
                                 <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#82828291]'}>BLOCKCHAIN</h4>
                             </span>
@@ -84,10 +91,12 @@ const DreamBig = ({}) => {
                             }
                         >
                             <span className={'relative'}>
-                                <img
-                                    src="/assets/images/dream-big/data.png" 
-                                    alt={''}
-                                    className={`${styles.card_image}`}
+                                <Image
+                                    src={'/assets/images/dream-big/data.png'}
+                                    alt={'Data service'}
+                                    className={' rounded-md'}
+                                    width={190}
+                                    height={100}
                                 />
                                 <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#82828291]'}>BIG DATA</h4>
                             </span>
@@ -97,18 +106,19 @@ const DreamBig = ({}) => {
                             </div>
                         </div>
                         <div 
-                            className={`${styles.card} row-span-1 col-start-2 rounded-md`}
-                            style={{marginTop: '-30px;'}}
+                            className={`${styles.card} row-span-1 col-start-2 rounded-md -mt-5`}
                             onClick={() => {
                                 setSelectedModalDataId(4)
                                 setOpenModal(true)}
                             }
                         >
                             <span className={'relative'}>
-                                <img 
-                                    src="/assets/images/dream-big/uxui.png"
-                                    alt={''}
-                                    className={`${styles.card_image}`}
+                                <Image
+                                    src={'/assets/images/dream-big/uxui.png'}
+                                    alt={'Ux UI service'}
+                                    className={'rounded-md'}
+                                    width={190}
+                                    height={200}
                                 />
                                 <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#82828291]'}>UX UI</h4>
                             </span>
@@ -119,17 +129,19 @@ const DreamBig = ({}) => {
                         </div>
                         <div 
                             className={`${styles.card} row-span-1 col-start-2 rounded-md`}
-                            style={{marginTop: '-30px;'}}
+                            style={{marginTop: '-20px;'}}
                             onClick={() => {
                                 setSelectedModalDataId(5)
                                 setOpenModal(true)}
                             }
                         >
                             <span className={'relative'}>
-                                <img 
-                                    src="/assets/images/dream-big/programming.png"
-                                    alt={''}
-                                    className={`${styles.card_image} w-full`}
+                                <Image
+                                    src={'/assets/images/dream-big/programming.png'}
+                                    alt={'Programming service'}
+                                    className={'rounded-md'}
+                                    width={190}
+                                    height={150}
                                 />
                                 <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#82828291]'}>PROGRAMMING</h4>
                             </span>
@@ -146,10 +158,12 @@ const DreamBig = ({}) => {
                             }
                         >
                             <span className={'relative'}>
-                                <img 
-                                    src="/assets/images/dream-big/digital-transformation.png" 
-                                    alt={''}
-                                    className={`${styles.card_image}`}
+                                <Image
+                                    src={'/assets/images/dream-big/digital-transformation.png'}
+                                    alt={'Programming service'}
+                                    className={'rounded-md'}
+                                    width={190}
+                                    height={350}
                                 />
                                 <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#00000085]'}>DIGITAL DISRUPTION</h4>
                             </span>

@@ -28,14 +28,17 @@ export default function Home() {
       </Head>
 
       <main className={'relative z-10'}>
-        <Image
-          layout={'fill'}
-          className={'z-[-1] opacity-50'}
-          src={'/assets/images/stars_bg.png'}
-          objectFit={'cover'}
-          alt={'Start'}
-          objectPosition={'center'}
-        />
+        <span className={'relative'}>
+          <Image
+            layout={'fill'}
+            className={'z-[-1] opacity-50'}
+            src={'/assets/images/stars_bg.png'}
+            objectFit={'cover'}
+            alt={'Start'}
+            objectPosition={'center'}
+          />
+        </span>
+      
         <Banner />
         <DreamBig />
         <How />

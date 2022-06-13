@@ -36,11 +36,10 @@ const OurBelief = () => {
                     <div
                         dangerouslySetInnerHTML={{
                             __html: `<video 
-                                className={'z-0 left-0 right-0 mr-auto ml-auto opacity-30 rounded-md'} 
-                                src={'/assets/videos/video-1.mp4'} 
-                                autoPlay muted= loop
+                                class='z-0 left-0 right-0 mr-auto ml-auto opacity-30 rounded-md'
+                                autoplay loop muted playsinline
                             />
-                                <source src=/assets/videos/video-2.mp4 type="video/mp4" />
+                                <source src=/assets/videos/video-1.mp4 type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>`,
                         }}
@@ -70,10 +69,16 @@ const OurBelief = () => {
                 </div>
             </div>
             <div className={'w-1/2 relative overflow-hidden'}>
-                <video 
-                    className={'absolute opacity-50 z-0 max-w-none rounded-md w-fit hidden md:inline'} 
-                    src={'/assets/videos/video-1.mp4'} 
-                    autoPlay={true} muted={true} loop={true} 
+                <div
+                    dangerouslySetInnerHTML={{
+                        __html: `<video 
+                        class='absolute opacity-50 z-0 max-w-none rounded-md w-fit hidden md:inline'
+                            autoplay loop muted playsinline
+                        />
+                            <source src=/assets/videos/video-1.mp4 type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>`,
+                    }}
                 />
                 <span 
                     className={'z-40 cursor-pointer absolute bottom-2 left-2'} 

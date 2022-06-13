@@ -47,11 +47,16 @@ const How = () => {
                         />
                     }
                 </span>
-                <video
-                    className={'z-0 left-0 right-0 mr-auto ml-auto opacity-30 rounded-md'} 
-                    src={'/assets/videos/video-2.mp4'} 
-                    autoPlay={true} muted={true} 
-                    loop={true} 
+                <div
+                    dangerouslySetInnerHTML={{
+                        __html: `<video 
+                            class="z-0 left-0 right-0 mr-auto ml-auto opacity-30 rounded-md" 
+                            autoplay loop muted playsinline
+                            >
+                            <source src=/assets/videos/video-2.mp4 type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>`,
+                    }}
                 />
                 <div className={'absolute z-20 margin-auto'} style={{'transform': 'translate(-50%, 0)', left: '50%'}}>
                     <h1 className={'empty-font'}>HOW WE</h1>

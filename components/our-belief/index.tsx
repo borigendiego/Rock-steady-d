@@ -33,10 +33,17 @@ const OurBelief = () => {
                     <h1 className={`${styles.text} w-full empty-font sm:text-left text-center`}>BELIEFS</h1>
                 </div>
                 <div className={'relative mt-4 md:hidden'}>
-                    <video 
-                        className={'z-0 left-0 right-0 mr-auto ml-auto opacity-30 rounded-md'} 
-                        src={'/assets/videos/video-1.mp4'} 
-                        autoPlay={true} muted={true} loop={true}
+                    <div
+                        dangerouslySetInnerHTML={{
+                            __html: `<video 
+                                className={'z-0 left-0 right-0 mr-auto ml-auto opacity-30 rounded-md'} 
+                                src={'/assets/videos/video-1.mp4'} 
+                                autoPlay muted= loop
+                            />
+                                <source src=/assets/videos/video-2.mp4 type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>`,
+                        }}
                     />
                     <span className={'z-40 cursor-pointer absolute bottom-2 right-2'} onClick={() => start(isMusicPlaying)}>
                         {

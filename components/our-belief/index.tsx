@@ -36,7 +36,7 @@ const OurBelief = () => {
                     <div
                         dangerouslySetInnerHTML={{
                             __html: `<video 
-                                class='z-0 left-0 right-0 mr-auto ml-auto opacity-30 rounded-md'
+                                class='z-0 left-0 right-0 mr-auto ml-auto opacity-50 rounded-md'
                                 autoplay loop muted playsinline
                             />
                                 <source src=/assets/videos/video-1.mp4 type="video/mp4" />

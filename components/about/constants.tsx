@@ -8,15 +8,15 @@ const ABOUT_TEXT = `Digital Delivery and Transformation Leader
 
 const COMPANIES = [
         {
-                url: '',
+                url: 'https://www.7eleven.com.au/',
                 image: '/assets/images/about/seven.svg',
         },
         {
-                url: '',
+                url: 'https://www.ml.com/',
                 image: '/assets/images/about/merill.svg',
         },
         {
-                url: '',
+                url: 'https://www.hsbc.com.au/',
                 image: '/assets/images/about/hsbc.svg',
         },
         {
@@ -24,15 +24,15 @@ const COMPANIES = [
                 image: '/assets/images/about/dulux.svg',
         },
         {
-                url: '',
+                url: 'https://www.bupa.com.au/',
                 image: '/assets/images/about/bupa.svg',
         },
         {
-                url: '',
+                url: 'https://www.coles.com.au/',
                 image: '/assets/images/about/coles.svg',
         },
         {
-                url: '',
+                url: 'https://www.bmwgroup.com/',
                 image: '/assets/images/about/bmw.svg',
         },
 ];

@@ -31,7 +31,13 @@ const About = () => {
                         <p className='font-italic italic mt-2 opacity-70'>“I value freedom and equality and want to build a sustainable
                             world for our future generations through emerging digital
                             technologies and cultural change”.</p>
-                        <a className='bg-none pt-4 float-right' href=''><img alt='Linked In icon' src='/assets/images/about/linkedin.svg'/></a>
+                        <a
+                            className='bg-none pt-4 float-right'
+                            href='https://www.linkedin.com/in/kamleshlad/'
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            <img alt='Linked In icon' className={'w-[32px]'} src='/assets/images/about/linkedin.svg'/>
+                        </a>
                     </div>
                 </div>
                 <motion.div
@@ -45,7 +51,14 @@ const About = () => {
                     <p className='pt-6 opacity-50 w-5/6 text-center sm:text-left'>{ABOUT_TEXT}</p>
                     <div className='md:flex my-12 items-center grid grid-cols-2 gap-2 md:gap-0'>
                         {COMPANIES.map((value, index) => 
-                        <a href={value.url} className={'bg-none pr-6 w-full'}><img key={index} src={value.image} className='w-24'/></a>
+                        <a
+                            href={value.url}
+                            className={'bg-none pr-6 w-full'}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img key={index} src={value.image} className='w-24'/>
+                        </a>
                         )}
                     </div>
                     <div className='w-full flex justify-center sm:block'>

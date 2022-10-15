@@ -3,12 +3,27 @@ import { ABOUT_TEXT, COMPANIES } from './constants';
 import Router from 'next/router';
 import styles from './about.module.scss';
 import Link from 'next/link';
+//framer
+import {motion} from "framer-motion";
 
 const About = () => {
     return(
         <div className={`${styles.background} flex sm:flex-row flex-col sm:block`}>
-            <a href='/' className='sm:float-right sm:relative sm:right-16 sm:top-8 sm:text-lg sm:p-0 flex justify-end pt-4 pr-4'>&#9735; GO BACK TO HOME PAGE</a>
-            <div className={`sm:flex inline sm:h-screen h-full`}>
+            <motion.a
+                href='/#ABOUT'
+                className='sm:float-right sm:relative sm:right-16 sm:top-8 sm:text-lg sm:p-0 flex justify-center pt-4 md:pr-4'
+                initial={{opacity: 0}}
+                whileInView={{opacity: 1}}
+                viewport={{ once: true }}
+                transition={{duration: 1, delay: 0.5}}
+            >&#9735; GO BACK TO HOME PAGE</motion.a>
+            <motion.div
+                className={`sm:flex inline sm:h-screen h-full`}
+                initial={{opacity: 0}}
+                whileInView={{opacity: 1}}
+                viewport={{ once: true }}
+                transition={{duration: 1, delay: 1.5}}
+            >
                 <div className='sm:w-1/2 flex flex-col items-center relative justify-center pt-8 px-8 sm:pt-32'>
                     <img alt='My photo' src='/assets/images/KAM_PHOTO2.png' className='sm:w-2/3 w-full'/>
                     <div className={`${styles.tile} py-6 px-8 sm:w-3/5 w-[90%] rounded-md relative bottom-12 md:bottom-1/4 md:left-10`}>
@@ -19,10 +34,16 @@ const About = () => {
                         <a className='bg-none pt-4 float-right' href=''><img alt='Linked In icon' src='/assets/images/about/linkedin.svg'/></a>
                     </div>
                 </div>
-                <div className='sm:w-1/2 flex flex-col justify-center items-center sm:items-start sm:pl-8 sm:mt-0'>
+                <motion.div
+                    className='sm:w-1/2 flex flex-col justify-center items-center sm:items-start sm:pl-8 sm:mt-0'
+                    initial={{opacity: 0, x: 15}}
+                    whileInView={{opacity: 1, x: 0}}
+                    viewport={{ once: true }}
+                    transition={{duration: 1, delay: 2}}
+                >
                     <h2 className='empty-font text-4xl'>ABOUT ME</h2>
                     <p className='pt-6 opacity-50 w-5/6 text-center sm:text-left'>{ABOUT_TEXT}</p>
-                    <div className='flex my-12 items-center'>
+                    <div className='md:flex my-12 items-center grid grid-cols-2 gap-2 md:gap-0'>
                         {COMPANIES.map((value, index) => 
                         <a href={value.url} className={'bg-none pr-6 w-full'}><img key={index} src={value.image} className='w-24'/></a>
                         )}
@@ -38,8 +59,8 @@ const About = () => {
                         >   Contact me</button>
                         </Link>
                     </div>
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         </div>
     )
 }

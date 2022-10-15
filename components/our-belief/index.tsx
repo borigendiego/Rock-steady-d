@@ -6,6 +6,8 @@ import Item from "./item";
 //Assets
 import VolumeMuteIcon from '@mui/icons-material/VolumeMute';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
+//framer
+import {motion} from "framer-motion";
 
 const OurBelief = () => {
     const [audio, setAudio] = useState<any>(null)
@@ -28,9 +30,21 @@ const OurBelief = () => {
     return(
         <div className={'flex flex-col sm:flex-row mt-10 mb-20'} id={'BELIEFS'}>
             <div className={'sm:w-3/6 lg:w-1/2 flex flex-col items-center'}>
-                <div className={'flex flex-wrap'}>
-                    <h1 className={`${styles.text} w-full sm:text-left text-center`}>OUR</h1>
-                    <h1 className={`${styles.text} w-full empty-font sm:text-left text-center`}>BELIEFS</h1>
+                <div className={'flex flex-wrap my-12 md:my-0'}>
+                    <motion.h1
+                        className={`${styles.text} w-full sm:text-left text-center`}
+                        initial={{opacity: 0, y: 30}}
+                        whileInView={{opacity: 1, y: 0}}
+                        viewport={{ once: true }}
+                        transition={{duration: 1, delay: 0.5}}
+                    >OUR</motion.h1>
+                    <motion.h1
+                        className={`${styles.text} w-full empty-font sm:text-left text-center`}
+                        initial={{opacity: 0, y: 30}}
+                        whileInView={{opacity: 1, y: 0}}
+                        viewport={{ once: true }}
+                        transition={{duration: 1, delay: 1}}
+                    >BELIEFS</motion.h1>
                 </div>
                 <div className={'relative mt-4 md:hidden'}>
                     <div
@@ -68,7 +82,13 @@ const OurBelief = () => {
                     {ITEM_DATA.map((value, index) => <Item itemData={value} key={index}/>)}
                 </div>
             </div>
-            <div className={'w-1/2 relative overflow-hidden'}>
+            <motion.div
+                className={'w-1/2 relative overflow-hidden'}
+                initial={{opacity: 0,}}
+                whileInView={{opacity: 1,}}
+                viewport={{ once: true }}
+                transition={{duration: 1, delay: 2}}
+            >
                 <div
                     dangerouslySetInnerHTML={{
                         __html: `<video 
@@ -102,7 +122,7 @@ const OurBelief = () => {
                         />
                     }
                 </span>
-            </div>
+            </motion.div>
         </div>
     )
 };

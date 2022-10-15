@@ -5,6 +5,8 @@ import MobileCarousel from '../commons/carousel';
 //Assets
 import VolumeMuteIcon from '@mui/icons-material/VolumeMute';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
+//framer
+import {motion} from "framer-motion";
 
 const How = () => {
     const [selectedItem, setSelectedItem] = useState<number>(0);
@@ -27,7 +29,13 @@ const How = () => {
    
     return(
         <div className={`sm:flex sm:flex-wrap sm:pr-8 py-20 mt-8`} id={'HOW'}>
-            <div className={`w-full h-full sm:w-1/2 flex flex-col justify-center relative`}>
+            <motion.div
+                className={`w-full h-full sm:w-1/2 flex flex-col justify-center relative`}
+                initial={{opacity: 0, y: 30}}
+                whileInView={{opacity: 1, y: 0}}
+                viewport={{ once: true }}
+                transition={{duration: 1, delay: 1}}
+            >
                 <span className={'z-40 cursor-pointer bottom-3 h-auto right-2 absolute'} onClick={() => start(isMusicPlaying)}>
                     {
                         isMusicPlaying 
@@ -62,10 +70,18 @@ const How = () => {
                     <h1 className={'empty-font'}>HOW WE</h1>
                     <h1>DO IT</h1>
                 </div>
-            </div>
-            <div className={'flex sm:w-1/2 justify-center items-center flex-col relative px-2 sm:px-12'}>
+            </motion.div>
+            <motion.div
+                className={'flex sm:w-1/2 justify-center items-center flex-col relative px-2 sm:px-12'}
+                initial={{opacity: 0, x: 30}}
+                whileInView={{opacity: 1, x: 0}}
+                viewport={{ once: true }}
+                transition={{duration: 1, delay: 2}}
+            >
                 <h3 className={'sm:mb-4 sm:mt-0 mt-24 text-center hidden md:block'}>Solutions which make you want to dance</h3>
-                <MobileCarousel slides={CAROUSEL_SLIDES} /> 
+                <div className={'w-full pt-12 md:pt-6'}>
+                    <MobileCarousel slides={CAROUSEL_SLIDES} />
+                </div>
                 <p className={'text-center h-28 sm:block hidden'}>{CAROUSEL_DATA[selectedItem].description}</p>
                 <img className={'mt-16 mb-10 w-full hidden md:inline'} src={'/assets/images/separator.svg'} alt={'Separator SVG'} />
                 <div className={'hidden sm:flex justify-between w-full'}>
@@ -86,7 +102,7 @@ const How = () => {
                         })
                     }
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 };

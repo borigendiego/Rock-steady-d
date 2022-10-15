@@ -4,19 +4,39 @@ import Modal from './Modal';
 import { DIALOG_DATA, CAROUSEL_SLIDES } from './dialog/constants';
 import MobileCarousel from '../commons/carousel';
 import Image from 'next/image';
+//framer
+import {motion} from "framer-motion";
 
 const DreamBig = ({}) => {
     const [openModal, setOpenModal] = useState<boolean>(false);
     const [selectedModalDataId, setSelectedModalDataId] = useState<number>(0);
 
     return (
-        <div className={`flex flex-col p-8 sm:p-12 ${styles.background}`} id={'WHAT'} >
-            <h1 className={`text-center text-white`}>DREAM BIG.</h1>
-            <h1 className={`text-center text-white empty-font`}>WE CREATE IT</h1>
+        <div className={`flex flex-col p-8 sm:p-12 md:my-0 my-16 ${styles.background}`} id={'WHAT'} >
+            <motion.h1
+                className={`text-center text-white`}
+                initial={{opacity: 0, y: 30}}
+                whileInView={{opacity: 1, y: 0}}
+                viewport={{ once: true }}
+                transition={{duration: 1, delay: 0.5}}
+            >DREAM BIG.</motion.h1>
+            <motion.h1
+                className={`text-center text-white empty-font`}
+                initial={{opacity: 0, y: 30}}
+                whileInView={{opacity: 1, y: 0}}
+                viewport={{ once: true }}
+                transition={{duration: 1, delay: 1}}
+            >WE CREATE IT</motion.h1>
             <MobileCarousel slides={CAROUSEL_SLIDES} /> 
             <div className={'flex mt-5 sm:mt-20 justify-center'}>
                 <div className={'w-1/2 hidden md:contents'}>
-                    <div className={`grid grid-cols-3 grid-flow-col gap-3`}>
+                    <motion.div
+                        className={`grid grid-cols-3 grid-flow-col gap-3`}
+                        initial={{opacity: 0, x: -30}}
+                        whileInView={{opacity: 1, x: 0}}
+                        viewport={{ once: true }}
+                        transition={{duration: 1, delay: 1.5}}
+                    >
                         <div 
                             className={`${styles.card} row-span-1 col-start-1 rounded-md`} 
                             onClick={() => {
@@ -172,10 +192,16 @@ const DreamBig = ({}) => {
                                 <p className='text-xs'>Click for + info</p>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
-                <div className={'sm:w-1/2 mb-0 sm:mb-10 sm:px-20 pt-8'}>
-                    <h3 className={`py-4 font-bold text-center ${styles.text}`}>
+                <motion.div
+                    className={'sm:w-1/2 mb-0 sm:mb-10 sm:px-20 pt-8'}
+                    initial={{opacity: 0, y: 30}}
+                    whileInView={{opacity: 1, y: 0}}
+                    viewport={{ once: true }}
+                    transition={{duration: 1, delay: 2.5}}
+                >
+                    <h3 className={`py-4 font-bold text-left ${styles.text}`}>
                         Innovative Digital Solutions to Rock your World!
                     </h3>
                     <p className={`py-4 ${styles.text} text-gray-400`}>
@@ -184,7 +210,7 @@ const DreamBig = ({}) => {
                     <p className={`py-4 font-bold ${styles.text}`}>
                         It's simple, we unite people, processes, tools and data in a creative way that will help your business grow.
                     </p>
-                </div>
+                </motion.div>
             </div>
 
             <Modal open={openModal} closeModal={() => setOpenModal(false)} selectedSection={DIALOG_DATA[selectedModalDataId].section} >

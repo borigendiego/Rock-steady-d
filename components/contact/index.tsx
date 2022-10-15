@@ -2,10 +2,19 @@ import React from 'react';
 import { Form } from '../Form';
 import { required, email } from './fieldValidations';
 import Image from 'next/image';
+//framer
+import {motion} from "framer-motion";
 
 const Contact = () => {
   return(
-      <div className={'flex flex-col justify-center'} id={'CONTACT'}>
+      <motion.div
+          className={'flex flex-col justify-center'}
+          id={'CONTACT'}
+          initial={{opacity: 0, y: 30}}
+          whileInView={{opacity: 1, y: 0}}
+          viewport={{ once: true }}
+          transition={{duration: 1, delay: 1}}
+      >
             <Image
                 src={'/assets/images/READY_TO.png'}
                 alt={'Ready to'}
@@ -49,7 +58,7 @@ const Contact = () => {
                 submitButtonLabel={'Send'}
                 emailServiceURL={'https://thehippoapi.netlify.app/.netlify/functions/api/rock-steady-mail'}
             />
-      </div>
+      </motion.div>
   )
 };
 

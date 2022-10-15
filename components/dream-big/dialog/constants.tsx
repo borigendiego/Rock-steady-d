@@ -106,15 +106,15 @@ const DIALOG_DATA = [
 ];
 
 const CAROUSEL_SLIDES = [
-    <div className={'bg-cover px-1 relative rounded-md h-full'}>
+    <div className={'bg-cover px-1 relative rounded-xl h-full'}>
          <Image
             layout={"fill"}
             className={'z-[-1] opacity-50'}
             src={'/assets/images/modal/marketingModal.png'}
             alt={'Marketing'}
         />
-        <h3 className={'text-center my-4'}>Marketing Campaing</h3>
-        <p className='text-center'>
+        <h3 className={'text-center mt-2'}>Marketing Campaing</h3>
+        <p className='text-center py-2 px-2'>
             In today's digital marketplace, small companies have the ability to win mindshare and influence their market through their websites,
             apps and social media. We´ll provide you with the framework and tools, in a long-term strategy that will fuel your growth for 5 to 10 years.
         </p>
@@ -128,7 +128,7 @@ const CAROUSEL_SLIDES = [
             alt={'Social'}
         />
         <h3 className={'text-center my-4'}>Social Media</h3>
-        <p className='text-center'>
+        <p className='text-center py-2 px-2'>
             We help to promote businesses through a variety of
             social media channels and SEO/SEM and Analytics attract target
             markets and segments through websites. We generate valuable content
@@ -158,7 +158,7 @@ const CAROUSEL_SLIDES = [
             alt={'Big Data'}
         />
         <h3 className={'text-center my-4'}>Big Data</h3>
-        <p className='text-center'>
+        <p className='text-center py-2'>
             We help organizations improve performance and OKRs.
             Through the identification of key metrics, and data analysis,
             we obtain insights that allow our clients to make better
@@ -173,8 +173,8 @@ const CAROUSEL_SLIDES = [
             src={'/assets/images/modal/uxuiModal.png'}
             alt={'Media'}
         />
-        <h3 className={'text-center my-4'}>{'Media & User experience'}</h3>
-        <p className='text-center'>
+        <h3 className={'text-center mt-4'}>{'Media & User experience'}</h3>
+        <p className='text-center p-2'>
             We want to ensure that contact with your brand, or with your product, through the interface on any device is clear,
             attractive and suggestive.
             We unite emotional design methodologies, focused on the user,
@@ -202,7 +202,7 @@ const CAROUSEL_SLIDES = [
             layout={"fill"}
             className={'z-[-1] opacity-50'}
             src={'/assets/images/modal/dataModal.png'}
-            alt={'Digital disruptio'}
+            alt={'Digital disruption'}
         />
         <h3 className={'text-center my-4'}>Digital disruption</h3>
         <p className='text-center'>We lead digital projects from strategy to implementation

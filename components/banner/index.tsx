@@ -1,12 +1,21 @@
 import React from 'react';
 import styles from './banner.module.scss';
 import Header from '../header';
+//Framer Motion
+import {motion} from "framer-motion";
+
 
 const Banner = () => {
     return(
         <div className={`flex flex-col sm:justify-start sm:px-12 sm:pt-2 sm:max-h-screen h-screen ${styles.background} overflow-hidden`}>
             <Header />
-            <div className={'flex flex-col items-center flex-grow justify-center w-full md:w-[32rem] m-auto md:px-0 px-2'}>
+            <motion.div
+                className={'flex flex-col items-center flex-grow justify-center w-full md:w-[32rem] m-auto md:px-0 px-2'}
+                initial={{opacity: 0, y: 30}}
+                whileInView={{opacity: 1, y: 0}}
+                viewport={{ once: true }}
+                transition={{duration: 1, delay: 1.7}}
+            >
                 <span className={'flex w-full justify-between'}>
                     <img src={'/assets/images/star_2.png'} className={'object-contain w-10 md:w-16'} />
                     <h3 className={'text-center empty-font text-[1.5rem] md:text-[2rem]'}>OUR CREATIVE</h3>
@@ -22,7 +31,7 @@ const Banner = () => {
                     SOCIAL MEDIA •  BLOCKCHAIN • METAVERSE
                 </h3>   
                 <img src={'/assets/images/star_3_crop.png'} className={'mt-6 w-20 h-8 object-fill'} />
-            </div>
+            </motion.div>
         </div>
     )
 };

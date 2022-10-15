@@ -2,10 +2,18 @@ import React from 'react';
 import styles from './box.module.scss';
 import Router from 'next/router';
 import Image from 'next/image';
+//framer
+import {motion} from "framer-motion";
 
 const Box = ({image, title, text}) => {
     return(
-        <div className={`${styles.box} flex flex-col justify-center relative mt-10 sm:mt-0`}>
+        <motion.div
+            className={`${styles.box} flex flex-col justify-center relative mt-10 sm:mt-0`}
+            initial={{opacity: 0, x: -15}}
+            whileInView={{opacity: 1, x: 0}}
+            viewport={{ once: true }}
+            transition={{duration: 1, delay: 2.5}}
+        >
             <Image 
                 alt={'profile picture'}
                 src={image} 
@@ -23,7 +31,7 @@ const Box = ({image, title, text}) => {
                     Get to know me
                 </button>
             </div>
-        </div>
+        </motion.div>
     )
 };
 

@@ -2,6 +2,8 @@ import React from 'react';
 import Router from 'next/router';
 import Dialog from '@mui/material/Dialog';
 import styles from './modal.module.scss';
+//framer
+import {motion} from "framer-motion";
 
 type modalProps = {
     open: boolean,
@@ -33,11 +35,43 @@ const Modal = (
             }}
         >
             <div className={`${styles.overlay} flex flex-col overflow-hidden`}>
-                <a onClick={() => closeModal()} className={`${styles.link} text-xl relative left-6 top-8 w-fit`}>&#9735; GO BACK</a>
-                <h1 className={`text-center text-white`}>DREAM BIG.</h1>
-                <h1 className={`text-center text-white empty-font`}>WE CREATE IT</h1>
-                {children}
-                <div className='w-full flex justify-end'>
+                <motion.a
+                    onClick={() => closeModal()}
+                    className={`${styles.link} text-xl relative left-6 top-8 w-fit`}
+                    initial={{opacity: 0}}
+                    whileInView={{opacity: 1}}
+                    viewport={{ once: true }}
+                    transition={{duration: 1, delay: 0.5}}
+                >&#9735; GO BACK</motion.a>
+                <motion.h1
+                    className={`text-center text-white`}
+                    initial={{opacity: 0}}
+                    whileInView={{opacity: 1}}
+                    viewport={{ once: true }}
+                    transition={{duration: 1, delay: 0.5}}
+                >DREAM BIG.</motion.h1>
+                <motion.h1
+                    className={`text-center text-white empty-font`}
+                    initial={{opacity: 0}}
+                    whileInView={{opacity: 1}}
+                    viewport={{ once: true }}
+                    transition={{duration: 1, delay: 0.5}}
+                >WE CREATE IT</motion.h1>
+                <motion.div
+                    initial={{opacity: 0}}
+                    whileInView={{opacity: 1}}
+                    viewport={{ once: true }}
+                    transition={{duration: 1, delay: 1}}
+                >
+                    {children}
+                </motion.div>
+                <motion.div
+                    className='w-full flex justify-end'
+                    initial={{opacity: 0}}
+                    whileInView={{opacity: 1}}
+                    viewport={{ once: true }}
+                    transition={{duration: 1, delay: 1.5}}
+                >
                     <button 
                         className={'py-3 px-4 relative right-48 bottom-24'}
                         onClick={() => {
@@ -48,7 +82,7 @@ const Modal = (
                     >
                         Find out more
                     </button>
-                </div>
+                </motion.div>
             </div>
         </Dialog>
     )

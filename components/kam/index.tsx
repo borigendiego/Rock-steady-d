@@ -7,7 +7,7 @@ import {motion} from "framer-motion";
 
 const Kam = () => {
     return(
-        <div className={`flex flex-wrap flex-col md:flex-row sm:justify-around items-center justify-center max-w-[1400px] md:mx-auto`} id={'ABOUT'}>
+        <div className={`flex flex-wrap flex-col md:flex-row sm:justify-around items-center justify-center max-w-[1400px] md:mx-auto py-20`} id={'ABOUT'}>
             <Box
                 image={'/assets/images/kam-home.png'}
                 title={'KAMLESH LAD - FOUNDER'}

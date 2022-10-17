@@ -6,7 +6,7 @@ import {motion} from "framer-motion";
 
 const Start = () => {
     return(
-        <div className={`flex justify-center flex-col mx-auto items-center h-screen`} id={'BLOCKCHAIN'}>
+        <div className={`flex justify-center flex-col mx-auto items-center py-20`} id={'BLOCKCHAIN'}>
             <motion.div
                 initial={{opacity: 0, y: 30}}
                 whileInView={{opacity: 1, y: 0}}

@@ -28,7 +28,7 @@ const OurBelief = () => {
     }
 
     return(
-        <div className={'flex flex-col sm:flex-row mt-10 mb-20'} id={'BELIEFS'}>
+        <div className={'flex flex-col sm:flex-row py-20'} id={'BELIEFS'}>
             <div className={'sm:w-3/6 lg:w-1/2 flex flex-col items-center'}>
                 <div className={'flex flex-wrap my-12 md:my-0'}>
                     <motion.h1
@@ -46,7 +46,7 @@ const OurBelief = () => {
                         transition={{duration: 1, delay: 1}}
                     >BELIEFS</motion.h1>
                 </div>
-                <div className={'relative mt-4 md:hidden'}>
+                <div className={'relative mt-6 md:hidden'}>
                     <div
                         dangerouslySetInnerHTML={{
                             __html: `<video 

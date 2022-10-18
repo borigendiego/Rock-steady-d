@@ -15,7 +15,7 @@ const About = () => {
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 viewport={{ once: true }}
-                transition={{duration: 1, delay: 0.5}}
+                transition={{duration: 0.7, delay: 0.5}}
             >&#9735; GO BACK TO HOME PAGE</motion.a>
             <div className={`md:flex inline md:h-screen h-full`}>
                 <motion.div
@@ -23,7 +23,7 @@ const About = () => {
                     initial={{opacity: 0}}
                     whileInView={{opacity: 1}}
                     viewport={{ once: true }}
-                    transition={{duration: 1, delay: 1.5}}
+                    transition={{duration: 0.7, delay: 1}}
                 >
                     <img alt={'My photo'} src={'/assets/images/digital-dis.png'} className='md:w-2/3 w-full rounded-md'/>
                     <div className={`bg-primary-purple py-6 px-8 w-[90%] md:w-3/5 rounded-md relative bottom-28 md:left-10`}>
@@ -38,7 +38,7 @@ const About = () => {
                     initial={{opacity: 0, x: 15}}
                     whileInView={{opacity: 1, x: 0}}
                     viewport={{ once: true }}
-                    transition={{duration: 1, delay: 2}}
+                    transition={{duration: 0.7, delay: 1.5}}
                 >
                     <h2 className='empty-font text-4xl md:text-left text-center'>Digital Disruption through</h2>
                     <h2 className='empty-font text-4xl md:text-left text-center'>Blockchain Technology</h2>

@@ -17,7 +17,7 @@ const Item = ({ itemData }) => {
             initial={{opacity: 0, y: 15}}
             whileInView={{opacity: 1, y: 0}}
             viewport={{ once: true }}
-            transition={{duration: 1, delay: 2}}
+            transition={{duration: 0.7, delay: 1.5}}
         >
             <div className={`flex items-center justify-center md:h-14 h-20 md:w-14 w-20 md:mr-6 ${styles.imageDiv}`}>
                 <img src={image} alt={`${key}-profile`} className={'mx-auto md:w-auto w-[55%]'}/>

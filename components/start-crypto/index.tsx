@@ -11,7 +11,7 @@ const Start = () => {
                 initial={{opacity: 0, y: 30}}
                 whileInView={{opacity: 1, y: 0}}
                 viewport={{ once: true }}
-                transition={{duration: 1, delay: 0.7}}
+                transition={{duration: 0.7, delay: 0.7}}
             >
                 <h2 className={`${styles.title} text-5xl leading-10 text-center mb-2`}>
                     Digital Disruption through
@@ -26,7 +26,7 @@ const Start = () => {
                     initial={{opacity: 0, y: 30}}
                     whileInView={{opacity: 1, y: 0}}
                     viewport={{ once: true }}
-                    transition={{duration: 1, delay: 1}}
+                    transition={{duration: 0.7, delay: 1}}
                 >
                     {'Between 1990 and 2000 the internet grew 63% per year. Crypto & Blockchain is growing 113% per year and increasing exponentially. It is fastest growing technology in recorded human history.'}
                 </motion.p>
@@ -37,7 +37,7 @@ const Start = () => {
                 initial={{opacity: 0, y: 30}}
                 whileInView={{opacity: 1, y: 0}}
                 viewport={{ once: true }}
-                transition={{duration: 1, delay: 1.7}}
+                transition={{duration: 1, delay: 1.5}}
             >Read more</motion.a>
         </div>
     )

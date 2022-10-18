@@ -36,14 +36,14 @@ const OurBelief = () => {
                         initial={{opacity: 0, y: 30}}
                         whileInView={{opacity: 1, y: 0}}
                         viewport={{ once: true }}
-                        transition={{duration: 1, delay: 0.5}}
+                        transition={{duration: 0.7, delay: 0.5}}
                     >OUR</motion.h1>
                     <motion.h1
                         className={`${styles.text} w-full empty-font sm:text-left text-center`}
                         initial={{opacity: 0, y: 30}}
                         whileInView={{opacity: 1, y: 0}}
                         viewport={{ once: true }}
-                        transition={{duration: 1, delay: 1}}
+                        transition={{duration: 0.7, delay: 1}}
                     >BELIEFS</motion.h1>
                 </div>
                 <div className={'relative mt-6 md:hidden'}>
@@ -87,7 +87,7 @@ const OurBelief = () => {
                 initial={{opacity: 0,}}
                 whileInView={{opacity: 1,}}
                 viewport={{ once: true }}
-                transition={{duration: 1, delay: 2}}
+                transition={{duration: 0.7, delay: 1.5}}
             >
                 <div
                     dangerouslySetInnerHTML={{

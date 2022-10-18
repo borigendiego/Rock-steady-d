@@ -34,7 +34,7 @@ const How = () => {
                 initial={{opacity: 0, y: 30}}
                 whileInView={{opacity: 1, y: 0}}
                 viewport={{ once: true }}
-                transition={{duration: 1, delay: 1}}
+                transition={{duration: 0.7, delay: 1}}
             >
                 <span className={'z-40 cursor-pointer bottom-3 h-auto right-2 absolute'} onClick={() => start(isMusicPlaying)}>
                     {
@@ -76,7 +76,7 @@ const How = () => {
                 initial={{opacity: 0, x: 30}}
                 whileInView={{opacity: 1, x: 0}}
                 viewport={{ once: true }}
-                transition={{duration: 1, delay: 2}}
+                transition={{duration: 0.7, delay: 1.5}}
             >
                 <h3 className={'sm:mb-4 sm:mt-0 mt-24 text-center hidden md:block'}>Solutions which make you want to dance</h3>
                 <div className={'w-full pt-12 md:pt-6'}>

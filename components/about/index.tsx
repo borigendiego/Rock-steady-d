@@ -15,14 +15,14 @@ const About = () => {
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 viewport={{ once: true }}
-                transition={{duration: 1, delay: 0.5}}
+                transition={{duration: 0.7, delay: 0.5}}
             >&#9735; GO BACK TO HOME PAGE</motion.a>
             <motion.div
                 className={`sm:flex inline sm:h-screen h-full`}
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 viewport={{ once: true }}
-                transition={{duration: 1, delay: 1.5}}
+                transition={{duration: 0.7, delay: 1}}
             >
                 <div className='sm:w-1/2 flex flex-col items-center relative justify-center pt-8 px-8 sm:pt-32'>
                     <img alt='My photo' src='/assets/images/KAM_PHOTO2.png' className='sm:w-2/3 w-full'/>
@@ -45,7 +45,7 @@ const About = () => {
                     initial={{opacity: 0, x: 15}}
                     whileInView={{opacity: 1, x: 0}}
                     viewport={{ once: true }}
-                    transition={{duration: 1, delay: 2}}
+                    transition={{duration: 0.7, delay: 1.5}}
                 >
                     <h2 className='empty-font text-4xl'>ABOUT ME</h2>
                     <p className='pt-6 opacity-50 w-5/6 text-center sm:text-left'>{ABOUT_TEXT}</p>

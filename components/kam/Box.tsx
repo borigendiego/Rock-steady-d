@@ -12,7 +12,7 @@ const Box = ({image, title, text}) => {
             initial={{opacity: 0, x: -15}}
             whileInView={{opacity: 1, x: 0}}
             viewport={{ once: true }}
-            transition={{duration: 1, delay: 2.5}}
+            transition={{duration: 1, delay: 1.5}}
         >
             <Image 
                 alt={'profile picture'}

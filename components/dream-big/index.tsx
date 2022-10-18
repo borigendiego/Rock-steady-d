@@ -18,14 +18,14 @@ const DreamBig = ({}) => {
                 initial={{opacity: 0, y: 30}}
                 whileInView={{opacity: 1, y: 0}}
                 viewport={{ once: true }}
-                transition={{duration: 1, delay: 0.5}}
+                transition={{duration: 0.7, delay: 0.5}}
             >DREAM BIG.</motion.h1>
             <motion.h1
                 className={`text-center text-white empty-font`}
                 initial={{opacity: 0, y: 30}}
                 whileInView={{opacity: 1, y: 0}}
                 viewport={{ once: true }}
-                transition={{duration: 1, delay: 1}}
+                transition={{duration: 0.7, delay: 1}}
             >WE CREATE IT</motion.h1>
             <MobileCarousel slides={CAROUSEL_SLIDES} /> 
             <div className={'flex mt-5 sm:mt-20 justify-center'}>
@@ -199,7 +199,7 @@ const DreamBig = ({}) => {
                     initial={{opacity: 0, y: 30}}
                     whileInView={{opacity: 1, y: 0}}
                     viewport={{ once: true }}
-                    transition={{duration: 1, delay: 2.5}}
+                    transition={{duration: 0.7, delay: 2}}
                 >
                     <h3 className={`py-4 font-bold text-left ${styles.text}`}>
                         Innovative Digital Solutions to Rock your World!

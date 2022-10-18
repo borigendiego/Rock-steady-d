@@ -14,7 +14,7 @@ const Banner = () => {
                 initial={{opacity: 0, y: 30}}
                 whileInView={{opacity: 1, y: 0}}
                 viewport={{ once: true }}
-                transition={{duration: 1, delay: 1.7}}
+                transition={{duration: 0.7, delay: 1.7}}
             >
                 <span className={'flex w-full justify-between'}>
                     <img src={'/assets/images/star_2.png'} className={'object-contain w-10 md:w-16'} />

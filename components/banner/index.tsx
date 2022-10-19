@@ -28,7 +28,7 @@ const Banner = () => {
                     DIGITAL CONSULTING •  MARKETING • BIG DATA
                 </h3>
                 <h3 className={'text-center text-[0.65rem] md:text-[1rem] bg-[#fff] text-black rounded-xl py-1 px-6'}>
-                    SOCIAL MEDIA •  BLOCKCHAIN • METAVERSE
+                    SOCIAL MEDIA •  BLOCKCHAIN
                 </h3>   
                 <img src={'/assets/images/star_3_crop.png'} className={'mt-6 w-20 h-8 object-fill'} />
             </motion.div>

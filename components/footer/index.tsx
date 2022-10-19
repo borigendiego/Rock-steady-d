@@ -10,7 +10,7 @@ const Footer = () => {
                 initial={{opacity: 0, x: 30}}
                 whileInView={{opacity: 1, x: 0}}
                 viewport={{ once: true }}
-                transition={{duration: 0.7, delay: 0.7}}
+                transition={{duration: 0.7, delay: 0.5}}
             >
                 <div className={'sm:w-1/5 w-1/2 lg:w-1/3 lg:px-12 flex flex-col items-center sm:items-start'}>
                     <img alt={'contact logo'} src={'/assets/images/logo_white.svg'} className='sm:w-9/12 w-full'/>
@@ -28,7 +28,7 @@ const Footer = () => {
                 initial={{opacity: 0, }}
                 whileInView={{opacity: 1}}
                 viewport={{ once: true }}
-                transition={{duration: 1, delay: 1}}
+                transition={{duration: 1, delay: .7}}
             >
                 Leaders in digital transformation from strategy to implementation through transformation of people, process and technology.
             </motion.p>

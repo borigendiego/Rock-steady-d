@@ -12,6 +12,7 @@ const Ready = dynamic(() => import('../components/ready'));
 //import Contact from '../components/contact';
 const Contact = dynamic(() => import('../components/contact'));
 import How from '../components/how';
+import Talks from '../components/talks';
 //const How = dynamic(() => import('../components/how'));
 //import Footer from '../components/footer';
 const Footer = dynamic(() => import('../components/footer'));
@@ -47,6 +48,7 @@ export default function Home() {
           <OurBelief />
           <Start />
           <Kam />
+          <Talks />
           <Ready />
           <Contact />
         </div>

@@ -13,6 +13,7 @@ const MyCustomForm = ({
     onSuccessMessage,
     onErrorMessage,
     customClass,
+    customButtonClass,
     emailServiceURL,
     submitButtonLabel
 }) => {
@@ -84,9 +85,8 @@ const MyCustomForm = ({
 
     return (
         <form 
-            className={`form ${customClass} mx-auto mb-16`}
+            className={`${customClass} mx-auto`}
             onSubmit={(event) => handleSubmit(event)}
-            style={{marginTop: '-30px'}}
         >
             {
                 fields.map((field) => {
@@ -155,7 +155,7 @@ const MyCustomForm = ({
                 <input
                     type={'submit'}
                     value={submitButtonLabel ? submitButtonLabel : 'SEND'}
-                    className={'contact-input-button button py-4 px-20 text-white cursor-pointer relative bottom-6'}
+                    className={`${customButtonClass} button py-4 px-20 text-white cursor-pointer`}
                 />
             </section>
         </form>

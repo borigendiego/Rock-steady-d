@@ -16,7 +16,7 @@ const About = () => {
                 whileInView={{opacity: 1}}
                 viewport={{ once: true }}
                 transition={{duration: 0.7, delay: 0.5}}
-            >&#9735; GO BACK TO HOME PAGE</motion.a>
+            >&#8617; GO BACK TO HOME PAGE</motion.a>
             <motion.div
                 className={`sm:flex inline sm:h-screen h-full`}
                 initial={{opacity: 0}}

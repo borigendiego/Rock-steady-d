@@ -105,7 +105,7 @@ button, .button {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   font-family: $poppins;
-  transition: transform 0.4s, background 1s;
+  transition: all 0.4s, background 1s;
   color: $white;
 
   &:hover {
@@ -113,6 +113,19 @@ button, .button {
     background: $hover-purple;
   }
 }
+
+.white-button {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 16px 16px rgba(0, 0, 0, 0.25);
+}
+
+//Talk modal styles
+.talk-modal {
+  background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+//Carousel styles
 
 #carousel-arrow {
   box-shadow: none; 
@@ -129,6 +142,21 @@ button, .button {
   min-height: 22rem;
 }
 
+//Talk form styles
+
+.talk-form {
+  width: 400px;
+  margin: 5% 0;
+}
+
+.talk-back {
+  transition: transform 0.3s ease;
+}
+
+.talk-back:hover {
+  transform: scale(1.1);
+}
+
 //Form Styles. Remove after refactor
 .form {
   display: flex;
@@ -137,11 +165,17 @@ button, .button {
   width: 55%;
   position: relative;
   bottom: 22vh;
+  margin-top: -30px;
 }
 
 .item { width: 100%; }
 
 .item.half { width: 47%; }
+
+.contact-button {
+  position: relative;
+  bottom: 24px;
+}
 
 .input {
   border: 3px solid #ccc;
@@ -241,5 +275,11 @@ textarea {
   .form {
     position: initial;
     width: 70%;
+  }
+
+  .talk-form {
+    width: auto;
+    padding: 0 5px;
+    margin: 10px 0;
   }
 }

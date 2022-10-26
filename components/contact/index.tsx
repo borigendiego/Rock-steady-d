@@ -57,6 +57,8 @@ const Contact = () => {
                 onErrorMessage={'Please try again in some minutes'}
                 submitButtonLabel={'Send'}
                 emailServiceURL={'https://thehippoapi.netlify.app/.netlify/functions/api/rock-steady-mail'}
+                customClass={'form'}
+                customButtonClass={'contact-button'}
             />
       </motion.div>
   )

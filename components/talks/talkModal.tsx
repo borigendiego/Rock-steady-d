@@ -4,7 +4,7 @@ import Dialog from '@mui/material/Dialog';
 import Layout from './layout';
 
 //framer
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 type modalProps = {
     open: boolean,
@@ -38,17 +38,27 @@ const TalkModal = (
                 className='talk-modal md:px-6 py-2'
                 >
                     <div className='flex justify-end'>
-                        <h3 
+                        <motion.h3 
                         className='talk-back text-5xl cursor-pointer md:w-[5%] p-2 md:p-0'
                         onClick={() => closeModal()}
-                        >&#8617;</h3>
+                        initial={{opacity: 0, y: -10}}
+                        whileInView={{opacity: 1, y: 0}}
+                        viewport={{ once: true }}
+                        transition={{duration: .5}}
+                        >&#8617;</motion.h3>
                     </div>
-                    <div className='md:flex justify-around p-4'>
+                    <motion.div 
+                    className='md:flex justify-around p-4'
+                    initial={{opacity: 0, x: -10}}
+                    whileInView={{opacity: 1, x: 0}}
+                    viewport={{ once: true }}
+                    transition={{duration: 1, delay: 1}}
+                    >
                         <img src='/assets/images/talkCalendar.svg' className='mx-auto my-2 md:my-0 md:mx-0'/> 
                         <h1 
                         className='empty-font md:text-[42px]'
                         >WEDNESDAY 9:00AM & 7:00PM BST LONDON</h1>
-                    </div>
+                    </motion.div>
                     <Layout />
                 </div>
             </div>

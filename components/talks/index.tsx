@@ -10,9 +10,15 @@ const Talks = () => {
     const [selectedModalDataId, setSelectedModalDataId] = useState<number>(0);
 
     return(
-        <div className='py-20'>
-            <div className='w-1/3'>
-               <div>
+        <div className='flex flex-col md:flex-row py-20 justify-around'>
+            <motion.div 
+            className='my-8 md:my-0'
+            initial={{opacity: 0, y: 30}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{ once: true }}
+            transition={{duration: 1, delay: 1}}
+            >
+               <div className='px-4 md:px-0'>
                     <h3 className="text-center empty-font">FREE TRAINING TALKS</h3>
                     <h1>BOOST</h1>
                     <span className={'flex w-full justify-between'}>
@@ -30,11 +36,18 @@ const Talks = () => {
                         Register
                     </button>
                 </div>
-
-            </div>
-            <div className="w-2/3">
-                Video
-            </div>
+            </motion.div>
+            <motion.div 
+            className='my-8 md:my-0'
+            initial={{opacity: 0, x: -15}}
+            whileInView={{opacity: 1, x: 0}}
+            viewport={{ once: true }}
+            transition={{duration: 1, delay: 1.7}}
+            >
+                <video width="620" height="440" controls>
+                    <source src='/assets/videos/talksVideo.mp4' type="video/mp4"></source>
+                </video>
+            </motion.div>
 
             <TalkModal open={openModal} closeModal={() => setOpenModal(false)}>
 

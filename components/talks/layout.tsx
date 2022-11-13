@@ -18,7 +18,7 @@ const Layout = () => {
                 <div className="flex flex-col text-center">
                     <h3 className="empty-font">HOW CAN I</h3>
                     <h1>ROCK</h1> 
-                    <h3 className="empty-font">MY INCOMES?</h3>
+                    <h3 className="empty-font">MY GROWTH?</h3>
                 </div>
                 <Form 
                     fields={[
@@ -40,7 +40,7 @@ const Layout = () => {
                     onSuccessMessage={'Your message has been successfully sent! We will contact you very soon'}
                     onErrorMessage={'Please try again in some minutes'}
                     submitButtonLabel={'Send'}
-                    emailServiceURL={'https://thehippoapi.netlify.app/.netlify/functions/api/rock-steady-mail'}
+                    emailServiceURL={'https://thehippoapi.netlify.app/.netlify/functions/api/rock-steady-subcription'}
                     customClass={'talk-form'}
                     customButtonClass={'white-button'}
                 />

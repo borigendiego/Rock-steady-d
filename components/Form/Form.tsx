@@ -57,6 +57,7 @@ const MyCustomForm = ({
                 .then(function (response) {
                     setValues(initialValues);
                     setMessageSent('succeed');
+                    
                 })
                 .catch(function (error) {
                     console.log(">>Error", error);

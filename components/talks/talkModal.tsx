@@ -54,10 +54,14 @@ const TalkModal = (
                     viewport={{ once: true }}
                     transition={{duration: 1, delay: 1}}
                     >
-                        <img src='/assets/images/talkCalendar.svg' className='mx-auto my-2 md:my-0 md:mx-0'/> 
-                        <h1 
-                        className='empty-font md:text-[42px]'
-                        >WEDNESDAY 9:00AM & 7:00PM BST LONDON</h1>
+                        <div className={'flex md:w-2/3 flex-wrap md:flex-nowrap flex-col md:flex-row w-full'}>
+                            <img src='/assets/images/talkCalendar.svg' className={'md:mr-2 object-contain'}/> 
+                            <h1 
+                                className={'empty-font md:text-[42px]'}
+                            >
+                                {`WEDNESDAY 9:00AM & 7:00PM BST LONDON`}
+                            </h1>
+                        </div>
                     </motion.div>
                     <Layout />
                 </div>

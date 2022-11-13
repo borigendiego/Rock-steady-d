@@ -26,7 +26,7 @@ const Talks = () => {
                         <h1 className={'text-center'}>YOUR</h1>
                         <img src={'/assets/images/star_3_crop.png'} className={'object-contain w-10 md:w-16 rotate-180'} />
                     </span>
-                    <h1>INCOMES</h1>
+                    <h1>GROWTH</h1>
                 </div>
                 <div className="w-full flex justify-center mt-4">
                     <button 

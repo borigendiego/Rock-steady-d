@@ -111,6 +111,15 @@ button, .button {
   transition: all 0.4s, background 1s;
   color: $white;
 
+  &:disabled {
+    opacity: 0.5;
+    &:hover {
+      transform: scale(1);
+      background: $main-purple;
+      cursor: not-allowed;
+    }
+  }
+
   &:hover {
     transform: scale(1.1);
     background: $hover-purple;

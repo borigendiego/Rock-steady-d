@@ -8,18 +8,18 @@ import { motion } from "framer-motion";
 
 type modalProps = {
     open: boolean,
-    children: any,
     closeModal: any,
 }
 
 const TalkModal = (
     {
         open,
-        children,
         closeModal,
     }:modalProps) => {
 
-    const handleClose = () => {};
+    const handleClose = () => {
+        closeModal();
+    };
    
     return(
         <Dialog
@@ -35,7 +35,7 @@ const TalkModal = (
         >
             <div className={`flex flex-col`}>
                 <div
-                className='talk-modal md:px-6 py-2'
+                    className='talk-modal md:px-6 py-2'
                 >
                     <div className='flex justify-end'>
                         <motion.h3 
@@ -63,7 +63,7 @@ const TalkModal = (
                             </h1>
                         </div>
                     </motion.div>
-                    <Layout />
+                    <Layout closeModal={closeModal} />
                 </div>
             </div>
         </Dialog>

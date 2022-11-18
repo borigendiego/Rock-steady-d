@@ -7,6 +7,16 @@ import useContactForm from './useContactForm';
 import MyInput from './CustomInput';
 import styles from './form.module.scss';
 
+type MyCustomFormPropsType = {
+    fields: any,
+    onSuccessMessage: any,
+    onErrorMessage: any,
+    customClass: any,
+    customButtonClass: any,
+    emailServiceURL: any,
+    submitButtonLabel: any,
+    afterSubmitAction?: any,
+}
 
 const MyCustomForm = ({
     fields,
@@ -15,9 +25,11 @@ const MyCustomForm = ({
     customClass,
     customButtonClass,
     emailServiceURL,
-    submitButtonLabel
-}) => {
+    submitButtonLabel,
+    afterSubmitAction
+}:MyCustomFormPropsType) => {
     const [messageSent, setMessageSent] = useState('');
+    const [isLoading, setIsloading] = useState<boolean>(false);
     const [messageDescription, setMessageDescription] = useState('');
     const initialValues = {
         name: '',
@@ -36,6 +48,7 @@ const MyCustomForm = ({
         initialValues,
         fields,
         onSubmit: () => {
+            setIsloading(true);
             const section = window.localStorage.getItem('section') || 'Contact form'
 
             axios.post(
@@ -55,11 +68,15 @@ const MyCustomForm = ({
                 }
             )
                 .then(function (response) {
+                    setIsloading(false);
                     setValues(initialValues);
                     setMessageSent('succeed');
-                    
+                    if(afterSubmitAction) {
+                        afterSubmitAction();
+                    }
                 })
                 .catch(function (error) {
+                    setIsloading(false);
                     console.log(">>Error", error);
                     setMessageDescription(error.toString());
                     setMessageSent('error');
@@ -157,6 +174,7 @@ const MyCustomForm = ({
                     type={'submit'}
                     value={submitButtonLabel ? submitButtonLabel : 'SEND'}
                     className={`${customButtonClass} button py-4 px-20 text-white cursor-pointer`}
+                    disabled={isLoading}
                 />
             </section>
         </form>

@@ -5,9 +5,7 @@ import TalkModal from "./talkModal";
 
 
 const Talks = () => {
-
     const [openModal, setOpenModal] = useState<boolean>(false);
-    const [selectedModalDataId, setSelectedModalDataId] = useState<number>(0);
 
     return(
         <div className='flex flex-col md:flex-row py-20 justify-around'>
@@ -42,16 +40,14 @@ const Talks = () => {
             initial={{opacity: 0, x: -15}}
             whileInView={{opacity: 1, x: 0}}
             viewport={{ once: true }}
-            transition={{duration: 1, delay: 1.7}}
+            transition={{duration: 1, delay: 1}}
             >
                 <video width="620" height="440" controls>
                     <source src='/assets/videos/talksVideo.mp4' type="video/mp4"></source>
                 </video>
             </motion.div>
 
-            <TalkModal open={openModal} closeModal={() => setOpenModal(false)}>
-
-            </TalkModal>
+            <TalkModal open={openModal} closeModal={() => setOpenModal(false)} />
         </div>
     )
 }

@@ -21,7 +21,7 @@ const Layout = ({ closeModal }:LayoutPropsType) => {
             transition={{duration: 1, delay: 0.8}}
             >
                 {
-                    !emailSent ? <div className={'border border-white rounded-lg p-4'}>
+                    emailSent ? <div className={'border border-white rounded-lg p-4'}>
                        <h1 className={"text-center empty-font text-[70px]"}>YOU</h1>
                        <h1 className={"text-[70px] text-center"}>ROCK</h1>
                        <h3 className={"empty-font text-center"}>YOUR MESSAGE HAS BEEN</h3>

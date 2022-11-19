@@ -30,10 +30,13 @@ const Layout = ({ closeModal }:LayoutPropsType) => {
                     </div>
                     : <div>
                     <div className="flex flex-col text-center">
-                        <h4 className={'mb-3'}>Register and receive the details to join the training</h4>
+                        
                         <h3 className="empty-font">HOW CAN I</h3>
                         <h1>ROCK</h1> 
                         <h3 className="empty-font">MY GROWTH?</h3>
+                        <p className={'md:text-[20px] mt-4'}>
+                            Register and receive the details to join the introduction presentation
+                        </p>
                     </div>
                     <Form 
                         fields={[

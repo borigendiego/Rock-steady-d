@@ -26,7 +26,7 @@ const Talks = () => {
                     </span>
                     <h1>GROWTH</h1>
                 </div>
-                <div className="w-full flex justify-center mt-4">
+                <div className="w-full justify-center mt-4 md:flex hidden">
                     <button 
                     className="py-3 px-4"
                     onClick={() => {setOpenModal(true)}}
@@ -45,6 +45,14 @@ const Talks = () => {
                 <video width="620" height="440" controls>
                     <source src='/assets/videos/talksVideo.mp4' type="video/mp4"></source>
                 </video>
+                <div className="w-full justify-center mt-4 flex md:hidden">
+                    <button 
+                    className="py-3 px-4"
+                    onClick={() => {setOpenModal(true)}}
+                    >
+                        Register
+                    </button>
+                </div>
             </motion.div>
 
             <TalkModal open={openModal} closeModal={() => setOpenModal(false)} />

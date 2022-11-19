@@ -47,22 +47,6 @@ const TalkModal = (
                         transition={{duration: .5}}
                         >&#8617;</motion.h3>
                     </div>
-                    <motion.div 
-                    className='md:flex justify-around p-4'
-                    initial={{opacity: 0, x: -10}}
-                    whileInView={{opacity: 1, x: 0}}
-                    viewport={{ once: true }}
-                    transition={{duration: 1, delay: 1}}
-                    >
-                        <div className={'flex md:w-2/3 flex-wrap md:flex-nowrap flex-col md:flex-row w-full'}>
-                            <img src='/assets/images/talkCalendar.svg' className={'md:mr-2 object-contain'}/> 
-                            <h1 
-                                className={'empty-font md:text-[42px]'}
-                            >
-                                {`WEDNESDAY 9:00AM & 7:00PM BST LONDON`}
-                            </h1>
-                        </div>
-                    </motion.div>
                     <Layout closeModal={closeModal} />
                 </div>
             </div>

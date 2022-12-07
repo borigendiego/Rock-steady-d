@@ -8,7 +8,7 @@ import {motion} from "framer-motion";
 
 const About = () => {
     return(
-        <div className={'page-bg flex md:flex-row flex-col md:block'}>
+        <div className={'flex md:flex-row flex-col md:block'}>
             <motion.a
                 href='/#BLOCKCHAIN'
                 className='md:float-right md:relative md:right-16 md:top-4 md:text-lg md:p-0 pt-4 pr-4 md:block flex justify-center md:text-md text-xl'

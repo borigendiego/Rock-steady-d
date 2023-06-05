@@ -2,6 +2,8 @@ import React from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import DigitalDisruptionComponent from '../components/digital-disruption';
+import Talks from '../components/talks';
+
 
 const DigitalDisruption: NextPage = () => {
     return(
@@ -10,8 +12,9 @@ const DigitalDisruption: NextPage = () => {
                 <meta></meta>
                 <title>ROCK STEADY | Digital disruption</title>
             </Head>
-            <main>
-               <DigitalDisruptionComponent /> 
+            <main className='page-bg'>
+                <DigitalDisruptionComponent />
+                <Talks />
             </main>
             <footer>
 

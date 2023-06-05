@@ -8,7 +8,7 @@ const Talks = () => {
     const [openModal, setOpenModal] = useState<boolean>(false);
 
     return(
-        <div className='flex flex-col md:flex-row py-20 justify-around'>
+        <div className='flex flex-col md:flex-row py-20 justify-around '>
             <motion.div 
             className='my-8 md:my-0'
             initial={{opacity: 0, y: 30}}

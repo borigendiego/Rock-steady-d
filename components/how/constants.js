@@ -17,7 +17,7 @@ const CAROUSEL_DATA = [
         id: 2,
         title: 'DEVELOPMENT',
         icon: '/assets/images/how-we-do-it/develop.svg',
-        description: "We love to write code!. We specialize in the development of customized websites, and we put them together 100% according to the client's needs.",
+        description: "We specialize in the development of customized websites, and we put them together tailored to the client's needs.",
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ const CAROUSEL_DATA = [
     },
     {
         id: 4,
-        title: 'CONTINUOUS IMPROVEMENT',
+        title: 'GROW',
         icon: '/assets/images/how-we-do-it/mantainance.svg',
         description: "We follow incremental design and development. We work this way for a different reason – to manage technical risks by breaking big changes down and making small bets instead of big ones.",
     }
@@ -73,7 +73,7 @@ const CAROUSEL_SLIDES = [
     </div>
     ,
     <div>
-        <h3 className={'text-center my-4'}>CONTINUOUS IMPROVEMENT</h3>
+        <h3 className={'text-center my-4'}>GROW</h3>
         <img src={'/assets/images/how-we-do-it/mantainance.svg'} className={'mx-auto w-16 pb-3'}/>
         <p className='text-center'>
             We follow incremental design and development. We work this way for a different reason – to manage technical risks by

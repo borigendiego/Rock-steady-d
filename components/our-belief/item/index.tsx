@@ -13,7 +13,7 @@ const Item = ({ itemData }) => {
     
     return(
         <motion.div
-            className={'flex flex-col sm:flex-row my-6 items-center sm:w-4/5'}
+            className={'flex flex-col sm:flex-row my-5 items-center sm:w-[92%]'}
             initial={{opacity: 0, y: 15}}
             whileInView={{opacity: 1, y: 0}}
             viewport={{ once: true }}

@@ -136,20 +136,6 @@ const CAROUSEL_SLIDES = [
         </p>
     </div>
     ,
-   <div className={'bg-cover px-1 relative rounded-md h-full'}>
-       <Image
-            layout={"fill"}
-            className={'z-[-1] opacity-50'}
-            src={'/assets/images/modal/metaverse-2.png'}
-            alt={'Blockchain'}
-        />
-        <h3 className={'text-center my-4'}>Blockchain</h3>
-        <p className='text-center'>
-            We Provide customers with innovative solutions to
-            their business challenges and goals through Blockchain technology.
-        </p>
-    </div>
-    ,
     <div className={'bg-cover px-1 relative rounded-md h-full'}>
          <Image
             layout={"fill"}
@@ -157,7 +143,7 @@ const CAROUSEL_SLIDES = [
             src={'/assets/images/modal/dataModal.png'}
             alt={'Big Data'}
         />
-        <h3 className={'text-center my-4'}>Big Data</h3>
+        <h3 className={'text-center my-4'}>Data Analytics</h3>
         <p className='text-center py-2'>
             We help organizations improve performance and OKRs.
             Through the identification of key metrics, and data analysis,
@@ -204,7 +190,7 @@ const CAROUSEL_SLIDES = [
             src={'/assets/images/modal/dataModal.png'}
             alt={'Digital disruption'}
         />
-        <h3 className={'text-center my-4'}>Digital disruption</h3>
+        <h3 className={'text-center my-4'}>Digital transformation</h3>
         <p className='text-center'>We lead digital projects from strategy to implementation
             through the transformation of people, processes and technology
         </p>

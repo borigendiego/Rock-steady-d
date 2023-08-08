@@ -13,3 +13,24 @@
 .background {
   background: linear-gradient(113.49deg, #A60321 -30.3%, #1F0B25 58.12%);
 }
+
+.bg {
+  background-color: rgba(136, 136, 136, 0.6);
+  width: 90%;
+  position: absolute;
+  padding: 1em;
+  z-index: 2;
+  top: 30%;
+  left: 2%;
+}
+
+@media (max-width: 480px) {
+  .bg {
+    position: static;
+    margin: 3em auto 0 auto;
+
+    h1 {
+      padding: 0 2px;
+    }
+  }
+}

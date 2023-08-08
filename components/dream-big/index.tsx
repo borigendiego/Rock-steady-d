@@ -19,14 +19,14 @@ const DreamBig = ({}) => {
                 whileInView={{opacity: 1, y: 0}}
                 viewport={{ once: true }}
                 transition={{duration: 0.7, delay: 0.5}}
-            >DREAM BIG.</motion.h1>
+            >DREAM BIG</motion.h1>
             <motion.h1
                 className={`text-center text-white empty-font`}
                 initial={{opacity: 0, y: 30}}
                 whileInView={{opacity: 1, y: 0}}
                 viewport={{ once: true }}
                 transition={{duration: 0.7, delay: 1}}
-            >WE CREATE IT</motion.h1>
+            >WE WILL BUILD IT</motion.h1>
             <MobileCarousel slides={CAROUSEL_SLIDES} /> 
             <div className={'flex mt-5 sm:mt-20 justify-center'}>
                 <div className={'w-1/2 hidden md:contents'}>
@@ -35,7 +35,7 @@ const DreamBig = ({}) => {
                         initial={{opacity: 0, x: -30}}
                         whileInView={{opacity: 1, x: 0}}
                         viewport={{ once: true }}
-                        transition={{duration: 1, delay: 1.5}}
+                        transition={{duration: 1, delay: 1}}
                     >
                         <div 
                             className={`${styles.card} row-span-1 col-start-1 rounded-md`} 
@@ -82,28 +82,6 @@ const DreamBig = ({}) => {
                             </div>
                         </div>
                         <div 
-                            className={`${styles.card} row-span-1 col-start-1 rounded-md`}
-                            onClick={() => {
-                                setSelectedModalDataId(2)
-                                setOpenModal(true)}
-                            }
-                        >
-                            <span className={'relative'}>
-                                <Image
-                                    src={'/assets/images/dream-big/metaverse.png'}
-                                    alt={'Metaverse service'}
-                                    className={' rounded-md'}
-                                    width={190}
-                                    height={130}
-                                />
-                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#82828291]'}>BLOCKCHAIN</h4>
-                            </span>
-                            
-                            <div className={`${styles.card_text}`}>
-                                <p className='text-xs'>Click for + info</p>
-                            </div>
-                        </div>
-                        <div 
                             className={`${styles.card} row-span-1 col-start-2 rounded-md`}
                             onClick={() => {
                                 setSelectedModalDataId(3)
@@ -118,7 +96,7 @@ const DreamBig = ({}) => {
                                     width={190}
                                     height={100}
                                 />
-                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#82828291]'}>BIG DATA</h4>
+                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#82828291]'}>DATA ANALYTICS</h4>
                             </span>
                             
                             <div className={`${styles.card_text}`}>
@@ -185,7 +163,7 @@ const DreamBig = ({}) => {
                                     width={190}
                                     height={350}
                                 />
-                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#00000085]'}>DIGITAL DISRUPTION</h4>
+                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#00000085]'}>DIGITAL TRANSFORMATION</h4>
                             </span>
                             
                             <div className={`${styles.card_text}`}>
@@ -205,10 +183,10 @@ const DreamBig = ({}) => {
                         Innovative Digital Solutions to Rock your World!
                     </h3>
                     <p className={`py-4 ${styles.text} text-gray-400`}>
-                        We help SMEs and Start-ups with their digital transformation and implement their requirements. We can enhance your company's existing digital capabilities through website and social media development, e-commerce implementations, and digital transformations.
+                        We help organisations with their digital transformation and implement their requirements. We can enhance your company's existing digital capabilities through website and social media development, e-commerce implementations, and digital transformations.
                     </p>
                     <p className={`py-4 font-bold ${styles.text}`}>
-                        It's simple, we unite people, processes, tools and data in a creative way that will help your business grow.
+                        We unite people, processes, tools and data in a creative way that will help your business grow.
                     </p>
                 </motion.div>
             </div>

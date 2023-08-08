@@ -25,8 +25,7 @@ const Kam = () => {
                     <h1 className={`text-center text-white empty-font clamp-h1`}>FROM THE REST</h1>
                 </div>
                 <span className={'mt-10 flex flex-col text-center'}>
-                    <h3>Create Solutions to Transform L.I.F.E.</h3>
-                    <h3>Living In Freedom Everyday</h3>
+                    <h3>Create Solutions to Transform your organisation</h3>
                 </span>
              </motion.div>
         </div>

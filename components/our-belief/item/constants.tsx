@@ -8,7 +8,7 @@ const ITEM_DATA = [
     {
         image: '/assets/images/icon.png',
         title: 'Collaboration',
-        text: 'Create a win:win collaborative environment between people and organisations.' +
+        text: 'Create a win:win collaborative environment between people and organisations. ' +
             'Promote people interactions through Face-to-face talking rather than technology' +
             ' Quality time with family, friends and colleagues.'
     },
@@ -28,7 +28,7 @@ const ITEM_DATA = [
         text: 'Drive towards an improved environment - culturally, economically and ecologically' 
     },
     {
-        image: '/assets/images/icon2.png',
+        image: '/assets/images/how-we-do-it/innovation.svg',
         title: 'Innovation',
         text: 'Adaptable in using emerging technology to enhance well-being for all using the above values and priorities' 
     },

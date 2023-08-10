@@ -20,7 +20,7 @@ const Item = ({ itemData }) => {
             transition={{duration: 0.7, delay: 1.5}}
         >
             <div className={`flex items-center justify-center md:h-14 h-20 md:w-14 w-20 md:mr-6 ${styles.imageDiv}`}>
-                <img src={image} alt={`${key}-profile`} className={'mx-auto md:w-auto w-[55%]'}/>
+                <img src={image} alt={`${key}-profile`} className={'mx-auto md:w-auto w-[55%] max-w-[35px]'}/>
             </div>
             <div className={'w-9/12 sm:pt-0 pt-4'}>
                 <h2 className={`${styles.title} pb-1 sm:text-left text-center`}>{title}</h2>

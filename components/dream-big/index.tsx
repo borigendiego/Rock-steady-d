@@ -19,7 +19,7 @@ const DreamBig = ({}) => {
                 whileInView={{opacity: 1, y: 0}}
                 viewport={{ once: true }}
                 transition={{duration: 0.7, delay: 0.5}}
-            >DREAM BIG</motion.h1>
+            >DREAM BIG.</motion.h1>
             <motion.h1
                 className={`text-center text-white empty-font`}
                 initial={{opacity: 0, y: 30}}

@@ -52,7 +52,9 @@ const DreamBig = ({}) => {
                                     width={190}
                                     height={120}
                                 />
-                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#82828291]'}>MARKETING</h4>
+                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#82828291]'}>
+                                    DIGITAL MARKETING
+                                </h4>
                             </span>
                             <div className={`${styles.card_text}`}>
                                 <p className='text-xs'>Click for + info</p>
@@ -141,7 +143,9 @@ const DreamBig = ({}) => {
                                     width={190}
                                     height={150}
                                 />
-                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#82828291]'}>PROGRAMMING</h4>
+                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#82828291]'}>
+                                    E-COMMERCE
+                                </h4>
                             </span>
                             
                             <div className={`${styles.card_text}`}>

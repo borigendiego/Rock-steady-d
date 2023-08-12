@@ -1,22 +1,17 @@
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
-import Image from 'next/image';
 //Components
 import DreamBig from '../components/dream-big';
 import Banner from '../components/banner';
 import OurBelief from '../components/our-belief';
 const Start = dynamic(() => import('../components/start-crypto'));
-//import Start from '../components/start-crypto';
-//import Ready from '../components/ready';
 const Ready = dynamic(() => import('../components/ready'));
-//import Contact from '../components/contact';
 const Contact = dynamic(() => import('../components/contact'));
 import How from '../components/how';
-//const How = dynamic(() => import('../components/how'));
-//import Footer from '../components/footer';
 const Footer = dynamic(() => import('../components/footer'));
-//import Kam from '../components/kam';
 const Kam = dynamic(() => import('../components/kam'));
+//framer
+import {motion} from "framer-motion";
 
 export default function Home() {
   return (
@@ -28,24 +23,33 @@ export default function Home() {
       </Head>
 
       <main className={'relative z-10'}>
-          {
-            /*
-              <Image
-              layout={'fill'}
-              className={'opacity-50 z-0'}
-              src={'/assets/images/stars_bg.png'}
-              objectFit={'fill'}
-              alt={'Start'}
-            />
-            */
-          }
-          
         <div className={'relative z-20'}>
           <Banner />
           <DreamBig />
           <How />
           <OurBelief />
           <Start />
+          <motion.div 
+            className={`rounded-2xl bg-[#88888899] p-4 md:max-w-[900px] mx-auto my-10 md:my-0`}
+            initial={{opacity: 0, y: 30}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{ once: true }}
+            transition={{duration: 0.5, delay: 0.5}}
+          >
+            <div className='flex'>
+                <h1 className={` md:text-4xl sm:text-left text-center`}>
+                  OUR
+                </h1>
+                <h1 className={`md:pl-3 md:text-4xl empty-font sm:text-left text-center`}>
+                  MISSION
+                </h1>
+            </div>
+            <p className='pt-3'>
+                Rock Steady Digital's mission is a journey of digital transformation through a journey of creativity and innovation.
+                We create a fun and energetic environment and work with our clients and partner organisations to deliver outstanding results.
+                We are passionate about helping people and companies succeed through continuous improvement.
+            </p>
+          </motion.div>
           <Kam />
           <Ready />
           <Contact />

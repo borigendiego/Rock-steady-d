@@ -15,7 +15,7 @@ const ITEM_DATA = [
     {
         image: '/assets/images/icon2.png',
         title: 'Growth',
-        text: 'Determined to create a better world for all through coaching life values not thaught in traditional educational institutions'
+        text: 'Determined to create a better world for all through coaching life values not taught in traditional educational institutions'
     },
     {
         image: '/assets/images/icon3.png',
@@ -24,7 +24,7 @@ const ITEM_DATA = [
     },
     {
         image: '/assets/images/icon4.png',
-        title: 'Continuous Imprevement',
+        title: 'Continuous Improvement',
         text: 'Drive towards an improved environment - culturally, economically and ecologically' 
     },
     {

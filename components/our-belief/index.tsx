@@ -89,19 +89,6 @@ const OurBelief = () => {
                 viewport={{ once: true }}
                 transition={{duration: 0.7, delay: 2}}
             >
-                <div className={`${styles.bg} rounded-2xl`}>
-                    <div className='flex'>
-                        <h1 className={`${styles.text}  md:text-4xl sm:text-left text-center`}>
-                            OUR</h1>
-                        <h1 className={`${styles.text} md:pl-3 md:text-4xl empty-font sm:text-left text-center`}>
-                            MISSION</h1>
-                    </div>
-                    <p className='pt-3'>
-                        Rock Steady Digital's mission is a journey of digital transformation through a joruney of creatividty and innovation.
-                         We create a fun and energetic environment and work with our clients and partner organisations to deliver outstanding results.
-                          We are passionate avout gelping people and companies succeed through continuous improvement
-                    </p>
-                </div>
                 <div
                     dangerouslySetInnerHTML={{
                         __html: `<video 

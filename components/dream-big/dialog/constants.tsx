@@ -113,7 +113,7 @@ const CAROUSEL_SLIDES = [
             src={'/assets/images/modal/marketingModal.png'}
             alt={'Marketing'}
         />
-        <h3 className={'text-center mt-2'}>Marketing Campaing</h3>
+        <h3 className={'text-center mt-2'}>Digital Marketing</h3>
         <p className='text-center py-2 px-2'>
             In today's digital marketplace, small companies have the ability to win mindshare and influence their market through their websites,
             apps and social media. We´ll provide you with the framework and tools, in a long-term strategy that will fuel your growth for 5 to 10 years.

@@ -24,7 +24,7 @@ const Banner = () => {
                 <h1 className={'text-center empty-font text-[3rem] md:text-[4.8rem] banner-letters'}>SOLUTIONS</h1>
                 <h1 className={'text-center text-[5rem] md:text-[10.4rem] tracking-[-10px] banner-letters -mt-5 md:-mt-10 md:-ml-3 md:-mb-8'}>ROCK</h1>
                 <h3 className={'text-center text-[0.65rem] md:text-[1rem] bg-[#fff] text-black rounded-xl py-1 px-6 mb-2 md:mt-6'}>
-                    DIGITAL TRANSFORMATION CONSULTING • DIGITAL MARKETING
+                    DIGITAL TRANSFORMATION • DIGITAL MARKETING
                 </h3>
                 <h3 className={'text-center text-[0.65rem] md:text-[1rem] bg-[#fff] text-black rounded-xl py-1 px-6'}>
                     DATA ANALYTICS • SOCIAL MEDIA • E-COMMERCE • UX/UI

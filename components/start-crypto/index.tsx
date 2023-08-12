@@ -1,5 +1,4 @@
 import React from 'react';
-//
 import styles from './start.module.scss';
 //framer
 import {motion} from "framer-motion";
@@ -11,7 +10,7 @@ const Start = () => {
                 initial={{opacity: 0, y: 30}}
                 whileInView={{opacity: 1, y: 0}}
                 viewport={{ once: true }}
-                transition={{duration: 0.7, delay: 0.7}}
+                transition={{duration: 0.5, delay: 0.5}}
             >
                 <h2 className={`${styles.title} text-5xl leading-10 text-center mb-2`}>
                     Digital Disruption through

@@ -28,7 +28,7 @@ const OurBelief = () => {
     }
 
     return(
-        <div className={'flex flex-col sm:flex-row py-20'} id={'BELIEFS'}>
+        <div className={'flex flex-col sm:flex-row py-5 md:py-20'} id={'BELIEFS'}>
             <div className={'sm:w-3/6 lg:w-[1/2] flex flex-col items-center'}>
                 <div className={'flex flex-wrap my-12 md:my-0'}>
                     <motion.h1

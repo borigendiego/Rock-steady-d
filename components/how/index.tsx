@@ -28,7 +28,7 @@ const How = () => {
     }
    
     return(
-        <div className={`sm:flex sm:flex-wrap sm:pr-8 py-20 mt-8`} id={'HOW'}>
+        <div className={`sm:flex sm:flex-wrap sm:pr-8 py-5 md:py-20 mt-8`} id={'HOW'}>
             <motion.div
                 className={`w-full h-full sm:w-1/2 flex flex-col justify-center relative`}
                 initial={{opacity: 0, y: 30}}

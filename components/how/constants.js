@@ -57,8 +57,8 @@ const CAROUSEL_SLIDES = [
         <h3 className={'text-center my-4'}>DEVELOPMENT</h3>
         <img src={'/assets/images/how-we-do-it/develop.svg'} className={'mx-auto w-16 pb-3'}/>
         <p className='text-center'>
-            We love to write code!. We specialize in the development of customized websites,
-            and we put them together 100% according to the client's needs.
+            We specialize in the development of customized websites, 
+            and we put them together tailored to the client's needs.
         </p>
     </div>
    ,

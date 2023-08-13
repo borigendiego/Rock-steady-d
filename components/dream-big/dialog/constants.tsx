@@ -4,11 +4,11 @@ import Image from 'next/image';
 const DIALOG_DATA = [
     {
         id: 1,
-        section: 'Marketing Campaing',
+        section: 'Marketing Campaign',
         content: <Tile 
                     key={1}
                     image={'/assets/images/modal/marketingModal.png'}
-                    title={'Marketing Campaing'}
+                    title={'Digital Marketing'}
                     text={`In today's digital marketplace, small companies have
                      the ability to win mindshare and influence their market through their websites,
                     apps and social media. We´ll provide you with the framework and
@@ -82,7 +82,7 @@ const DIALOG_DATA = [
                 <Tile 
                     key={6}
                     image={'/assets/images/modal/programmingModal.png'}
-                    title={'Programming'}
+                    title={'E-Commerce'}
                     text={`We create digital solutions according to the needs of each business.
                     We take care of the development of custom websites and applications.
                     Each of our projects is unique, as are our clients.`}
@@ -175,7 +175,7 @@ const CAROUSEL_SLIDES = [
             src={'/assets/images/modal/programmingModal.png'}
             alt={'Programming'}
         />
-        <h3 className={'text-center my-4'}>Programming</h3>
+        <h3 className={'text-center my-4'}>E-Commerce</h3>
         <p className='text-center'>
             We create digital solutions according to the needs of each business.
             We take care of the development of custom websites and applications.

@@ -30,7 +30,7 @@ export default function Home() {
           <OurBelief />
           <Start />
           <motion.div 
-            className={`rounded-2xl bg-[#88888899] p-4 md:max-w-[900px] mx-auto my-10 md:my-0`}
+            className={`rounded-2xl bg-[#88888899] p-4 md:max-w-[900px] mx-7 lg:mx-auto md:my-0`}
             initial={{opacity: 0, y: 30}}
             whileInView={{opacity: 1, y: 0}}
             viewport={{ once: true }}

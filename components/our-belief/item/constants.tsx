@@ -1,9 +1,3 @@
-type itemObj = {
-    image: string,
-    title: string,
-    text: string,
-};
-
 const ITEM_DATA = [
     {
         image: '/assets/images/icon.png',

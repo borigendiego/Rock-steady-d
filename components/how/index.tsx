@@ -9,7 +9,7 @@ import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import {motion} from "framer-motion";
 
 const How = () => {
-    const [selectedItem, setSelectedItem] = useState<number>(0);
+    const [selectedItem, setSelectedItem] = useState<number>(2);
     const [audio, setAudio] = useState<any>(null)
     const [isMusicPlaying, setIsMusicPlaying] = useState<boolean>(false);
 
@@ -82,7 +82,9 @@ const How = () => {
                 <div className={'w-full pt-12 md:pt-6'}>
                     <MobileCarousel slides={CAROUSEL_SLIDES} />
                 </div>
-                <p className={'text-center h-28 sm:block hidden'}>{CAROUSEL_DATA[selectedItem].description}</p>
+                <p className={'text-center h-28 sm:block hidden'}>
+                    {CAROUSEL_DATA[selectedItem].description}
+                </p>
                 <img className={'mt-16 mb-10 w-full hidden md:inline'} src={'/assets/images/separator.svg'} alt={'Separator SVG'} />
                 <div className={'hidden sm:flex justify-between w-full'}>
                     {

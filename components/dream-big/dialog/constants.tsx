@@ -49,7 +49,7 @@ const DIALOG_DATA = [
                 <Tile 
                     key={3}
                     image={'/assets/images/modal/dataModal.png'}
-                    title={'Big Data'}
+                    title={'Data Analytics'}
                     text={`We help organizations improve performance and OKRs.
                     Through the identification of key metrics, and data analysis,
                      we obtain insights that allow our clients to make better

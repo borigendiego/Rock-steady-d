@@ -6,7 +6,7 @@ const Footer = () => {
     return(
         <div className={`sm:pt-8 lg:px-32`}>
             <motion.div
-                className={'flex sm:pt-0 pt-8 lg:flex-row justify-center'}
+                className={'flex sm:pt-0 pt-8 lg:flex-row justify-center flex-wrap'}
                 initial={{opacity: 0, x: 30}}
                 whileInView={{opacity: 1, x: 0}}
                 viewport={{ once: true }}
@@ -15,12 +15,12 @@ const Footer = () => {
                 <div className={'sm:w-1/5 w-1/2 lg:w-1/3 lg:px-12 flex flex-col items-center sm:items-start'}>
                     <img alt={'contact logo'} src={'/assets/images/logo_white.svg'} className='sm:w-9/12 w-full'/>
                 </div>
-                <div className={'flex lg:w-1/3 items-center flex-wrap'}>
-                    <a className={'sm:flex hidden w-fit h-1/4 mx-4'} href={'#HOW'}>Discover</a>
-                    <a className={'sm:flex hidden w-fit h-1/4 mx-4'} href={'#HOW'}>Design</a>
-                    <a className={'sm:flex hidden w-fit h-1/4 mx-4'} href={'#HOW'}>Develop</a>
-                    <a className={'sm:flex hidden w-fit h-1/4 mx-4'} href={'#HOW'}>Deploy</a>
-                    <a className={'sm:flex hidden w-fit h-1/4 mx-4'} href={'#HOW'}>Manteinance</a>
+                <div className={'flex items-center flex-wrap sm:pt-0 pt-8 lg:flex-row justify-center'}>
+                    <a className={'flex w-fit h-1/4 mx-4 md:my-0 my-2'} href={'#HOW'}>DISCOVERY</a>
+                    <a className={'flex w-fit h-1/4 mx-4 md:my-0 my-2'} href={'#HOW'}>INNOVATION</a>
+                    <a className={'flex w-fit h-1/4 mx-4 md:my-0 my-2'} href={'#HOW'}>DEVELOPMENT</a>
+                    <a className={'flex w-fit h-1/4 mx-4 md:my-0 my-2'} href={'#HOW'}>ACTION</a>
+                    <a className={'flex w-fit h-1/4 mx-4 md:my-0 my-2'} href={'#HOW'}>GROW</a>
                 </div>
             </motion.div>
             <motion.p

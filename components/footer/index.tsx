@@ -1,4 +1,5 @@
 import React from 'react';
+import { MENU_LINKS } from '../header/constants';
 //framer
 import {motion} from "framer-motion";
 
@@ -15,13 +16,20 @@ const Footer = () => {
                 <div className={'sm:w-1/5 w-1/2 lg:w-1/3 lg:px-12 flex flex-col items-center sm:items-start'}>
                     <img alt={'contact logo'} src={'/assets/images/logo_white.svg'} className='sm:w-9/12 w-full'/>
                 </div>
-                <div className={'flex items-center flex-wrap sm:pt-0 pt-8 lg:flex-row justify-center'}>
+                <div className={'md:flex hidden items-center flex-wrap sm:pt-0 pt-8 lg:flex-row justify-center'}>
                     <a className={'flex w-fit h-1/4 mx-4 md:my-0 my-2'} href={'#DISCOVERY'}>DISCOVERY</a>
                     <a className={'flex w-fit h-1/4 mx-4 md:my-0 my-2'} href={'#INNOVATION'}>INNOVATION</a>
                     <a className={'flex w-fit h-1/4 mx-4 md:my-0 my-2'} href={'#DEVELOPMENT'}>DEVELOPMENT</a>
                     <a className={'flex w-fit h-1/4 mx-4 md:my-0 my-2'} href={'#ACTION'}>ACTION</a>
                     <a className={'flex w-fit h-1/4 mx-4 md:my-0 my-2'} href={'#GROW'}>GROW</a>
                 </div>
+                <ul className={'mt-10 flex md:hidden'}>
+                    {
+                        MENU_LINKS.map((link,index) =>
+                            <a key={index} href={link.linkTo} className={`mx-4 text-white`}><li>{link.label}</li></a>
+                        )
+                    }
+                </ul>
             </motion.div>
             <motion.p
                 className={'sm:mt-4 sm:pt-8 sm:pb-20 text-center text-gray-400 py-6 px-2'}

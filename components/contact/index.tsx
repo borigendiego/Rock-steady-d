@@ -18,8 +18,9 @@ const Contact = () => {
             <Image
                 src={'/assets/images/READY_TO.png'}
                 alt={'Ready to'}
-                width={800}
-                height={600}
+                width={400}
+                height={300}
+                className={'object-contain'}
             />
             <Form 
                 fields={[

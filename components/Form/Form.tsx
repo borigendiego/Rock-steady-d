@@ -103,7 +103,7 @@ const MyCustomForm = ({
 
     return (
         <form 
-            className={`${customClass} mx-auto`}
+            className={`${customClass} mx-auto mt-0 md:mt-24`}
             onSubmit={(event) => handleSubmit(event)}
         >
             {

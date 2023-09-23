@@ -16,11 +16,11 @@ const Footer = () => {
                     <img alt={'contact logo'} src={'/assets/images/logo_white.svg'} className='sm:w-9/12 w-full'/>
                 </div>
                 <div className={'flex items-center flex-wrap sm:pt-0 pt-8 lg:flex-row justify-center'}>
-                    <a className={'flex w-fit h-1/4 mx-4 md:my-0 my-2'} href={'#HOW'}>DISCOVERY</a>
-                    <a className={'flex w-fit h-1/4 mx-4 md:my-0 my-2'} href={'#HOW'}>INNOVATION</a>
-                    <a className={'flex w-fit h-1/4 mx-4 md:my-0 my-2'} href={'#HOW'}>DEVELOPMENT</a>
-                    <a className={'flex w-fit h-1/4 mx-4 md:my-0 my-2'} href={'#HOW'}>ACTION</a>
-                    <a className={'flex w-fit h-1/4 mx-4 md:my-0 my-2'} href={'#HOW'}>GROW</a>
+                    <a className={'flex w-fit h-1/4 mx-4 md:my-0 my-2'} href={'#DISCOVERY'}>DISCOVERY</a>
+                    <a className={'flex w-fit h-1/4 mx-4 md:my-0 my-2'} href={'#INNOVATION'}>INNOVATION</a>
+                    <a className={'flex w-fit h-1/4 mx-4 md:my-0 my-2'} href={'#DEVELOPMENT'}>DEVELOPMENT</a>
+                    <a className={'flex w-fit h-1/4 mx-4 md:my-0 my-2'} href={'#ACTION'}>ACTION</a>
+                    <a className={'flex w-fit h-1/4 mx-4 md:my-0 my-2'} href={'#GROW'}>GROW</a>
                 </div>
             </motion.div>
             <motion.p

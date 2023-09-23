@@ -1,21 +1,42 @@
 import React, { useState, useEffect } from 'react';
-//Compoments
+import { useRouter } from 'next/router';
+//Components
 import { CAROUSEL_DATA, CAROUSEL_SLIDES } from './constants';
 import MobileCarousel from '../commons/carousel';
 //Assets
 import VolumeMuteIcon from '@mui/icons-material/VolumeMute';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 //framer
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 const How = () => {
+    const router = useRouter();
     const [selectedItem, setSelectedItem] = useState<number>(2);
     const [audio, setAudio] = useState<any>(null)
     const [isMusicPlaying, setIsMusicPlaying] = useState<boolean>(false);
 
     useEffect(() => {
         setAudio(new Audio('/assets/music/music1.mp3'))
-    }, [])
+    }, []);
+
+    useEffect(() => {
+        const handleHashChange = () => {
+          const currentHash = window.location.hash;
+          const hashRemoved = currentHash.slice(1)
+
+          const selectedItemByHash = CAROUSEL_DATA.find((i) => i.title === hashRemoved);
+
+          if(selectedItemByHash) {
+            setSelectedItem(selectedItemByHash.id);
+          }
+        };
+
+        window.addEventListener('hashchange', handleHashChange);
+    
+        return () => {
+          window.removeEventListener('hashchange', handleHashChange);
+        };
+      }, []);
 
     const start = (isPlaying: boolean) => {
         if (isPlaying) {
@@ -92,7 +113,8 @@ const How = () => {
                             return (
                                 <div 
                                     key={item.id}
-                                    className={'flex flex-col items-center w-1/5 mx-1 hover:scale-125 duration-300 cursor-pointer'}
+                                    id={item.title}
+                                    className={'flex flex-col items-center w-1/5 mx-1 hover:scale-125 duration-300 cursor-pointer scroll-m-96'}
                                     onMouseEnter={() => setSelectedItem(item.id)}
                                 >
                                     <div className={'mx-4 flex justify-center items-center rounded-full bg-gray-700 mb-3 h-16 w-16'}>

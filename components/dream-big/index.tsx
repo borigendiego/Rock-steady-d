@@ -83,6 +83,29 @@ const DreamBig = ({}) => {
                                 <p className='text-xs'>Click for + info</p>
                             </div>
                         </div>
+                        <div
+                            className={`${styles.card} row-span-1 col-start-1 rounded-md`}
+                            onClick={() => {
+                                setSelectedModalDataId(2)
+                                setOpenModal(true)}
+                                
+                            }
+                        >
+                            <span className={'relative'}>
+                                <Image
+                                    src={'/assets/images/dream-big/brandscientist.jpeg'}
+                                    alt={'Marketing service'}
+                                    className={'rounded-md object-fill'}
+                                    width={190}
+                                    height={200}
+                                />
+                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#00000085]'}>BRAND SCIENTIST</h4>
+                            </span>
+                           
+                            <div className={`${styles.card_text}`}>
+                                <p className='text-xs'>Click for + info</p>
+                            </div>
+                        </div>
                         <div 
                             className={`${styles.card} row-span-1 col-start-2 rounded-md`}
                             onClick={() => {

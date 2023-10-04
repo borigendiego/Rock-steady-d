@@ -24,7 +24,7 @@ const Footer = () => {
                 </div>
             </motion.div>
             <motion.p
-                className={'sm:mt-4 sm:pt-8 sm:pb-20 text-center text-gray-400 py-6 px-2'}
+                className={'sm:mt-4 sm:pt-4 sm:pb-4 text-center text-gray-400 py-6 px-2'}
                 initial={{opacity: 0, }}
                 whileInView={{opacity: 1}}
                 viewport={{ once: true }}
@@ -32,6 +32,15 @@ const Footer = () => {
             >
                 Leaders in digital transformation from strategy to implementation through transformation of people, process and technology.
             </motion.p>
+            <motion.p
+                initial={{opacity: 0, y: -30}}
+                whileInView={{opacity: 1, y: 0}}
+                viewport={{once: true}}
+                transition={{duration: 1, delay: .7}}
+                className='py-4 text-center text-gray-400 mt-4'
+            >
+                <a href="https://www.thehipposoft.com/" target='_blank' rel='noreferrer' className='text-gray-400'>Created by <span className='text-white'>HippoSoft</span> | All Right Reserved</a>
+          </motion.p>
         </div>
     )
 };

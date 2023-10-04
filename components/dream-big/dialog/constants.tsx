@@ -32,15 +32,17 @@ const DIALOG_DATA = [
     },
     {
         id: 3,
-        section: 'Blockchain',
+        section: 'Brand Scientist',
         content: 
-                <Tile 
-                    key={3}
-                    image={'/assets/images/modal/metaverse-2.png'}
-                    title={'Blockchain'}
-                    text={`We Provide customers with innovative solutions to
-                     their business challenges and goals through Blockchain technology.`}
-                />,
+                <div className='flex mx-auto my-10 justify-center'>
+                    <img alt={``} src={'/assets/images/modal/brandscientist-modal.jpeg'} className={'w-1/4 mr-8'}/>
+                    <div className='w-1/3 ml-8'>
+                        <p className='mb-2'>{`We'll help you build a BIGGER brand`}</p>
+                        <p className='opacity-50 mb-12'>
+                        Your brand extends well beyond your logo, colours, and promises. It encapsulates all of the emotions your products evoke, the impressions created through social engagement, and the feelings your customers get when they engage with you directly. We'll help you to dominate your industry with a brand that's unforgettable and instantly recognisable using our Brand Scientist AI tools.
+                        </p>
+                    </div>
+                </div>,
     },
     {
         id: 4,
@@ -114,7 +116,7 @@ const CAROUSEL_SLIDES = [
             alt={'Marketing'}
         />
         <h3 className={'text-center mt-2'}>Digital Marketing</h3>
-        <p className='text-center py-2 px-2'>
+        <p className='py-2 px-2'>
             In today's digital marketplace, small companies have the ability to win mindshare and influence their market through their websites,
             apps and social media. We´ll provide you with the framework and tools, in a long-term strategy that will fuel your growth for 5 to 10 years.
         </p>
@@ -128,7 +130,7 @@ const CAROUSEL_SLIDES = [
             alt={'Social'}
         />
         <h3 className={'text-center my-4'}>Social Media</h3>
-        <p className='text-center py-2 px-2'>
+        <p className='py-2 px-2'>
             We help to promote businesses through a variety of
             social media channels and SEO/SEM and Analytics attract target
             markets and segments through websites. We generate valuable content
@@ -137,6 +139,19 @@ const CAROUSEL_SLIDES = [
     </div>
     ,
     <div className={'bg-cover px-1 relative rounded-md h-full'}>
+        <Image
+            layout={"fill"}
+            className={'z-[-1] opacity-50'}
+            src={'/assets/images/dream-big/brandscientist.jpeg'}
+            alt={'Media'}
+        />
+        <h3 className={'text-center mt-4'}>Brand Scinentist</h3>
+        <p className='p-2 px-2 text-sm'>
+        Your brand extends well beyond your logo, colours, and promises. It encapsulates all of the emotions your products evoke, the impressions created through social engagement, and the feelings your customers get when they engage with you directly. We'll help you to dominate your industry with a brand that's unforgettable and instantly recognisable using our Brand Scientist AI tools.
+        </p>
+    </div>
+    ,   
+    <div className={'bg-cover px-1 relative rounded-md h-full'}>
          <Image
             layout={"fill"}
             className={'z-[-1] opacity-50'}
@@ -144,7 +159,7 @@ const CAROUSEL_SLIDES = [
             alt={'Big Data'}
         />
         <h3 className={'text-center my-4'}>Data Analytics</h3>
-        <p className='text-center py-2'>
+        <p className='py-2 px-2'>
             We help organizations improve performance and OKRs.
             Through the identification of key metrics, and data analysis,
             we obtain insights that allow our clients to make better
@@ -160,7 +175,7 @@ const CAROUSEL_SLIDES = [
             alt={'Media'}
         />
         <h3 className={'text-center mt-4'}>{'Media & User experience'}</h3>
-        <p className='text-center p-2'>
+        <p className='p-2 px-2'>
             We want to ensure that contact with your brand, or with your product, through the interface on any device is clear,
             attractive and suggestive.
             We unite emotional design methodologies, focused on the user,
@@ -176,7 +191,7 @@ const CAROUSEL_SLIDES = [
             alt={'Programming'}
         />
         <h3 className={'text-center my-4'}>E-Commerce</h3>
-        <p className='text-center'>
+        <p className='px-2'>
             We create digital solutions according to the needs of each business.
             We take care of the development of custom websites and applications.
             Each of our projects is unique, as are our clients.
@@ -191,10 +206,10 @@ const CAROUSEL_SLIDES = [
             alt={'Digital disruption'}
         />
         <h3 className={'text-center my-4'}>Digital transformation</h3>
-        <p className='text-center'>We lead digital projects from strategy to implementation
+        <p className='px-2'>We lead digital projects from strategy to implementation
             through the transformation of people, processes and technology
         </p>
-        <p className={'text-center'}>We have the ability to adapt and flexibility to deal with exponential changes in technology.</p>
+        <p className={'px-2'}>We have the ability to adapt and flexibility to deal with exponential changes in technology.</p>
     </div>
 ];
 

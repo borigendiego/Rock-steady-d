@@ -13,7 +13,7 @@ const Tile = ({
             <Image 
                 alt={`image-${key}`}
                 src={image} 
-                className={'z-20 relative rounded-t-md'}
+                className={'z-20 relative rounded-xl object-contain'}
                 width={300}
                 height={250}
             />

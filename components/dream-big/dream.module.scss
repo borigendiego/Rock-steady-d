@@ -41,6 +41,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    p {
+        background-color: #1d161b;
+        padding: 4px;
+        border-radius: 5px;
+    }
 }
 
 .card {
@@ -48,6 +54,22 @@
   position: relative;
   background: #1d161b;
   height: fit-content;
+}
+
+.card::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background-color: #1d161b;
+  opacity: .2;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.card:hover::after {
+  opacity: 0;
 }
 
 .card_image {

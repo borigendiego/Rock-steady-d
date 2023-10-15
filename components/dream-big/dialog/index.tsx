@@ -17,7 +17,7 @@ const Tile = ({
                 width={300}
                 height={250}
             />
-            <div className='w-1/3 ml-8'>
+            <div className='w-[42%] ml-8'>
                 <p className='mb-2'>{title}</p>
                 <p className='opacity-50 mb-6'>{text}</p>
             </div>

@@ -25,9 +25,9 @@ const DIALOG_DATA = [
         id: 2,
         section: 'People, Culture & Change offering',
         content: 
-                <div className='flex mx-auto my-10 justify-center'>
+                <div className='flex mx-auto my-10 pb-8 justify-center'>
                     <img alt={``} src={'/assets/images/dream-big/people.jpeg'} className={'w-1/4 mr-8 rounded-xl'}/>
-                    <div className='w-1/3 ml-8 pb-14'>
+                    <div className='w-[42%] ml-8 pb-14'>
                         <p className='mb-2'>People, Culture & Change offering</p>
                         <p className='opacity-50 mb-6'>With any Digital Transformation, there is a huge impact to the organization on People and Culture. Rock Steady Digital can help you through this process and build strategies and action plans to deliver change more smoothly.</p>
                     </div>
@@ -37,9 +37,9 @@ const DIALOG_DATA = [
         id: 3,
         section: 'Brand Scientist',
         content: 
-                <div className='flex mx-auto my-10 pb-14 justify-center'>
+                <div className='flex mx-auto my-10 pb-16 justify-center'>
                     <img alt={``} src={'/assets/images/modal/brandscientist-modal.jpeg'} className={'w-1/4 mr-8 object-contain rounded-xl'}/>
-                    <div className='w-[40%] ml-8'>
+                    <div className='w-[42%] ml-8'>
                         <p className='mb-2'>{`We'll help you build a BIGGER brand`}</p>
                         <p className='opacity-50'>
                             Your brand extends well beyond your logo, colours, and promises. It encapsulates all of the emotions your products evoke, the impressions created through social engagement, and the feelings your customers get when they engage with you directly. We'll help you to dominate your industry with a brand that's unforgettable and instantly recognisable using our Brand Scientist AI tools.
@@ -69,7 +69,7 @@ const DIALOG_DATA = [
         section: 'Media & User experience',
         content: <div className='flex mx-auto my-10 justify-center'>
                     <img alt={``} src={'/assets/images/modal/uxuiModal.png'} className={'w-1/4 mr-8'}/>
-                    <div className='w-1/3 ml-8'>
+                    <div className='w-[42%] ml-8'>
                         <p className='mb-2'>{'Media & User Experience'}</p>
                         <p className='opacity-50 mb-6'>
                             We want to ensure that contact with your brand, or with your product, through the interface on any device is clear,
@@ -140,7 +140,7 @@ const CAROUSEL_SLIDES = [
         </p>
     </div>
     ,
-    <div className={'bg-cover px-1 relative rounded-md h-full bg-[#1d161b] flex flex-col justify-center'}>
+    <div className={'bg-cover px-1 relative rounded-md h-full bg-[#88888899] flex flex-col justify-center'}>
         <h3 className={'text-center mt-4'}>Brand Scinentist</h3>
         <p className='pt-1 px-2 text-sm'>
             Your brand extends well beyond your logo, colours, and promises. It encapsulates all of the emotions your products evoke, the impressions created through social engagement, and the feelings your customers get when they engage with you directly. We'll help you to dominate your industry with a brand that's unforgettable and instantly recognisable using our Brand Scientist AI tools.

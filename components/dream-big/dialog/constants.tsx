@@ -44,7 +44,7 @@ const DIALOG_DATA = [
                         <p className='opacity-50'>
                             Your brand extends well beyond your logo, colours, and promises. It encapsulates all of the emotions your products evoke, the impressions created through social engagement, and the feelings your customers get when they engage with you directly. We'll help you to dominate your industry with a brand that's unforgettable and instantly recognisable using our Brand Scientist AI tools.
                         </p>
-                        <p>Use this code and get a $100 discount: RSD100</p>
+                        <p className='mt-2'>Use this code and get a $100 discount: RSD100</p>
                     </div>
                 </div>,
         customLink: 'https://brand-scientist.com/advantage',

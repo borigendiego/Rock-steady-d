@@ -11,11 +11,11 @@ const About = () => {
         <div className={`${styles.background} flex sm:flex-row flex-col sm:block`}>
             <motion.a
                 href='/#ABOUT'
-                className='sm:float-right sm:relative sm:right-16 sm:top-8 sm:text-lg sm:p-0 flex justify-center pt-4 md:pr-4'
+                className='sm:float-right sm:relative sm:right-16 sm:top-8 sm:text-lg sm:p-0 flex justify-center pt-4 md:pr-4 duration-300 hover:scale-105'
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 viewport={{ once: true }}
-                transition={{duration: 0.7, delay: 0.5}}
+                transition={{duration: 0.7, delay: 2}}
             >&#8617; GO BACK TO HOME PAGE</motion.a>
             <motion.div
                 className={`sm:flex inline sm:h-screen h-full`}
@@ -36,7 +36,7 @@ const About = () => {
                             href='https://www.linkedin.com/in/kamleshlad/'
                             target="_blank"
                             rel="noopener noreferrer">
-                            <img alt='Linked In icon' className={'w-[32px]'} src='/assets/images/about/linkedin.svg'/>
+                            <img alt='Linked In icon' className={'w-[32px] duration-300 hover:scale-110'} src='/assets/images/about/linkedin.svg'/>
                         </a>
                     </div>
                 </div>
@@ -53,7 +53,7 @@ const About = () => {
                         {COMPANIES.map((value, index) => 
                         <a
                             href={value.url}
-                            className={'bg-none pr-6 w-full'}
+                            className={'bg-none pr-6 w-full duration-300 hover:scale-110'}
                             target="_blank"
                             rel="noopener noreferrer"
                         >

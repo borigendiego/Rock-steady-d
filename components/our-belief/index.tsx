@@ -78,7 +78,7 @@ const OurBelief = () => {
                         }
                     </span>
                 </div>
-                <div className={'flex flex-col items-baseline mt-4 px-4 sm:items-center'}>
+                <div className={'flex flex-col items-baseline mt-4 px-4'}>
                     {ITEM_DATA.map((value, index) => <Item itemData={value} key={index}/>)}
                 </div>
             </div>

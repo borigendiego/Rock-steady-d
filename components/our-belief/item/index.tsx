@@ -23,8 +23,8 @@ const Item = ({ itemData }) => {
                 <img src={image} alt={`${key}-profile`} className={'mx-auto md:w-auto w-[55%] max-w-[35px]'}/>
             </div>
             <div className={'w-9/12 sm:pt-0 pt-4'}>
-                <h2 className={`${styles.title} pb-1 sm:text-left text-center`}>{title}</h2>
-                <p className={`${styles.text} sm:text-left text-center`}>{text}</p>
+                <h2 className={`${styles.title}  py-1`}>{title}</h2>
+                <p className={`${styles.text} py-1`}>{text}</p>
             </div>
         </motion.div>
     )

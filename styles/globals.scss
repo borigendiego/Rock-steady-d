@@ -62,22 +62,31 @@ a {
   color: $white;
   text-decoration: none;
   font-family: $poppins, sans-serif;
-  transition: transform ease 0.2s;
-  background-image: linear-gradient(#fff, #fff);
-  background-position: 0 100%;
-  background-size: 0 2px;
-  background-repeat: no-repeat;
-
+  transition: ease 300ms;
 
 }
 
 
-a:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-  background-position: 100% 100%;
-  background-size: 100% 2px;
-  transition: 300ms;
+
+nav {
+  a {
+    color: $white;
+    text-decoration: none;
+    font-family: $poppins, sans-serif;
+    transition: transform ease 0.2s;
+    background-image: linear-gradient(#fff, #fff);
+    background-position: 0 100%;
+    background-size: 0 2px;
+    background-repeat: no-repeat;
+  }
+  
+  
+  a:hover {
+    cursor: pointer;
+    background-position: 100% 100%;
+    background-size: 100% 2px;
+    transition: 300ms;
+  }
 }
 
 img {

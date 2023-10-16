@@ -36,7 +36,7 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{duration: 0.5, delay: 0.5}}
           >
-            <div className='flex'>
+            <div className='md:flex'>
                 <h1 className={` md:text-4xl sm:text-left text-center`}>
                   OUR
                 </h1>

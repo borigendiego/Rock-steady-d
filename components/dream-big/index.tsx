@@ -12,7 +12,7 @@ const DreamBig = ({}) => {
     const [selectedModalDataId, setSelectedModalDataId] = useState<number>(0);
 
     return (
-        <div className={`flex flex-col p-8 sm:p-12 md:my-0 my-16 ${styles.background}`} id={'WHAT'} >
+        <div className={`flex flex-col p-4 sm:p-12 md:my-0 my-16 ${styles.background}`} id={'WHAT'} >
             <motion.h1
                 className={`text-center text-white`}
                 initial={{opacity: 0, y: 30}}
@@ -52,7 +52,7 @@ const DreamBig = ({}) => {
                                     width={190}
                                     height={120}
                                 />
-                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#82828291]'}>
+                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#82828291] z-10'}>
                                     DIGITAL MARKETING
                                 </h4>
                             </span>
@@ -70,13 +70,13 @@ const DreamBig = ({}) => {
                         >
                             <span className={'relative'}>
                                 <Image
-                                    src={'/assets/images/dream-big/social-media.png'}
-                                    alt={'Marketing service'}
-                                    className={' rounded-md'}
+                                    src={'/assets/images/dream-big/people-2.jpeg'}
+                                    alt={'People, Culture & Change offering'}
+                                    className={'rounded-md object-cover'}
                                     width={190}
-                                    height={200}
+                                    height={220}
                                 />
-                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#00000085]'}>SOCIAL MEDIA</h4>
+                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#00000085] z-10'}>PEOPLE</h4>
                             </span>
                            
                             <div className={`${styles.card_text}`}>
@@ -94,11 +94,11 @@ const DreamBig = ({}) => {
                                 <Image
                                     src={'/assets/images/dream-big/data.png'}
                                     alt={'Data service'}
-                                    className={' rounded-md'}
+                                    className={'rounded-md'}
                                     width={190}
-                                    height={100}
+                                    height={120}
                                 />
-                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#82828291]'}>DATA ANALYTICS</h4>
+                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#82828291] z-10'}>DATA ANALYTICS</h4>
                             </span>
                             
                             <div className={`${styles.card_text}`}>
@@ -106,7 +106,7 @@ const DreamBig = ({}) => {
                             </div>
                         </div>
                         <div 
-                            className={`${styles.card} row-span-1 col-start-2 rounded-md -mt-5`}
+                            className={`${styles.card} row-span-1 col-start-2 rounded-md `}
                             onClick={() => {
                                 setSelectedModalDataId(4)
                                 setOpenModal(true)}
@@ -120,7 +120,7 @@ const DreamBig = ({}) => {
                                     width={190}
                                     height={200}
                                 />
-                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#82828291]'}>UX UI</h4>
+                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#82828291] z-10'}>UX UI</h4>
                             </span>
                             
                             <div className={`${styles.card_text}`}>
@@ -141,9 +141,9 @@ const DreamBig = ({}) => {
                                     alt={'Programming service'}
                                     className={'rounded-md'}
                                     width={190}
-                                    height={150}
+                                    height={140}
                                 />
-                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#82828291]'}>
+                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#82828291] z-10'}>
                                     E-COMMERCE
                                 </h4>
                             </span>
@@ -153,7 +153,7 @@ const DreamBig = ({}) => {
                             </div>
                         </div>
                         <div 
-                            className={`${styles.card} row-span-3 col-start-3 mt-auto mb-auto rounded-md`}
+                            className={`${styles.card} row-span-2 col-start-3 mb-auto mt-auto rounded-md`}
                             onClick={() => {
                                 setSelectedModalDataId(6)
                                 setOpenModal(true)}
@@ -165,11 +165,34 @@ const DreamBig = ({}) => {
                                     alt={'Programming service'}
                                     className={'rounded-md'}
                                     width={190}
-                                    height={350}
+                                    height={300}
                                 />
-                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#00000085]'}>DIGITAL TRANSFORMATION</h4>
+                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#00000085] z-10'}>DIGITAL TRANSFORMATION</h4>
                             </span>
                             
+                            <div className={`${styles.card_text}`}>
+                                <p className='text-xs'>Click for + info</p>
+                            </div>
+                        </div>
+                        <div
+                            className={`${styles.card} row-span-1 col-start-3 rounded-md -mt-[25px]`}
+                            onClick={() => {
+                                setSelectedModalDataId(2)
+                                setOpenModal(true)}
+                                
+                            }
+                        >
+                            <span className={'relative'}>
+                                <Image
+                                    src={'/assets/images/dream-big/brandscientist.jpeg'}
+                                    alt={'Marketing service'}
+                                    className={'rounded-md object-contain'}
+                                    width={190}
+                                    height={120}
+                                />
+                                <h4 className={'text-center absolute bottom-0 w-full rounded-b-md bg-[#00000085] z-10'}>BRAND SCIENTIST</h4>
+                            </span>
+                           
                             <div className={`${styles.card_text}`}>
                                 <p className='text-xs'>Click for + info</p>
                             </div>
@@ -195,7 +218,7 @@ const DreamBig = ({}) => {
                 </motion.div>
             </div>
 
-            <Modal open={openModal} closeModal={() => setOpenModal(false)} selectedSection={DIALOG_DATA[selectedModalDataId].section} >
+            <Modal open={openModal} closeModal={() => setOpenModal(false)} selectedSection={DIALOG_DATA[selectedModalDataId].section} customLink={DIALOG_DATA[selectedModalDataId].customLink} >
                 <div>
                     {DIALOG_DATA[selectedModalDataId].content}
                 </div>

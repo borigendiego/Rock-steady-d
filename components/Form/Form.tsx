@@ -136,7 +136,7 @@ const MyCustomForm = ({
                                         value={values[name]}
                                         rows={10}
                                         cols={40}
-                                        className={'input_box'}
+                                        className={'input_box resize-none'}
                                         placeholder={placeholder}
                                         onChange={(e) => handleChange(e, [])}
                                     />

@@ -2,6 +2,7 @@ import React from 'react';
 import Router from 'next/router';
 import Dialog from '@mui/material/Dialog';
 import styles from './modal.module.scss';
+import Link from 'next/link';
 //framer
 import {motion} from "framer-motion";
 
@@ -10,6 +11,7 @@ type modalProps = {
     children: any,
     closeModal: any,
     selectedSection: string,
+    customLink?: string,
 }
 
 const Modal = (
@@ -18,6 +20,7 @@ const Modal = (
         children,
         closeModal,
         selectedSection,
+        customLink,
     }:modalProps) => {
 
     const handleClose = () => {};
@@ -37,7 +40,7 @@ const Modal = (
             <div className={`${styles.overlay} flex flex-col overflow-hidden`}>
                 <motion.a
                     onClick={() => closeModal()}
-                    className={`${styles.link} text-xl relative left-6 top-8 w-fit`}
+                    className={`${styles.link} text-xl relative left-6 top-8 w-fit duration-300 hover:scale-110 cursor-pointer`}
                     initial={{opacity: 0}}
                     whileInView={{opacity: 1}}
                     viewport={{ once: true }}
@@ -72,8 +75,21 @@ const Modal = (
                     viewport={{ once: true }}
                     transition={{duration: 1, delay: 1.5}}
                 >
+
+                    {customLink ?
+
+                        <a href={customLink} target='_blank' rel='noreferrer'>
+                            <button 
+                                className={'py-3 px-4 relative right-48 bottom-24'}
+                            >
+                                Find out more
+                            </button>
+                        </a>
+
+                    :
                     <button 
                         className={'py-3 px-4 relative right-48 bottom-24'}
+
                         onClick={() => {
                             window.localStorage.setItem('section', selectedSection);
                             closeModal();
@@ -81,7 +97,7 @@ const Modal = (
                         }}
                     >
                         Find out more
-                    </button>
+                    </button>}
                 </motion.div>
             </div>
         </Dialog>

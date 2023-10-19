@@ -23,12 +23,12 @@ const DIALOG_DATA = [
     },
     {
         id: 2,
-        section: 'People, Culture & Change offering',
+        section: 'People, Culture & Change',
         content: 
                 <div className='flex mx-auto my-10 pb-8 justify-center'>
                     <img alt={``} src={'/assets/images/dream-big/people.jpeg'} className={'w-1/4 mr-8 rounded-xl'}/>
                     <div className='w-[42%] ml-8 pb-14'>
-                        <p className='mb-2'>People, Culture & Change offering</p>
+                        <p className='mb-2'>People, Culture & Change</p>
                         <p className='opacity-50 mb-6'>With any Digital Transformation, there is a huge impact to the organization on People and Culture. Rock Steady Digital can help you through this process and build strategies and action plans to deliver change more smoothly.</p>
                     </div>
                 </div>,
@@ -44,7 +44,7 @@ const DIALOG_DATA = [
                         <p className='opacity-50'>
                             Your brand extends well beyond your logo, colours, and promises. It encapsulates all of the emotions your products evoke, the impressions created through social engagement, and the feelings your customers get when they engage with you directly. We'll help you to dominate your industry with a brand that's unforgettable and instantly recognisable using our Brand Scientist AI tools.
                         </p>
-                        <p className='mt-2'>Use this code and get a $100 discount: RSD100</p>
+                        <p className='mt-2'>Click on the link below and get a $100 discount with the ‘Done for You’ services: RSD100</p>
                     </div>
                 </div>,
         customLink: 'https://brand-scientist.com/advantage',

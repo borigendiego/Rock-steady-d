@@ -39,12 +39,12 @@ const DIALOG_DATA = [
         content: 
                 <div className='flex mx-auto my-10 pb-16 justify-center'>
                     <img alt={``} src={'/assets/images/modal/brandscientist-modal.jpeg'} className={'w-1/4 mr-8 object-contain rounded-xl'}/>
-                    <div className='w-[42%] ml-8'>
+                    <div className='w-[45%] ml-8'>
                         <p className='mb-2'>{`We'll help you build a BIGGER brand`}</p>
                         <p className='opacity-50'>
                             Your brand extends well beyond your logo, colours, and promises. It encapsulates all of the emotions your products evoke, the impressions created through social engagement, and the feelings your customers get when they engage with you directly. We'll help you to dominate your industry with a brand that's unforgettable and instantly recognisable using our Brand Scientist AI tools.
                         </p>
-                        <p className='mt-2'>Click on the link below and get a $100 discount with the ‘Done for You’ services: RSD100</p>
+                        <p className='mt-2'>Click on the button below and get a $100 discount with the ‘Done for You’ services. Code: RSD100</p>
                     </div>
                 </div>,
         customLink: 'https://brand-scientist.com/advantage',

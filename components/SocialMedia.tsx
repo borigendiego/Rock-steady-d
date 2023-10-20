@@ -7,7 +7,7 @@ import {motion} from "framer-motion";
 const SocialMedia = () => {
     return(
         <motion.div 
-            className='fixed flex cursor-pointer bottom-[20px] right-[40px] md:right-[60px] z-40 socialmedia'
+            className='fixed md:flex hidden cursor-pointer bottom-[20px] right-[40px] md:right-[60px] z-40 socialmedia'
             initial={{opacity: 0, x: 30}}
             whileInView={{opacity: 1, x: 0}}
             viewport={{ once: true }}

@@ -111,6 +111,14 @@ img {
   font-size: clamp(50px, 100%, 64px);
 }
 
+//Social media styles
+
+.socialmedia {
+  img {
+    filter: invert(1);
+  }
+}
+
 //Button Styles
 button, .button {
   background: $main-purple;

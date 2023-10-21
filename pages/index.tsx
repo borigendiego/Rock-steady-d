@@ -12,6 +12,7 @@ const Footer = dynamic(() => import('../components/footer'));
 const Kam = dynamic(() => import('../components/kam'));
 //framer
 import {motion} from "framer-motion";
+import SocialMedia from '../components/SocialMedia';
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <main className={'relative z-10'}>
         <div className={'relative z-20'}>
           <Banner />
+          <SocialMedia />
           <DreamBig />
           <How />
           <OurBelief />

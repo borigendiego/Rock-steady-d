@@ -17,11 +17,11 @@ const Footer = () => {
                     <img alt={'contact logo'} src={'/assets/images/logo_white.svg'} className='sm:w-9/12 w-full'/>
                 </div>
                 <nav className={'flex lg:w-1/3 items-center flex-wrap'}>
-                    <a className={'sm:flex hidden w-fit h-1/4 mx-4'} href={'#HOW'}>Discover</a>
-                    <a className={'sm:flex hidden w-fit h-1/4 mx-4'} href={'#HOW'}>Design</a>
-                    <a className={'sm:flex hidden w-fit h-1/4 mx-4'} href={'#HOW'}>Develop</a>
-                    <a className={'sm:flex hidden w-fit h-1/4 mx-4'} href={'#HOW'}>Deploy</a>
-                    <a className={'sm:flex hidden w-fit h-1/4 mx-4'} href={'#HOW'}>Manteinance</a>
+                    <a className={'sm:flex hidden w-fit h-1/4 mx-4'} href={'#HOW'}>Discovery</a>
+                    <a className={'sm:flex hidden w-fit h-1/4 mx-4'} href={'#HOW'}>Innovation</a>
+                    <a className={'sm:flex hidden w-fit h-1/4 mx-4'} href={'#HOW'}>Development</a>
+                    <a className={'sm:flex hidden w-fit h-1/4 mx-4'} href={'#HOW'}>Action</a>
+                    <a className={'sm:flex hidden w-fit h-1/4 mx-4'} href={'#HOW'}>Grow</a>
                 </nav>
             </motion.div>
             <motion.p

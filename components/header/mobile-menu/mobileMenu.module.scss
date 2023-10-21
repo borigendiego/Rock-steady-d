@@ -23,7 +23,7 @@
   .menuToggle a
   {
     text-decoration: none;
-    color: #cdcdcd;
+    color: #000;
 
     transition: color 0.3s ease;
   }
@@ -86,7 +86,7 @@
   {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #cdcdcd;
+    background: #000;
   }
 
   /*
@@ -136,8 +136,8 @@
   .menuToggle input:checked ~ .menu
   {
     width: 80vw;
-    height: 50vh;
-    background: linear-gradient(214.02deg, #B05369 6.04%, #671AE4 92.95%);
+    height: 60vh;
+    background-color: #888888fd;
     transform: translate(-68vw, 0);
 
     li {

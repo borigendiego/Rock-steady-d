@@ -5,6 +5,51 @@ import styles from './about.module.scss';
 import Link from 'next/link';
 //framer
 import {motion} from "framer-motion";
+import Image from 'next/image';
+
+const SOCIAL_DATA = [
+    {
+        src: '/assets/images/social/facebook.svg',
+        alt: 'Facebook icon',
+        href: 'https://www.facebook.com/profile.php?id=61551540136730',
+    },
+    {
+        src: '/assets/images/social/instagram.svg',
+        alt: 'instagram icon',
+        href: 'https://www.instagram.com/rocksteadydigital/',
+    },
+    {
+        src: '/assets/images/social/twitter.svg',
+        alt: 'twitter icon',
+        href: 'https://twitter.com/KamRockSteady',
+    },
+    {
+        src: '/assets/images/social/youtube.svg',
+        alt: 'youtube icon',
+        href: 'https://www.youtube.com/@rocksteadydigital',
+    },
+    {
+        src: '/assets/images/social/tiktok.svg',
+        alt: 'tiktok icon',
+        href: 'https://www.tiktok.com/@rocksteadydigital',
+    },
+    {
+        src: '/assets/images/social/linkedin.svg',
+        alt: 'linkedin icon',
+        href: 'https://www.linkedin.com/company/rock-steady',
+    },
+    {
+        src: '/assets/images/social/pinterest.svg',
+        alt: 'pinterest icon',
+        href: 'https://www.pinterest.com/rocksteadydigital/',
+    },
+    {
+        src: '/assets/images/social/telegram.svg',
+        alt: 'telegram icon',
+        href: 'https://t.me/+pRybtGjasi0yNGQ1',
+    },
+]
+
 
 const About = () => {
     return(
@@ -61,16 +106,31 @@ const About = () => {
                         </a>
                         )}
                     </div>
-                    <div className='w-full flex justify-center sm:block'>
+                    <div className='w-full flex md:flex-row flex-col md:justify-between items-center '>
                         <Link href={'/#CONTACT'}>
                             <button 
-                            className={'sm:w-1/4 w-1/2 px-3 py-4 sm:float-right sm:m-0 mb-4'}
+                            className={'sm:w-1/4 w-1/2 px-3 py-4 sm:m-0 mb-4'}
                             onClick={() => {
                                 //window.localStorage.setItem('section', selectedSection);
                                 Router.push('/#CONTACT')
                             }}
                         >   Contact me</button>
                         </Link>
+                        <div className='socialmedia md:block grid grid-cols-4 gap-3 my-4 md:my-0'>
+                            {
+                                SOCIAL_DATA.map((val, index) => 
+                                    <a href={val.href} target={'_blank'} rel="noreferrer" className='hover:scale-105 duration-300 md:px-1 md:mx-1 px-2'>
+                                        <Image 
+                                            src={val.src} 
+                                            alt={val.alt} 
+                                            width={30} 
+                                            height={30}
+                                            className='social-icon'
+                                         />
+                                    </a>
+                                )
+                            }
+                        </div>
                     </div>
                 </motion.div>
             </motion.div>

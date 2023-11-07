@@ -14,7 +14,7 @@ const OurBelief = () => {
     const [isMusicPlaying, setIsMusicPlaying] = useState<boolean>(false);
 
     useEffect(() => {
-        setAudio(new Audio('/assets/music/music2.mp3'))
+        setAudio(new Audio('/assets/music/no-roll-drumfello.mp3'))
     }, [])
 
     const start = (isPlaying: boolean) => {
@@ -53,7 +53,7 @@ const OurBelief = () => {
                                 class='z-0 left-0 right-0 mr-auto ml-auto opacity-50 rounded-md'
                                 autoplay loop muted playsinline
                             />
-                                <source src=/assets/videos/video-1.mp4 type="video/mp4" />
+                                <source src=/assets/videos/new-video.mp4 type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>`,
                         }}
@@ -95,7 +95,7 @@ const OurBelief = () => {
                         class='absolute opacity-50 z-0 max-w-none rounded-md w-fit hidden md:inline'
                             autoplay loop muted playsinline
                         />
-                            <source src=/assets/videos/video-1.mp4 type="video/mp4" />
+                            <source src=/assets/videos/new-video.mp4 type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>`,
                     }}

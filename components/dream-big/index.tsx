@@ -129,7 +129,7 @@ const DreamBig = ({}) => {
                         </div>
                         <div 
                             className={`${styles.card} row-span-1 col-start-2 rounded-md`}
-                            style={{marginTop: '-20px;'}}
+                            style={{marginTop: '-20px'}}
                             onClick={() => {
                                 setSelectedModalDataId(5)
                                 setOpenModal(true)}
